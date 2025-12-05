@@ -3,9 +3,244 @@
 % ==========================================
 \chapter{RENCANA SELANJUTNYA}
 \label{chap:rencana-selanjutnya}
-Jelaskan secara detail langkah-langkah rencana selanjutnya, hal-hal yang diperlukan atau akan disiapkan, dan risiko dan mitigasinya, yang meliputi:
-\begin{enumerate}
-\item	Rencana implementasi, termasuk alat dan bahan yang diperlukan, lingkungan, konfigurasi, biaya, dan sebagainya.
-\item	Desain pengujian dan evaluasi, misalnya metode verifikasi dan validasi.
-\item	Analisis risiko dan mitigasi, misalnya tindakan selanjutnya jika ada yang tidak berjalan sesuai rencana.
-\end{enumerate}
+
+Bab ini menjelaskan rencana pelaksanaan tahap berikutnya dari pengembangan modul e-complaint SpeedForce. Pembahasan mencakup rencana penyelesaian pengembangan sistem, rencana pengujian dan evaluasi berbasis kerangka Design Science Research (DSR), rencana implementasi awal di lingkungan operasional SpeedForce, serta gambaran analisis manfaat dan estimasi biaya secara kualitatif. Dengan demikian, Bab ini menutup proposal tugas akhir dengan menguraikan bagaimana artefak yang telah dirancang pada Bab~\ref{chap:perancangan-sistem} akan diwujudkan, diuji, dan disiapkan untuk penggunaan nyata.
+
+\section{Rencana Implementasi Modul E-Complaint}
+
+Hingga tahap proposal, penelitian telah mencakup identifikasi masalah dan motivasi, penetapan tujuan solusi dan kebutuhan sistem, serta perancangan konseptual sistem, arsitektur, model data, dan rancangan antarmuka. Tahapan DSR berikutnya yang harus diselesaikan meliputi: (1) perancangan teknis detail dan pengembangan artefak (\textit{design \& development}), (2) demonstrasi penggunaan modul pada konteks operasional SpeedForce (\textit{demonstration}), dan (3) evaluasi fungsional serta \textit{usability}/UX artefak (\textit{evaluation}).
+
+Rencana penelitian selanjutnya disusun agar penyelesaian tugas akhir selaras dengan penyelesaian seluruh tahapan DSR tersebut. Secara garis besar, aktivitas penelitian dibagi ke dalam lima fase.
+
+\subsection{Fase 1 – Finalisasi Desain Teknis (Design Refinement)}
+
+Pada fase ini, rancangan yang telah disusun di Bab~\ref{chap:perancangan-sistem} disempurnakan menjadi spesifikasi teknis yang siap diimplementasikan. Kegiatan utama meliputi:
+
+\begin{itemize}
+  \item merapikan dan mengonfirmasi kembali kebutuhan fungsional F1--F15 bersama pihak SpeedForce;
+  \item memfinalkan \textit{logical data model} dan memetakannya ke skema tabel PostgreSQL;
+  \item mendetailkan alur antarmuka untuk formulir keluhan, halaman cek status, dan panel internal (penyusunan \textit{wireframe} tingkat lanjut);
+  \item menyusun daftar \textit{endpoint} dan struktur \textit{view} utama pada Django, termasuk pemetaan URL--\textit{view}--\textit{template}.
+\end{itemize}
+
+Fase ini menutup tahapan \textit{define objectives of a solution} dan menghasilkan desain yang cukup granular untuk langsung diimplementasikan pada fase berikutnya.
+
+\subsection{Fase 2 – Implementasi Modul E-Complaint (Design \& Development)}
+
+Fase ini berfokus pada implementasi artefak menggunakan Django sebagai \textit{web framework} dan PostgreSQL sebagai basis data. Aktivitas yang direncanakan antara lain:
+
+\begin{itemize}
+  \item pembuatan \textit{project} dan \textit{app} Django khusus modul e-complaint;
+  \item implementasi model Django yang merepresentasikan entitas \texttt{Pelanggan}, \texttt{TiketKeluhan}, \texttt{KategoriKeluhan}, \texttt{KanalKeluhan}, \texttt{StatusKeluhan}, \texttt{RiwayatStatusTiket}, dan \texttt{PenggunaInternal};
+  \item pembuatan \textit{view} dan \textit{template} untuk:
+  \begin{itemize}
+    \item formulir pengajuan keluhan (F1--F4),
+    \item halaman cek status keluhan (F10),
+    \item panel internal untuk daftar tiket, detail tiket, penugasan teknisi, dan pembaruan status (F5--F9, F11--F15);
+  \end{itemize}
+  \item integrasi antarmuka modul e-complaint dengan halaman layanan SpeedForce yang sudah ada (misalnya melalui penambahan \textit{section} dan tombol ``Ajukan Keluhan'' pada halaman layanan/produk);
+  \item penanganan autentikasi dan otorisasi pengguna internal (admin/CS dan teknisi).
+\end{itemize}
+
+Output fase ini adalah prototipe modul e-complaint yang berjalan pada \textit{development environment} dan telah siap diuji secara fungsional.
+
+\subsection{Fase 3 – Pengujian Fungsional dan Perbaikan (Internal Testing \& Refinement)}
+
+Setelah implementasi awal selesai, dilakukan pengujian fungsional untuk memastikan setiap kebutuhan fungsional F1--F15 telah didukung oleh sistem. Fokus pengujian mencakup:
+
+\begin{itemize}
+  \item pengujian \textit{happy flow} end-to-end: pengajuan keluhan, pembangkitan tiket, penugasan teknisi, penutupan tiket, dan pengecekan status;
+  \item pengujian kondisi batas, misalnya validasi formulir, perubahan status berulang, dan skenario tiket dibuka kembali;
+  \item pengujian hak akses untuk memastikan pemisahan peran admin/CS dan teknisi;
+  \item perbaikan \textit{bug} serta penyempurnaan antarmuka berdasarkan umpan balik awal dari pengguna internal SpeedForce.
+\end{itemize}
+
+Hasil fase ini adalah artefak yang cukup stabil untuk diujicobakan pada konteks penggunaan nyata dan siap memasuki tahap demonstrasi dan evaluasi.
+
+\subsection{Fase 4 – Demonstrasi dan Evaluasi Usability/UX (Demonstration \& Evaluation)}
+
+Fase ini mengisi tahapan \textit{demonstration} dan \textit{evaluation} dalam DSR. Kegiatan yang direncanakan meliputi:
+
+\begin{itemize}
+  \item mendemonstrasikan modul e-complaint pada skenario nyata di SpeedForce, misalnya uji coba terbatas dengan sebagian pelanggan dan seluruh admin/CS;
+  \item mengumpulkan data penggunaan dasar, seperti jumlah tiket yang masuk selama periode uji, distribusi status tiket, dan frekuensi pembaruan status;
+  \item menyelenggarakan evaluasi \textit{usability} menggunakan System Usability Scale (SUS) pada dua kelompok responden:
+  \begin{enumerate}
+    \item pengguna internal (admin/CS dan teknisi),
+    \item pelanggan yang mencoba mengajukan keluhan melalui modul e-complaint;
+  \end{enumerate}
+  \item menyelenggarakan evaluasi pengalaman pengguna menggunakan User Experience Questionnaire (UEQ) untuk menangkap aspek daya tarik, kejelasan, efisiensi, dan stimulasi antarmuka.
+\end{itemize}
+
+Data SUS dan UEQ kemudian dianalisis untuk menilai apakah modul e-complaint telah mencapai tingkat \textit{usability} dan UX yang memadai dalam konteks penggunaan di SpeedForce.
+
+\subsection{Fase 5 – Analisis, Dokumentasi, dan Komunikasi Hasil (Communication)}
+
+Fase terakhir berfokus pada analisis hasil, dokumentasi, dan komunikasi temuan penelitian. Aktivitas utama meliputi:
+
+\begin{itemize}
+  \item menganalisis hasil pengujian fungsional serta data SUS dan UEQ;
+  \item menghubungkan hasil evaluasi dengan tujuan solusi yang telah ditetapkan pada Bab~\ref{chap:analisis-masalah};
+  \item merumuskan rekomendasi pengembangan lebih lanjut, misalnya perluasan fitur, integrasi dengan sistem \textit{billing}, atau penambahan notifikasi otomatis;
+  \item menyusun laporan tugas akhir serta bahan presentasi sidang, termasuk rencana serah terima artefak kepada SpeedForce.
+\end{itemize}
+
+\section{Analisis Biaya–Manfaat (Cost–Benefit Analysis)}
+
+Analisis biaya–manfaat (\textit{Cost--Benefit Analysis}, CBA) dilakukan untuk menilai kelayakan praktis pengembangan dan implementasi modul e-complaint di SpeedForce. Analisis difokuskan pada biaya dan manfaat yang relevan bagi SpeedForce sebagai ISP lokal, bukan sekadar dari sudut pandang penelitian akademik.
+
+\subsection{Analisis Biaya}
+
+Biaya yang terkait dengan implementasi modul e-complaint dikelompokkan ke dalam empat kategori utama: biaya pengembangan sistem, biaya infrastruktur, biaya operasional dan perubahan proses, serta biaya evaluasi dan pelatihan.
+
+\subsubsection{Biaya Pengembangan Sistem}
+
+Biaya pengembangan sistem terutama berupa:
+
+\begin{itemize}
+  \item waktu dan upaya teknis untuk perancangan detail, pemrograman Django, penyusunan skema PostgreSQL, dan integrasi dengan website SpeedForce;
+  \item waktu koordinasi dengan pihak SpeedForce untuk klarifikasi kebutuhan, pengujian, dan perbaikan.
+\end{itemize}
+
+Dalam konteks tugas akhir, sebagian besar biaya ini terealisasi sebagai waktu kerja peneliti dan dukungan supervisi, bukan biaya finansial langsung bagi perusahaan. Namun, dari perspektif SpeedForce tetap terdapat \textit{opportunity cost} berupa waktu manajemen dan staf yang digunakan untuk memberikan masukan serta melakukan uji coba sistem.
+
+\subsubsection{Biaya Infrastruktur}
+
+Biaya infrastruktur mencakup:
+
+\begin{itemize}
+  \item pemanfaatan server yang sudah ada untuk \textit{hosting} website SpeedForce, atau peningkatan kapasitas jika diperlukan (misalnya \textit{upgrade} paket \textit{hosting}/VPS);
+  \item kebutuhan tambahan penyimpanan basis data untuk tiket dan riwayat keluhan.
+\end{itemize}
+
+Karena modul e-complaint dirancang sebagai bagian dari website yang sudah berjalan, biaya infrastruktur tambahan diperkirakan relatif rendah dan terbatas pada penyesuaian konfigurasi serta kapasitas server.
+
+\subsubsection{Biaya Operasional dan Perubahan Proses}
+
+Biaya operasional dan perubahan proses terutama berasal dari:
+
+\begin{itemize}
+  \item penyesuaian alur kerja admin/CS dan teknisi dari pola berbasis chat WhatsApp dan catatan manual menjadi penggunaan panel tiket;
+  \item potensi kenaikan beban kerja sementara selama masa transisi ketika kanal lama dan kanal baru berjalan bersamaan.
+\end{itemize}
+
+Biaya ini lebih berupa waktu adaptasi dan penyesuaian kebiasaan kerja dibandingkan investasi finansial yang besar.
+
+\subsubsection{Biaya Evaluasi dan Pelatihan}
+
+Kategori ini mencakup:
+
+\begin{itemize}
+  \item waktu untuk melatih admin/CS dan teknisi menggunakan modul e-complaint;
+  \item waktu yang dibutuhkan responden (pelanggan dan internal) untuk mengikuti skenario uji dan mengisi kuesioner SUS serta UEQ.
+\end{itemize}
+
+\subsection{Analisis Manfaat}
+
+Manfaat implementasi modul e-complaint dapat dilihat dari sisi pelanggan, sisi operasional internal, dan sisi manajerial.
+
+\subsubsection{Manfaat bagi Pelanggan}
+
+Manfaat utama bagi pelanggan antara lain:
+
+\begin{itemize}
+  \item tersedianya kanal keluhan yang jelas dan resmi sehingga pelanggan memiliki satu pintu utama untuk menyampaikan keluhan, tanpa bergantung pada nomor pribadi atau jalur komunikasi informal;
+  \item transparansi status keluhan, karena pelanggan dapat memeriksa status tiket secara mandiri tanpa harus berulang kali menghubungi admin hanya untuk menanyakan progres;
+  \item pengalaman layanan yang lebih profesional melalui penggunaan nomor tiket dan riwayat penanganan yang terdokumentasi, yang berpotensi meningkatkan kepuasan dan kepercayaan pelanggan.
+\end{itemize}
+
+\subsubsection{Manfaat bagi Operasional Internal}
+
+Dari sisi operasional internal, modul e-complaint memberikan:
+
+\begin{itemize}
+  \item pencatatan keluhan yang terpusat dan terstandar dalam basis data terstruktur, sehingga pelacakan keluhan lebih mudah dan risiko keluhan ``hilang'' menurun;
+  \item pengelolaan beban kerja teknisi yang lebih jelas karena panel tiket menampilkan tiket per teknisi dan status masing-masing tiket;
+  \item pengurangan redundansi komunikasi, karena informasi status dan log aktivitas tersaji di panel, sehingga admin tidak perlu mencari informasi di banyak percakapan chat yang tersebar.
+\end{itemize}
+
+\subsubsection{Manfaat Manajerial dan Pengambilan Keputusan}
+
+Dari perspektif manajerial, modul e-complaint:
+
+\begin{itemize}
+  \item menyediakan data historis untuk analisis pola gangguan, misalnya jenis keluhan yang paling sering muncul, wilayah yang paling banyak mengalami gangguan, dan indikasi waktu tanggap;
+  \item menyediakan dasar untuk penyusunan indikator kinerja (KPI) dan evaluasi kualitas layanan, sehingga perbaikan proses penanganan keluhan dapat dilakukan secara lebih sistematis;
+  \item memperkuat kemampuan pengambilan keputusan berbasis data terkait prioritas perbaikan infrastruktur, penambahan teknisi, atau penyesuaian prosedur penanganan keluhan.
+\end{itemize}
+
+Secara kualitatif, kombinasi biaya yang relatif moderat dan manfaat operasional serta manajerial yang cukup signifikan menunjukkan bahwa implementasi modul e-complaint berpotensi layak dan menguntungkan bagi SpeedForce.
+
+\section{Identifikasi Risiko dan Strategi Mitigasi}
+
+Pengembangan dan implementasi modul e-complaint mengandung sejumlah risiko yang dapat memengaruhi keberhasilan penelitian maupun adopsi sistem di SpeedForce. Risiko-risiko tersebut dikelompokkan menjadi empat kategori: risiko teknis, risiko proses dan organisasi, risiko jadwal, dan risiko evaluasi. Setiap risiko diidentifikasi beserta strategi mitigasinya.
+
+\subsection{Risiko Teknis}
+
+\textbf{R1 -- Kompleksitas integrasi dengan website SpeedForce yang sudah ada.}\\
+Integrasi modul e-complaint dengan halaman layanan yang telah berjalan berpotensi menimbulkan masalah kompatibilitas, misalnya konflik gaya CSS, struktur \textit{template}, atau konfigurasi web server/reverse proxy.
+
+Mitigasi:
+\begin{itemize}
+  \item menggunakan lingkungan pengembangan terpisah dan \textit{staging} sebelum \textit{deploy} ke lingkungan produksi;
+  \item menerapkan pemisahan \textit{namespace} CSS/JavaScript untuk modul e-complaint;
+  \item melakukan pengujian regresi terhadap fitur yang sudah ada setelah integrasi.
+\end{itemize}
+
+\textbf{R2 -- Kendala performa atau stabilitas pada server yang terbatas.}\\
+Kapasitas \textit{hosting}/VPS SpeedForce mungkin terbatas sehingga penambahan modul baru dapat memengaruhi performa jika konfigurasi tidak optimal.
+
+Mitigasi:
+\begin{itemize}
+  \item melakukan pengujian beban ringan pada fase \textit{internal testing};
+  \item mengoptimalkan kueri basis data dan pengelolaan aset statis;
+  \item bila diperlukan, merekomendasikan \textit{upgrade} konfigurasi server dengan justifikasi data hasil pengujian.
+\end{itemize}
+
+\subsection{Risiko Proses dan Organisasi}
+
+\textbf{R3 -- Resistensi terhadap perubahan proses kerja.}\\
+Peralihan dari pola kerja berbasis chat dan catatan manual ke sistem tiket terpusat dapat menimbulkan resistensi dari admin/CS dan teknisi yang sudah terbiasa dengan cara lama.
+
+Mitigasi:
+\begin{itemize}
+  \item melibatkan pengguna internal sejak tahap perancangan dan uji coba agar mereka merasa memiliki terhadap sistem;
+  \item menyediakan panduan penggunaan yang ringkas dan jelas serta sesi pelatihan singkat;
+  \item menerapkan masa transisi di mana kanal lama dan baru berjalan paralel dengan komunikasi internal yang eksplisit mengenai tujuan perubahan.
+\end{itemize}
+
+\textbf{R4 -- Ketergantungan pada individu kunci.}\\
+Pengelolaan modul e-complaint berisiko terlalu bergantung pada satu atau dua orang yang paling memahami sistem, sehingga menimbulkan masalah jika mereka tidak tersedia.
+
+Mitigasi:
+\begin{itemize}
+  \item menyusun dokumentasi teknis dan operasional yang memadai;
+  \item memastikan lebih dari satu orang (misalnya minimal satu perwakilan admin/CS dan satu teknisi) memahami alur kerja dan penggunaan sistem;
+  \item mengusulkan penunjukan penanggung jawab fungsional modul e-complaint di pihak SpeedForce.
+\end{itemize}
+
+\subsection{Risiko Jadwal}
+
+\textbf{R5 -- Keterlambatan implementasi dan pengujian karena keterbatasan waktu peneliti.}\\
+Pengembangan modul e-complaint yang mencakup sisi \textit{front-end}, \textit{back-end}, integrasi, serta evaluasi dapat melebihi waktu yang tersedia jika prioritas tidak diatur dengan jelas.
+
+Mitigasi:
+\begin{itemize}
+  \item memprioritaskan penyelesaian fitur inti yang terkait langsung dengan F1--F10 (pelaporan, tiket, status, panel dasar) sebagai \textit{minimum viable product};
+  \item menjadwalkan fitur tambahan (F11--F15) sebagai pengembangan lanjutan bila waktu memungkinkan;
+  \item menggunakan rencana kerja per fase (Fase 1--5) sebagai acuan pengendalian jadwal dan melakukan penyesuaian dini jika terjadi deviasi.
+\end{itemize}
+
+\subsection{Risiko Evaluasi}
+
+\textbf{R6 -- Kesulitan merekrut responden untuk evaluasi SUS dan UEQ.}\\
+Jumlah pelanggan dan pengguna internal yang bersedia menguji sistem dan mengisi kuesioner mungkin terbatas, sehingga data evaluasi kurang banyak dan kurang beragam.
+
+Mitigasi:
+\begin{itemize}
+  \item menargetkan kombinasi responden internal dan pelanggan yang paling aktif menyampaikan keluhan;
+  \item menyederhanakan skenario uji agar tidak memakan waktu lama;
+  \item menyediakan instruksi pengisian kuesioner yang singkat dan jelas untuk mengurangi kebingungan.
+\end{itemize}
+
+Dengan rencana implementasi, analisis biaya–manfaat, serta identifikasi risiko dan mitigasinya sebagaimana diuraikan pada bab ini, penelitian diharapkan dapat menghasilkan artefak modul e-complaint yang tidak hanya layak secara teknis, tetapi juga realistis untuk diadopsi dan dikembangkan lebih lanjut oleh SpeedForce.

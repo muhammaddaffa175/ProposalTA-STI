@@ -1,24 +1,635 @@
-% ============================================================================================
+% ==========================================
 % BAB III ANALISIS MASALAH
-% Pembagian subbab tidak rigid dan dapat bervariasi. Bab ini minimal berisi analisis kebutuhan
-% fungsional dan nonfungsional, analisis berbagai alternatif solusi yang dapat ditawarkan, dan
-% metode pemilihan solusi yang diusulkan.
-% ============================================================================================
+% ==========================================
 \chapter{ANALISIS MASALAH}
 \label{chap:analisis-masalah}
-\section{Analisis Kondisi Saat Ini}
-Menurut \textcite{laudon2020}, gambarkan terlebih dahulu model konseptual sistem yang ada saat ini. Model konseptual ini berisi berbagai komponen atau subsitem dan interaksi antarsubsistem tersebut. Setelah itu, berikan penjelasan tentang masalah yang ada pada sistem tersebut. Paragraf berikut berisi contoh penjabaran masalah sistem informasi fasilitas kesehatan untuk pasien \autocite{pressman2019}. 
-\section{Analisis Kebutuhan}
-\lipsum[4]
-\subsection{Identifikasi Masalah Pengguna}
-\lipsum[5]
-\subsection{Kebutuhan Fungsional}
-\lipsum[6]
-\subsection{Kebutuhan Nonfungsional}
-\lipsum[7]
 
+Bab ini membahas analisis terhadap kondisi pengelolaan keluhan pelanggan SpeedForce saat ini, kebutuhan sistem yang diperlukan, serta pertimbangan pemilihan solusi yang akan dikembangkan.
+
+Hasil analisis pada bab ini menjadi dasar bagi perancangan konsep sistem pada Bab IV dan sekaligus mengisi tahapan \textit{problem identification} serta \textit{define objectives of a solution} dalam kerangka \textit{Design Science Research} (DSR). \autocite{hevner2004,peffers2007}
+
+% --- Analisis Kondisi Saat Ini ---
+\section{Analisis Kondisi Saat Ini}
+
+Pada bagian ini, kondisi pengelolaan keluhan pelanggan SpeedForce ditinjau terlebih dahulu sebelum merumuskan kebutuhan sistem dan alternatif solusi.
+
+\subsection{Gambaran Umum Proses Penanganan Keluhan di SpeedForce}
+
+Secara umum, pelanggan SpeedForce menyampaikan keluhan melalui beberapa kanal komunikasi yang sudah familiar, seperti pesan instan (misalnya WhatsApp), panggilan telepon, atau pesan melalui media sosial. Keluhan tersebut biasanya diterima langsung oleh pemilik usaha, admin, atau petugas yang bertanggung jawab menangani layanan pelanggan. Setelah menerima keluhan, petugas akan melakukan klarifikasi singkat kepada pelanggan, kemudian meneruskan informasi gangguan tersebut kepada teknisi yang bertugas melalui kanal komunikasi internal, yang umumnya juga berbasis pesan instan.
+
+Pencatatan keluhan, jika dilakukan, masih cenderung bersifat manual atau semi-manual. Informasi seperti nama pelanggan, lokasi pemasangan, jenis keluhan, dan waktu pelaporan bisa saja dicatat di buku tulis, catatan pribadi, atau \textit{spreadsheet} sederhana. Namun, pencatatan ini belum selalu konsisten dilakukan untuk setiap keluhan. Selain itu, status penanganan keluhan (misalnya ``sedang dicek'', ``dalam penanganan teknisi'', atau ``selesai'') lebih sering dikomunikasikan secara informal melalui percakapan internal, bukan melalui sistem terpusat yang dapat dilihat kembali secara historis. Kondisi ini membuat \textit{service desk} sulit menyediakan jejak historis yang lengkap dan andal. \autocite{galup_itsm_2009}
+
+Dari sisi pelanggan, untuk mengetahui perkembangan penanganan keluhan, mereka perlu menghubungi petugas kembali dan menanyakan status secara langsung. Tidak ada sarana bagi pelanggan untuk memantau status keluhan secara mandiri, misalnya melalui halaman web yang menampilkan status tiket atau riwayat keluhan.
+
+Alur proses penanganan keluhan pelanggan SpeedForce saat ini digambarkan pada Gambar~\ref{fig:alur-keluhan-saat-ini}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/AS-IS.png}
+  \caption{Diagram alur proses penanganan keluhan pelanggan SpeedForce saat ini (AS-IS)}
+  \label{fig:alur-keluhan-saat-ini}
+\end{figure}
+
+
+\subsection{Permasalahan Utama dalam Proses Pengelolaan Keluhan}
+
+Berdasarkan gambaran umum tersebut, dapat diidentifikasi beberapa permasalahan utama dalam pengelolaan keluhan pelanggan SpeedForce saat ini.
+
+\textbf{M1 -- Kanal keluhan belum terpusat.}
+
+Keluhan dapat masuk melalui berbagai kanal informal, seperti chat WhatsApp, telepon, atau pesan media sosial. Kondisi ini menyulitkan perusahaan untuk memastikan bahwa setiap keluhan benar-benar tercatat dan tertangani, karena tidak ada satu pintu resmi yang berfungsi sebagai kanal pengaduan utama. Dari perspektif praktik pengelolaan layanan, ketiadaan kanal resmi membuat pengelolaan \textit{multi-channel} menjadi tidak terkoordinasi dan menyulitkan konsistensi layanan. \autocite{verhoef_multichannel_2015}
+
+\textbf{M2 -- Pencatatan keluhan belum seragam dan belum sepenuhnya terdokumentasi.}
+
+Informasi keluhan sering kali hanya tersimpan dalam riwayat percakapan di aplikasi pesan instan atau catatan pribadi/manual. Hal ini menyulitkan jika di kemudian hari dibutuhkan penelusuran riwayat keluhan pelanggan tertentu, analisis pola gangguan, atau penyusunan laporan kinerja layanan. Praktik terbaik \textit{IT service management} menekankan pentingnya basis data insiden yang terdokumentasi dan terstruktur untuk mendukung analisis dan peningkatan layanan. \autocite{galup_itsm_2009}
+
+\textbf{M3 -- Belum terdapat identitas unik (tiket) untuk setiap keluhan.}
+
+Tanpa adanya tiket keluhan, proses pelacakan status menjadi bergantung pada ingatan petugas atau penelusuran manual di percakapan. Ketika jumlah pelanggan meningkat, pendekatan ini berpotensi menyebabkan keluhan terlewat, tertukar, atau tertunda penanganannya.
+
+\textbf{M4 -- Pelanggan tidak memiliki sarana untuk memantau status keluhan secara mandiri.}
+
+Seluruh informasi mengenai perkembangan penanganan keluhan harus diperoleh melalui komunikasi ulang dengan petugas. Dari perspektif pelanggan, hal ini dapat menimbulkan kesan bahwa proses penanganan kurang transparan dan lambat, terutama jika petugas sedang sibuk atau waktu respons komunikasi tidak konsisten. Transparansi proses penanganan keluhan berkorelasi dengan persepsi keadilan dan kepuasan pelanggan terhadap penyelesaian keluhan. \autocite{tax_customer_1998}
+
+\textbf{M5 -- Manajemen belum memiliki data terstruktur untuk memantau kinerja penanganan keluhan.}
+
+Tanpa basis data keluhan yang rapi, indikator seperti jumlah keluhan per periode, jenis gangguan yang paling sering muncul, rata-rata waktu tanggap, dan rata-rata waktu penyelesaian sulit dihitung secara konsisten. Akibatnya, upaya perbaikan layanan cenderung bersifat reaktif dan berbasis pengalaman, bukan berbasis data. Pendekatan \textit{data-driven service improvement} mensyaratkan adanya data keluhan yang terstruktur agar manajemen dapat mengidentifikasi pola masalah dan memprioritaskan tindakan perbaikan. \autocite{galup_itsm_2009}
+
+Permasalahan-permasalahan ini dapat dirangkum dalam Tabel~\ref{tab:permasalahan-keluhan-saat-ini} yang mengaitkan setiap tahapan proses dengan permasalahan dan dampaknya terhadap pelanggan maupun perusahaan.
+
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Ringkasan permasalahan proses penanganan keluhan pelanggan saat ini}
+  \label{tab:permasalahan-keluhan-saat-ini}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.06\textwidth}  % Kode
+    >{\raggedright\arraybackslash}p{0.22\textwidth} % Permasalahan
+    X                                             % Uraian singkat
+    X                                             % Dampak pelanggan
+    X                                             % Dampak SpeedForce
+  }
+    \toprule
+    \textbf{Kode} &
+    \textbf{Permasalahan Utama} &
+    \textbf{Uraian Singkat} &
+    \textbf{Dampak ke Pelanggan} &
+    \textbf{Dampak ke SpeedForce} \\
+    \midrule
+    M1 &
+    Kanal keluhan belum terpusat &
+    Keluhan masuk melalui berbagai kanal informal (WhatsApp, telepon, media sosial) tanpa satu pintu resmi sebagai kanal pengaduan utama. &
+    Pelanggan bingung harus melapor ke mana, sering harus mengulang informasi yang sama di kanal berbeda, dan tidak yakin keluhannya benar-benar tercatat. &
+    Sulit memonitor seluruh keluhan yang masuk; ada risiko keluhan tidak tercatat atau terlewat karena tersebar di banyak kanal komunikasi. \\
+    \midrule
+    M2 &
+    Pencatatan keluhan belum seragam dan tidak terdokumentasi dengan baik &
+    Informasi keluhan hanya tersimpan di riwayat chat atau catatan pribadi/manual; tidak ada format pencatatan yang konsisten dan terpusat. &
+    Pelanggan ragu apakah detail keluhannya disimpan dengan benar dan bisa ditelusuri jika masalah berulang. &
+    Data keluhan mudah hilang, penelusuran riwayat pelanggan menyita waktu, dan analisis pola gangguan sulit dilakukan karena tidak ada basis data yang rapi. \\
+    \midrule
+    M3 &
+    Keluhan belum memiliki identitas unik (nomor tiket) &
+    Setiap keluhan tidak diberikan identitas tiket unik sehingga pelacakan status sangat bergantung pada ingatan petugas atau pencarian manual di percakapan. &
+    Pelanggan kesulitan merujuk keluhan tertentu saat \textit{follow-up}; proses klarifikasi status menjadi tidak jelas dan rawan tertukar. &
+    Ketika jumlah pelanggan meningkat, keluhan berpotensi tertukar, terlewat, atau tertunda penanganannya karena tidak ada sistem referensi tiket yang jelas. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% --- Tabel permasalahan utama (lanjutan M4--M5) ---
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Ringkasan permasalahan proses penanganan keluhan pelanggan saat ini (lanjutan)}
+  \label{tab:permasalahan-keluhan-saat-ini-lanjutan}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.06\textwidth}  % Kode
+    >{\raggedright\arraybackslash}p{0.22\textwidth} % Permasalahan
+    X                                             % Uraian singkat
+    X                                             % Dampak pelanggan
+    X                                             % Dampak SpeedForce
+  }
+    \toprule
+    \textbf{Kode} &
+    \textbf{Permasalahan Utama} &
+    \textbf{Uraian Singkat} &
+    \textbf{Dampak ke Pelanggan} &
+    \textbf{Dampak ke SpeedForce} \\
+    \midrule
+    M4 &
+    Pelanggan tidak memiliki sarana mandiri untuk memantau status keluhan &
+    Perkembangan penanganan keluhan hanya dapat diketahui dengan cara menghubungi kembali petugas (chat/telepon); tidak ada antarmuka bagi pelanggan untuk mengecek status secara mandiri. &
+    Pelanggan merasa proses penanganan kurang transparan dan lambat, terutama jika respons petugas tidak konsisten atau sedang sibuk. &
+    Menambah beban komunikasi admin/CS untuk menjawab pertanyaan status berulang, meningkatkan risiko miskomunikasi, dan membuat proses layanan tampak kurang profesional. \\
+    \midrule
+    M5 &
+    Manajemen tidak memiliki data terstruktur untuk monitoring dan evaluasi penanganan &
+    Tidak tersedia basis data keluhan yang konsisten untuk menghitung KPI seperti jumlah keluhan per periode, jenis gangguan terbanyak, rata-rata waktu tanggap, dan rata-rata waktu penyelesaian secara sistematis dan berkelanjutan. &
+    Pelanggan cenderung merasakan masalah yang sama berulang tanpa perbaikan yang nyata karena upaya peningkatan layanan tidak terarah dan tidak berbasis data. &
+    Perbaikan layanan cenderung reaktif dan berbasis pengalaman individu; sulit menyusun indikator kinerja dan membuat keputusan perbaikan jaringan/layanan secara strategis berbasis data. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Analisis ini menunjukkan bahwa, seiring bertambahnya jumlah pelanggan dan kompleksitas layanan, mekanisme pengelolaan keluhan yang bergantung pada komunikasi informal dan pencatatan manual berpotensi menjadi hambatan bagi SpeedForce dalam menjaga kualitas layanan dan kepercayaan pelanggan.
+
+% --- Analisis Kebutuhan ---
+\section{Analisis Kebutuhan}
+
+Analisis kebutuhan dilakukan untuk menjembatani kondisi saat ini dengan kondisi yang diharapkan. Pada konteks Design Science Research, bagian ini mengisi tahapan \textit{define objectives of a solution}, yaitu merumuskan apa yang perlu dicapai oleh solusi yang akan dikembangkan, baik dari perspektif pengguna maupun dari sisi operasional perusahaan. \autocite{hevner2004,peffers2007}
+
+\subsection{Kebutuhan Fungsional}
+
+Berdasarkan permasalahan utama M1--M5 yang dirangkum pada Tabel~\ref{tab:permasalahan-keluhan-saat-ini}, dapat disusun sejumlah kebutuhan fungsional (apa saja yang harus bisa dilakukan oleh sistem) untuk modul e-complaint yang akan dikembangkan. Beberapa kebutuhan fungsional utama antara lain sebagai berikut.
+
+\begin{itemize}
+  \item Pelanggan dapat mengirim keluhan melalui formulir web yang terhubung dengan website layanan pelanggan SpeedForce tanpa perlu membuat akun terlebih dahulu.
+
+  \item Sistem dapat membuat nomor tiket unik untuk setiap keluhan dan mencatat informasi penting seperti identitas pelanggan, lokasi pemasangan, jenis keluhan, waktu pelaporan, dan kanal masuk keluhan.
+
+  \item Pengguna internal (admin/CS) dapat melihat daftar keluhan yang masuk, memfilter berdasarkan status, tanggal, jenis keluhan, atau wilayah, serta memperbarui status keluhan.
+
+  \item Sistem mendukung pencatatan penugasan teknisi untuk setiap tiket, termasuk perubahan status dari ``baru'' menjadi ``dalam penanganan'' dan kemudian ``selesai''.
+
+  \item Pelanggan dapat memeriksa status keluhan dengan menggunakan nomor tiket atau identifikasi lain yang disepakati, sehingga tidak perlu selalu menghubungi petugas.
+
+  \item Sistem menyimpan riwayat penanganan keluhan yang dapat ditinjau kembali oleh manajemen, misalnya untuk mengetahui keluhan berulang pada pelanggan tertentu atau wilayah tertentu.
+
+  \item Sistem menyediakan ringkasan data keluhan yang dapat digunakan sebagai bahan laporan sederhana, seperti jumlah keluhan per bulan, kategori keluhan terbanyak, dan waktu tanggap rata-rata berdasarkan data yang tersedia.
+\end{itemize}
+
+Kebutuhan-kebutuhan tersebut dapat dirinci lebih lanjut dalam Tabel~\ref{tab:kebutuhan-fungsional} agar mudah ditelusuri pada tahap perancangan dan implementasi.
+
+% --- Kebutuhan fungsional F1--F4 ---
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Rincian kebutuhan fungsional modul e-complaint}
+  \label{tab:kebutuhan-fungsional}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.07\textwidth}
+    >{\raggedright\arraybackslash}p{0.23\textwidth}
+    X
+    >{\raggedright\arraybackslash}p{0.16\textwidth}
+    >{\centering\arraybackslash}p{0.11\textwidth}
+  }
+    \toprule
+    \textbf{Kode} &
+    \textbf{Nama Kebutuhan} &
+    \textbf{Deskripsi} &
+    \textbf{Aktor Utama} &
+    \textbf{Prioritas} \\
+    \midrule
+    F1 &
+    Formulir keluhan pelanggan berbasis web &
+    Sistem menyediakan formulir keluhan pada website layanan pelanggan yang dapat diakses tanpa akun oleh pelanggan. &
+    Pelanggan &
+    Tinggi \\
+    \midrule
+    F2 &
+    Validasi data keluhan &
+    Sistem melakukan validasi dasar (misalnya kolom wajib, format kontak) sebelum keluhan dikirim agar informasi cukup lengkap. &
+    Pelanggan &
+    Tinggi \\
+    \midrule
+    F3 &
+    Pembuatan tiket keluhan otomatis &
+    Setiap keluhan yang berhasil dikirim otomatis diberi nomor tiket unik dan dicatat di basis data. &
+    Sistem &
+    Tinggi \\
+    \midrule
+    F4 &
+    Konfirmasi pengiriman keluhan &
+    Setelah keluhan tersimpan, sistem menampilkan halaman atau pesan konfirmasi yang memuat ringkasan keluhan dan nomor tiket. &
+    Pelanggan &
+    Tinggi \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% --- Kebutuhan fungsional F5--F8 ---
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Rincian kebutuhan fungsional modul e-complaint (lanjutan)}
+  \label{tab:kebutuhan-fungsional-lanjutan-1}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.07\textwidth}
+    >{\raggedright\arraybackslash}p{0.23\textwidth}
+    X
+    >{\raggedright\arraybackslash}p{0.16\textwidth}
+    >{\centering\arraybackslash}p{0.11\textwidth}
+  }
+    \toprule
+    \textbf{Kode} &
+    \textbf{Nama Kebutuhan} &
+    \textbf{Deskripsi} &
+    \textbf{Aktor Utama} &
+    \textbf{Prioritas} \\
+    \midrule
+    F5 &
+    Daftar keluhan untuk admin/CS &
+    Admin dapat melihat daftar keluhan yang masuk dalam tampilan tabel dengan informasi dasar seperti waktu, pelanggan, jenis keluhan, dan status. &
+    Admin/CS &
+    Tinggi \\
+    \midrule
+    F6 &
+    Filter dan pencarian keluhan &
+    Admin dapat memfilter dan mencari keluhan berdasarkan tanggal, status, jenis keluhan, atau identitas pelanggan. &
+    Admin/CS &
+    Tinggi \\
+    \midrule
+    F7 &
+    Detail tiket dan riwayat penanganan &
+    Sistem menyediakan tampilan detail untuk setiap tiket yang memuat informasi keluhan dan riwayat perubahan status. &
+    Admin/CS, Teknisi &
+    Tinggi \\
+    \midrule
+    F8 &
+    Penugasan teknisi &
+    Admin dapat menetapkan atau mengubah teknisi yang bertanggung jawab pada suatu tiket keluhan. &
+    Admin/CS &
+    Sedang \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% --- Kebutuhan fungsional F9--F12 ---
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Rincian kebutuhan fungsional modul e-complaint (lanjutan)}
+  \label{tab:kebutuhan-fungsional-lanjutan-2}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.07\textwidth}
+    >{\raggedright\arraybackslash}p{0.23\textwidth}
+    X
+    >{\raggedright\arraybackslash}p{0.16\textwidth}
+    >{\centering\arraybackslash}p{0.11\textwidth}
+  }
+    \toprule
+    \textbf{Kode} &
+    \textbf{Nama Kebutuhan} &
+    \textbf{Deskripsi} &
+    \textbf{Aktor Utama} &
+    \textbf{Prioritas} \\
+    \midrule
+    F9 &
+    Pembaruan status tiket &
+    Admin atau teknisi dapat mengubah status tiket (misalnya baru, dalam penanganan, selesai) dengan menambahkan catatan singkat. &
+    Admin/CS, Teknisi &
+    Tinggi \\
+    \midrule
+    F10 &
+    Tampilan status keluhan untuk pelanggan &
+    Pelanggan dapat mengecek status keluhan dengan memasukkan nomor tiket dan informasi verifikasi sederhana (misalnya nomor pelanggan atau nomor telepon). &
+    Pelanggan &
+    Tinggi \\
+    \midrule
+    F11 &
+    Riwayat keluhan per pelanggan &
+    Sistem dapat menampilkan riwayat keluhan yang pernah diajukan oleh pelanggan tertentu. &
+    Admin/CS, Manajemen &
+    Sedang \\
+    \midrule
+    F12 &
+    Ringkasan statistik keluhan &
+    Sistem menyediakan ringkasan sederhana seperti jumlah keluhan per periode, kategori keluhan terbanyak, dan sebaran status. &
+    Manajemen, Admin/CS &
+    Sedang \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% --- Kebutuhan fungsional F13--F14 ---
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Rincian kebutuhan fungsional modul e-complaint (lanjutan)}
+  \label{tab:kebutuhan-fungsional-lanjutan-3}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.07\textwidth}
+    >{\raggedright\arraybackslash}p{0.23\textwidth}
+    X
+    >{\raggedright\arraybackslash}p{0.16\textwidth}
+    >{\centering\arraybackslash}p{0.11\textwidth}
+  }
+    \toprule
+    \textbf{Kode} &
+    \textbf{Nama Kebutuhan} &
+    \textbf{Deskripsi} &
+    \textbf{Aktor Utama} &
+    \textbf{Prioritas} \\
+    \midrule
+    F13 &
+    Log aktivitas penting &
+    Sistem menyimpan jejak aktivitas penting (misalnya perubahan status tiket, penugasan teknisi) untuk keperluan audit internal. &
+    Admin/CS, Manajemen &
+    Sedang \\
+    \midrule
+    F14 &
+    Integrasi dasar dengan data pelanggan &
+    Sistem minimal menyimpan atau mengaitkan tiket dengan identitas pelanggan (ID pelanggan, nama, kontak) agar pelacakan lebih mudah. &
+    Admin/CS &
+    Tinggi \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+
+\subsection{Kebutuhan Non-Fungsional}
+
+Selain kebutuhan fungsional, terdapat kebutuhan nonfungsional yang menentukan seberapa baik sistem harus berjalan.
+
+Beberapa kebutuhan nonfungsional yang relevan dalam konteks modul e-complaint SpeedForce antara lain sebagai berikut.
+
+\begin{itemize}
+  \item \textbf{Kemudahan penggunaan (usability).} Antarmuka harus sederhana, jelas, dan dapat digunakan oleh pelanggan yang tidak memiliki latar belakang teknis. Formulir keluhan sebaiknya tidak terlalu panjang dan menggunakan istilah yang mudah dipahami. Evaluasi kemudahan penggunaan dapat dilakukan menggunakan System Usability Scale (SUS). \autocite{Brooke1996}
+
+  \item \textbf{Kemudahan akses.} Sistem dapat diakses melalui peramban web umum dari perangkat desktop maupun perangkat seluler, mengingat banyak pelanggan yang mengakses internet melalui ponsel.
+
+  \item \textbf{Keandalan dasar (reliability).} Sistem diharapkan dapat mencatat keluhan tanpa kehilangan data, menyimpan riwayat perubahan status, dan mengurangi risiko keluhan ``hilang'' akibat tidak tercatat.
+
+  \item \textbf{Keamanan dasar (security).} Informasi kontak pelanggan dan detail keluhan harus dilindungi dari akses yang tidak berwenang. Akses ke panel internal perlu dibatasi dengan mekanisme autentikasi untuk pengguna internal.
+
+  \item \textbf{Kinerja (performance).} Waktu respons sistem untuk memuat halaman utama dan formulir keluhan harus cukup cepat pada koneksi internet yang wajar, agar pelanggan tidak enggan menggunakan sistem.
+
+  \item \textbf{Aksesibilitas.} Tampilan dan interaksi sistem perlu memperhatikan prinsip aksesibilitas web dasar, misalnya kontras warna yang cukup, struktur halaman yang rapi, dan penggunaan teks alternatif untuk elemen penting, sehingga memudahkan berbagai kelompok pengguna. Aspek pengalaman pengguna dapat diukur lebih lanjut menggunakan instrumen seperti User Experience Questionnaire (UEQ). \autocite{Laugwitz2008}
+\end{itemize}
+
+Kebutuhan-kebutuhan tersebut dapat disusun dalam Tabel~\ref{tab:kebutuhan-nonfungsional} sebagai acuan pada saat perancangan antarmuka dan arsitektur sistem.
+
+% --- NFR NFR01--NFR04 ---
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Rincian kebutuhan non-fungsional modul e-complaint}
+  \label{tab:kebutuhan-nonfungsional}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.08\textwidth}
+    >{\raggedright\arraybackslash}p{0.22\textwidth}
+    X
+    X
+  }
+    \toprule
+    \textbf{Kode} &
+    \textbf{Kategori} &
+    \textbf{Deskripsi NFR} &
+    \textbf{Target Terukur} \\
+    \midrule
+    NFR01 &
+    Usability \& UX &
+    Form keluhan mudah dipahami dan alur pengiriman/cek status tidak berbelit. &
+    Pengguna dapat mengirim keluhan maksimal tiga langkah layar (isi formulir $\rightarrow$ konfirmasi $\rightarrow$ selesai); skor SUS~$\geq$~70 pada uji coba. \\
+    \midrule
+    NFR02 &
+    Pengalaman Pengguna &
+    Pengalaman penggunaan terasa nyaman dan tidak membuat frustrasi. &
+    Skor UEQ \textit{Attractiveness}~$\geq$~1{,}0, dan \textit{Efficiency} serta \textit{Clarity}~$\geq$~0{,}8 pada uji coba. \\
+    \midrule
+    NFR03 &
+    Aksesibilitas &
+    Tampilan mudah terbaca di berbagai perangkat dan tidak melelahkan mata. &
+    Rasio kontras teks--\textit{background}~$\geq$~4{,}5~:~1; ukuran font utama~$\geq$~12~pt atau 16~px. \\
+    \midrule
+    NFR04 &
+    Keamanan \& Privasi &
+    Akses internal hanya untuk pengguna berwenang dan data keluhan tidak bocor. &
+    Halaman panel internal hanya bisa diakses setelah login; data keluhan dan kontak pelanggan hanya dapat dilihat peran internal (admin/CS/teknisi). \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% --- NFR NFR05--NFR06 ---
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Rincian kebutuhan non-fungsional modul e-complaint (lanjutan)}
+  \label{tab:kebutuhan-nonfungsional-lanjutan}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.08\textwidth}
+    >{\raggedright\arraybackslash}p{0.22\textwidth}
+    X
+    X
+  }
+    \toprule
+    \textbf{Kode} &
+    \textbf{Kategori} &
+    \textbf{Deskripsi NFR} &
+    \textbf{Target Terukur} \\
+    \midrule
+    NFR05 &
+    Keandalan \& Audit &
+    Data keluhan dan perubahan status tidak hilang dan dapat ditelusuri. &
+    Tidak ada keluhan yang hilang pada pengujian normal; 100\% perubahan status tiket tercatat di log (waktu, pengguna, status lama--baru). \\
+    \midrule
+    NFR06 &
+    Kinerja \& Maintainability &
+    Sistem responsif dan mudah dipelihara/diatur untuk skala ISP lokal. &
+    Waktu muat halaman utama dan form keluhan~$\leq$~3~detik pada koneksi rumahan standar; pencarian/pemfilteran tiket~$\leq$~2~detik untuk hingga $\pm$1{,}000 tiket; penambahan atau perubahan kategori keluhan dapat dilakukan tanpa mengubah kode (melalui konfigurasi atau tabel referensi). \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+
+% --- Pemetaan Kebutuhan terhadap Permasalahan ---
+\section{Pemetaan Kebutuhan Fungsional terhadap Permasalahan}
+
+Setelah permasalahan utama dalam pengelolaan keluhan pelanggan diidentifikasi dan dirangkum dalam Tabel~\ref{tab:permasalahan-keluhan-saat-ini} (M1--M5), serta kebutuhan fungsional modul e-complaint dirinci pada Tabel~\ref{tab:kebutuhan-fungsional}, langkah berikutnya adalah memetakan setiap kebutuhan fungsional terhadap permasalahan yang melatarbelakanginya.
+
+Pemetaan ini bertujuan untuk memastikan bahwa fungsi yang dikembangkan benar-benar berakar pada masalah yang telah diidentifikasi, sekaligus menghindari penambahan fitur yang tidak relevan dengan ruang lingkup permasalahan penelitian.
+
+Tabel~\ref{tab:pemetaan-kebutuhan-permasalahan} menyajikan hubungan antara setiap \textit{functional requirement} (F1--F14) dengan permasalahan utama M1--M5.
+
+% --- Pemetaan FR F1--F7 ---
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Pemetaan kebutuhan fungsional terhadap permasalahan utama}
+  \label{tab:pemetaan-kebutuhan-permasalahan}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.07\textwidth}
+    X
+    >{\centering\arraybackslash}p{0.05\textwidth}
+    >{\centering\arraybackslash}p{0.05\textwidth}
+    >{\centering\arraybackslash}p{0.05\textwidth}
+    >{\centering\arraybackslash}p{0.05\textwidth}
+    >{\centering\arraybackslash}p{0.05\textwidth}
+  }
+    \toprule
+    \textbf{Kode FR} &
+    \textbf{Nama Kebutuhan} &
+    \textbf{M1} &
+    \textbf{M2} &
+    \textbf{M3} &
+    \textbf{M4} &
+    \textbf{M5} \\
+    \midrule
+    F1 & Formulir keluhan pelanggan berbasis web &
+    $\checkmark$ & $\checkmark$ & & & \\
+    \midrule
+    F2 & Validasi data keluhan &
+    & $\checkmark$ & & & \\
+    \midrule
+    F3 & Pembuatan tiket keluhan otomatis &
+    & $\checkmark$ & $\checkmark$ & & \\
+    \midrule
+    F4 & Konfirmasi pengiriman keluhan &
+    & $\checkmark$ & $\checkmark$ & & \\
+    \midrule
+    F5 & Daftar keluhan untuk admin/CS &
+    $\checkmark$ & $\checkmark$ & & & $\checkmark$ \\
+    \midrule
+    F6 & Filter dan pencarian keluhan &
+    & $\checkmark$ & & & $\checkmark$ \\
+    \midrule
+    F7 & Detail tiket dan riwayat penanganan &
+    & $\checkmark$ & $\checkmark$ & & $\checkmark$ \\
+    \midrule
+    F8 & Penugasan teknisi &
+    & & $\checkmark$ & & $\checkmark$ \\
+    \midrule
+    F9 & Pembaruan status tiket &
+    & & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \midrule
+    F10 & Tampilan status keluhan untuk pelanggan &
+    & & & $\checkmark$ & \\
+    \midrule
+    F11 & Riwayat keluhan per pelanggan &
+    & $\checkmark$ & & & $\checkmark$ \\
+    \midrule
+    F12 & Ringkasan statistik keluhan &
+    & & & & $\checkmark$ \\
+    \midrule
+    F13 & Log aktivitas penting &
+    & $\checkmark$ & $\checkmark$ & & $\checkmark$ \\
+    \midrule
+    F14 & Integrasi dasar dengan data pelanggan &
+    & $\checkmark$ & & & $\checkmark$ \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Dari Tabel~\ref{tab:pemetaan-kebutuhan-permasalahan} terlihat bahwa setiap kebutuhan fungsional yang dipertahankan (F1--F14) memiliki keterkaitan yang jelas dengan sedikitnya satu permasalahan utama M1--M5.
+
+Fitur-fitur seperti formulir keluhan web (F1), validasi data (F2), pembuatan tiket otomatis (F3), serta daftar dan detail tiket (F5--F7) terutama menjawab permasalahan kanal yang tidak terpusat dan pencatatan yang tidak seragam (M1 dan M2).
+
+Penugasan teknisi (F8) dan pembaruan status tiket (F9) berkontribusi langsung pada pengurangan risiko keluhan terlewat atau tertunda (M3) sekaligus menyediakan data status yang dibutuhkan untuk monitoring (M5). Tampilan status bagi pelanggan (F10) fokus menjawab kebutuhan transparansi dan sarana cek mandiri (M4), sedangkan ringkasan statistik (F12), log aktivitas (F13), dan integrasi data pelanggan (F14) menguatkan kemampuan perusahaan dalam melakukan monitoring dan evaluasi berbasis data (M5).
+
+% --- Analisis Pemilihan Solusi ---
 \section{Analisis Pemilihan Solusi}
+
+Bagian ini membahas alternatif solusi yang dapat digunakan untuk mengatasi permasalahan pengelolaan keluhan di SpeedForce, kemudian menganalisis secara sistematis alasan pemilihan solusi yang akan dikembangkan dalam tugas akhir ini.
+
+Analisis dilakukan dengan mempertimbangkan kebutuhan fungsional dan nonfungsional yang telah diidentifikasi, karakteristik operasional SpeedForce sebagai ISP lokal, serta keterbatasan waktu dan sumber daya pengembangan.
+
 \subsection{Alternatif Solusi}
-\lipsum[8]
+
+Berdasarkan analisis kondisi dan kebutuhan, terdapat beberapa alternatif pendekatan yang secara umum dapat dipertimbangkan, antara lain sebagai berikut.
+
+\subsubsection*{A1 -- Peningkatan prosedur tanpa pengembangan sistem baru}
+
+Alternatif pertama adalah memperbaiki cara kerja yang ada tanpa membangun aplikasi baru. Pendekatan ini dapat berupa penetapan satu nomor resmi sebagai kanal keluhan, penyusunan format standar pencatatan keluhan (misalnya tabel \textit{spreadsheet}), serta pembuatan prosedur internal untuk penugasan teknisi dan pelaporan status.
+
+Secara teknis, alternatif ini tidak mengubah arsitektur sistem informasi di SpeedForce. Data keluhan tetap tersebar di beberapa media (chat, \textit{spreadsheet} terpisah), bergantung pada kedisiplinan petugas. Integrasi dengan website layanan pelanggan juga tidak terjadi; website hanya berfungsi sebagai halaman informasi, bukan sebagai titik masuk data keluhan.
+
+Kelebihan pendekatan ini adalah biaya dan kompleksitas implementasi yang rendah. SpeedForce tidak perlu menambah infrastruktur atau pengembangan aplikasi baru. Namun, dari sisi kualitas sistem, tidak tercipta basis data keluhan terpusat yang dapat diolah untuk analisis, tidak tersedia mekanisme identitas tiket terotomasi, dan tidak ada antarmuka bagi pelanggan untuk mengecek status secara mandiri.
+
+Dengan kata lain, alternatif ini tidak menjawab kebutuhan utama terkait transparansi status keluhan, pelacakan historis, dan kemampuan analitik sederhana. Pendekatan ini lebih cocok sebagai langkah perbaikan awal, bukan sebagai solusi jangka menengah untuk mendukung pertumbuhan jumlah pelanggan.
+
+\subsubsection*{A2 -- Pemanfaatan platform tiket/helpdesk pihak ketiga}
+
+Alternatif kedua adalah menggunakan layanan \textit{helpdesk} atau \textit{ticketing} pihak ketiga berbasis \textit{software as a service} (SaaS). Contohnya adalah platform yang menyediakan formulir keluhan secara daring, pembuatan tiket otomatis, antarmuka internal untuk agen layanan, dan fitur pelaporan sederhana.
+
+Secara teknis, platform semacam ini memiliki arsitektur \textit{multi-tenant} berbasis cloud, di mana data keluhan SpeedForce disimpan pada infrastruktur penyedia. Biasanya tersedia REST API atau mekanisme \textit{embed widget} yang dapat diintegrasikan ke website SpeedForce, misalnya dengan menanamkan formulir pengaduan dari platform tersebut.
+
+Dari sisi fungsional, alternatif ini dapat memenuhi sebagian besar kebutuhan dasar, seperti pembuatan tiket otomatis, daftar tiket dengan status, penugasan agen, dan notifikasi dasar. Namun, terdapat beberapa pertimbangan teknis dan operasional: integrasi tampilan dan pengalaman pengguna tidak sepenuhnya berada di bawah kontrol SpeedForce; data keluhan berada di lingkungan penyedia layanan sehingga ada ketergantungan terhadap kebijakan penyimpanan dan keamanan pihak ketiga; serta fleksibilitas penyesuaian alur proses terbatas pada fitur yang disediakan platform. \autocite{galup_itsm_2009}
+
+Dari perspektif metodologi penelitian, penggunaan platform jadi juga mengurangi ruang untuk merancang dan mengembangkan artefak secara mandiri. Tugas akhir cenderung berubah menjadi studi konfigurasi dan evaluasi platform, bukan pengembangan sistem berbasis DSR.
+
+\subsubsection*{A3 -- Pengembangan modul e-complaint berbasis web terintegrasi dengan website SpeedForce}
+
+Alternatif ketiga adalah membangun modul e-complaint berbasis web yang dirancang khusus untuk kebutuhan SpeedForce dan diintegrasikan langsung dengan website layanan pelanggan. Dalam pendekatan ini, sistem e-complaint menjadi bagian dari arsitektur aplikasi web SpeedForce, bukan entitas terpisah.
+
+Secara teknis, pendekatan ini dapat dibayangkan sebagai sebuah aplikasi web sisi server (misalnya berbasis pola MVC) yang menyediakan \textit{endpoint} untuk formulir keluhan pelanggan, halaman pengecekan status, dan panel internal admin/CS/teknisi; basis data terpusat (misalnya basis data relasional) yang menyimpan entitas tiket keluhan beserta riwayat statusnya; lapisan autentikasi dan otorisasi untuk membedakan akses pelanggan (umum) dengan akses pengguna internal; serta integrasi antarmuka dengan website SpeedForce, sehingga pelanggan merasa tetap berada dalam satu lingkungan layanan yang sama.
+
+Dengan pendekatan ini, beberapa aspek penting dapat dikendalikan secara lebih spesifik: model data keluhan dapat dirancang untuk mendukung kebutuhan pelaporan sederhana; alur proses dan aturan perubahan status tiket dapat ditentukan secara eksplisit; antarmuka pengguna dapat disesuaikan sehingga konsisten dengan identitas visual dan gaya desain website SpeedForce; dan pengendalian data serta integrasi ke depan tetap berada di tangan SpeedForce.
+
+Dalam konteks tugas akhir, alternatif ini memberikan lahan yang jelas untuk menerapkan Design Science Research: peneliti dapat merancang dan mengembangkan artefak, kemudian mengevaluasinya berdasarkan kebutuhan yang telah didefinisikan. \autocite{hevner2004,peffers2007}
+
+Alternatif-alternatif tersebut dapat dibandingkan secara sistematis dalam Tabel~\ref{tab:perbandingan-alternatif} dengan menggunakan beberapa kriteria, seperti kesesuaian dengan kebutuhan pengguna, kemudahan implementasi, biaya, fleksibilitas, dan kemandirian teknologi.
+
+\clearpage
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Perbandingan alternatif solusi pengelolaan keluhan pelanggan}
+  \label{tab:perbandingan-alternatif}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.08\textwidth} % Kode
+    X                                            % Deskripsi
+    X                                            % Kelebihan
+    X                                            % Keterbatasan
+    X                                            % Kesesuaian
+  }
+    \toprule
+    \textbf{Kode Alternatif} &
+    \textbf{Deskripsi} &
+    \textbf{Kelebihan} &
+    \textbf{Keterbatasan} &
+    \textbf{Kesesuaian dengan Kebutuhan SpeedForce} \\
+    \midrule
+    A1 &
+    Meningkatkan formalitas prosedur tanpa pengembangan sistem baru (menggunakan nomor resmi dan \textit{spreadsheet}). &
+    Biaya rendah, implementasi cepat, tidak membutuhkan pengembangan teknis. &
+    Tetap bergantung pada pencatatan manual, tidak ada akses mandiri bagi pelanggan, sulit menyusun laporan historis. &
+    Kurang memenuhi kebutuhan transparansi ke pelanggan dan kebutuhan data terstruktur untuk evaluasi jangka panjang. \\
+    \midrule
+    A2 &
+    Menggunakan platform pihak ketiga (helpdesk/ticketing berbasis cloud). &
+    Banyak fitur standar sudah tersedia (formulir keluhan, tiket, panel admin); waktu implementasi singkat. &
+    Integrasi dengan website SpeedForce bisa terbatas; model biaya langganan; kontrol penuh terhadap data kurang maksimal. &
+    Cukup membantu, tetapi fleksibilitas terhadap cara kerja SpeedForce dan integrasi tampilan dengan website bisa terbatas. \\
+    \midrule
+    A3 &
+    Mengembangkan modul e-complaint berbasis web yang terintegrasi dengan website layanan pelanggan SpeedForce. &
+    Alur dapat disesuaikan dengan proses bisnis SpeedForce; kanal keluhan resmi jelas; data tersentral. &
+    Membutuhkan waktu dan usaha pengembangan, serta pemeliharaan teknis di sisi SpeedForce. &
+    Paling sesuai dengan kebutuhan fokus: respons lebih teratur, transparansi status ke pelanggan, dan data keluhan yang rapi. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
 \subsection{Analisis Penentuan Solusi}
-\lipsum[9]
+
+Setelah mengidentifikasi ketiga alternatif di atas, perlu dilakukan analisis yang lebih sistematis untuk menentukan solusi mana yang paling sesuai dengan kebutuhan SpeedForce dan tujuan tugas akhir.
+
+Dari sisi cakupan kebutuhan fungsional, alternatif A1 hanya memperbaiki cara kerja manual tanpa menyediakan mekanisme tiket, panel status, maupun akses mandiri bagi pelanggan. A2 dan A3 sama-sama berpotensi memenuhi kebutuhan inti seperti pembuatan tiket, daftar keluhan, dan pelacakan status. Namun, hanya A3 yang memungkinkan perancangan alur dan model data secara penuh sesuai dengan proses bisnis yang diinginkan.
+
+Dari sisi kebutuhan nonfungsional, khususnya \textit{usability} dan \textit{user experience}, A3 memberikan fleksibilitas tertinggi. Pada A2, kualitas pengalaman pengguna sangat bergantung pada desain platform pihak ketiga, dan kemampuan peneliti untuk mengubah alur atau halaman terbatas. Sebaliknya, pada A3, peneliti dapat merancang antarmuka secara sadar untuk mendukung kemudahan penggunaan, lalu mengevaluasi hasilnya menggunakan instrumen SUS dan UEQ seperti yang direncanakan pada metodologi. \autocite{Brooke1996,Laugwitz2008}
+
+Dari perspektif arsitektur dan integrasi, A3 juga lebih konsisten dengan gambaran jangka menengah SpeedForce. Modul e-complaint yang tertanam di website layanan pelanggan menjadikan website sebagai \textit{single entry point} untuk informasi dan layanan, mengurangi fragmentasi pengalaman pelanggan sehingga tidak perlu diarahkan ke domain lain, serta memudahkan penambahan fitur lain di masa depan.
+
+Alternatif A2 memang menawarkan kemudahan implementasi awal, tetapi menambah lapisan integrasi yang dikendalikan pihak lain. Jika SpeedForce suatu saat ingin mengubah alur proses, struktur laporan, atau melakukan integrasi lebih dalam dengan sistem internal, tingkat fleksibilitas A2 mungkin menjadi kendala.
+
+Dari sisi kompleksitas pengembangan, A3 memang membutuhkan usaha teknis yang lebih besar dibanding A1 dan A2. Namun, dalam konteks tugas akhir dengan periode pengerjaan sekitar beberapa bulan, skala sistem yang dibutuhkan masih relatif terkendali: jumlah aktor internal terbatas, jumlah tiket harian untuk ISP lokal cenderung masih dalam rentang yang dapat ditangani oleh aplikasi web monolitik sederhana dengan basis data relasional, dan kebutuhan performa belum menyentuh skala \textit{high traffic} yang memaksa penggunaan arsitektur terdistribusi yang kompleks.
+
+Artinya, dari sudut pandang rekayasa perangkat lunak, membangun modul e-complaint sebagai aplikasi web monolitik yang terintegrasi dengan website adalah solusi yang realistis untuk diselesaikan dalam tugas akhir, sambil tetap cukup menantang dari sisi perancangan, implementasi, dan evaluasi.
+
+Terakhir, bila dilihat dari perspektif metodologis DSR, A3 paling selaras dengan tahapan sebagai berikut. \autocite{hevner2004,peffers2007}
+
+\begin{enumerate}
+  \item \textbf{Problem Identification \& Motivation} -- masalah keluhan yang tidak terstruktur dan tidak transparan sudah diuraikan di Bab~\ref{chap:pendahuluan} dan Bab ini.
+
+  \item \textbf{Define Objectives of a Solution} -- kebutuhan fungsional dan nonfungsional telah ditetapkan secara eksplisit pada bagian sebelumnya.
+
+  \item \textbf{Design \& Development} -- alternatif A3 memberi ruang penuh untuk merancang artefak modul e-complaint berbasis web.
+
+  \item \textbf{Demonstration \& Evaluation} -- artefak yang dikembangkan dapat didemonstrasikan pada skenario nyata di SpeedForce dan dievaluasi dengan pengujian fungsional serta instrumen SUS/UEQ.
+
+  \item \textbf{Communication} -- hasil perancangan dan evaluasi dapat didokumentasikan secara komprehensif sebagai kontribusi tugas akhir.
+\end{enumerate}
+
+
+Dengan mempertimbangkan seluruh aspek seperti cakupan kebutuhan, fleksibilitas desain dan evaluasi, integrasi dengan website layanan pelanggan, kendali terhadap data, serta keselarasan dengan pendekatan Design Science Research, tugas akhir ini memilih alternatif A3, yaitu pengembangan modul e-complaint berbasis web yang terintegrasi dengan website layanan pelanggan SpeedForce, sebagai solusi utama yang akan dirancang, diimplementasikan, dan dievaluasi pada bab-bab selanjutnya.

@@ -97,6 +97,17 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage[bahasai]{datetime2}
+% \documentclass{article}
+\usepackage[utf8]{inputenc} % atau 
+\usepackage{float}
+\usepackage{array}
+\usepackage{pdflscape}
+% --- tambahan preamble ---
+\usepackage{tabularx}       % agar tabel bisa mengisi lebar \textwidth
+\usepackage{multirow}
+\usepackage{pifont}         % untuk tanda centang (\ding{51}) dan silang (\ding{55})
+\newcommand{\cmark}{\ding{51}} 
+\newcommand{\xmark}{\ding{55}}
 
 
 \setcounter{tocdepth}{4} % kedalaman daftar isi sampai subsubbab
@@ -198,6 +209,10 @@
 % ==========================================
 % AWAL DOKUMEN
 % ==========================================
+
+% --------------------------------------------------------------------------
+
+
 \begin{document}
 
 % ==========================================
@@ -209,7 +224,7 @@
     
     \vspace*{2cm}
     
-    {\Large\bfseries PERANCANGAN SISTEM INFORMASI AKADEMIK BERBASIS WEB}\\
+    {\Large\bfseries Pengembangan Modul E-Complaint Terintegrasi pada Website Layanan Pelanggan SpeedForce di PT Sanders Bersaudara Media}\\
      \vspace{4cm}
 
     {\Large \textbf{Proposal Tugas Akhir}}\\
@@ -220,8 +235,8 @@
     
     {\large Oleh}\\[0.3cm]
     \textbf{
-    {\large John Doe}\\
-    {\large 18299000}
+    {\large Muhammad Daffa Kusuma Atmaja}\\
+    {\large 18222108}
     }\\
 
     \vspace{2cm}
@@ -256,7 +271,7 @@
   \textbf{\large LEMBAR PENGESAHAN}\\[1cm]
   \vspace*{1.5cm}
     
-  {\large\bfseries PERANCANGAN SISTEM INFORMASI AKADEMIK BERBASIS WEB}\\
+  {\large\bfseries Pengembangan Modul E-Complaint Terintegrasi pada Website Layanan Pelanggan SpeedForce di PT Sanders Bersaudara Media}\\
      \vspace{2cm}
 
   {\Large \textbf{Proposal Tugas Akhir}}\\
@@ -267,8 +282,8 @@
     
   {\large Oleh}\\[0.3cm]
     \textbf{
-    {\large John Doe}\\
-    {\large 18299000}
+    {\large Muhammad Daffa Kusuma Atmaja}\\
+    {\large 18222108}
   }\\
     
   \vspace{0.5cm}
@@ -286,8 +301,8 @@
 % Versi 1 pembimbing (default)
 % ==========================================
 	Pembimbing  \\[3cm]
-	Dr. Ir. John Doe, M.T.   \\[0.2cm]
-	NIP. 123456789 
+	Dr. Lenny Putri Yulianti, S.T., M.T.   \\[0.2cm]
+	NIP. 119110073 
 % ==========================================
 
 \end{center}
@@ -349,11 +364,11 @@
 \listoftables
 \addcontentsline{toc}{chapter}{DAFTAR TABEL}
 
-% --- DAFTAR LISTING (ALGORITMA, PSEUDOCODE, SOURCE CODE) ---
-\newpage
+% % --- DAFTAR LISTING (ALGORITMA, PSEUDOCODE, SOURCE CODE) ---
+% \newpage
 
-\lstlistoflistings
-\addcontentsline{toc}{chapter}{\lstlistlistingname}
+% \lstlistoflistings
+% \addcontentsline{toc}{chapter}{\lstlistlistingname}
 
 \mainmatter
 % --- FORMAT TAMPILAN JUDUL BAB, SUBBAB, JUDUL GAMBAR DAN TABEL ---
@@ -398,6 +413,7 @@
 % DAFTAR PUSTAKA
 % ==========================================
 
+\nocite{*}
 \printbibliography[title={DAFTAR PUSTAKA}]
 
 % ==========================================

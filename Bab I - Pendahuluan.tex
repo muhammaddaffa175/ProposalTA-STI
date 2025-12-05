@@ -3,36 +3,172 @@
 % ==========================================
 \chapter{PENDAHULUAN}
 \label{chap:pendahuluan}
+
+Bab ini menjelaskan gambaran awal dari tugas akhir yang dilakukan. Fokus penelitian adalah pada perancangan dan pengembangan modul e-complaint berbasis web untuk membantu ISP lokal SpeedForce dalam mengelola keluhan pelanggan layanan internet tetap secara lebih terstruktur dan terdokumentasi.
+
+Pembahasan diawali dengan latar belakang yang memaparkan konteks meningkatnya kebutuhan layanan internet, pentingnya pengelolaan keluhan pelanggan, serta kondisi penanganan keluhan di SpeedForce saat ini. Setelah itu disusun rumusan masalah yang merangkum secara ringkas persoalan utama yang menjadi dasar penelitian.
+
+Berdasarkan rumusan tersebut, ditetapkan tujuan penelitian yang menggambarkan hasil yang ingin dicapai. Agar pembahasan lebih terarah, dicantumkan batasan masalah yang menjelaskan ruang lingkup kajian dan sistem yang dikembangkan. Terakhir, dijelaskan secara singkat metodologi penelitian sebagai gambaran tahapan yang ditempuh dalam menyelesaikan tugas akhir ini.
+
 % --- Latar Belakang ---
 \section{Latar Belakang}
-Latar Belakang menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tugas akhir. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
+
+Perkembangan teknologi informasi dalam satu dekade terakhir telah mengubah internet dari sekadar fasilitas tambahan menjadi infrastruktur dasar yang menopang berbagai aktivitas masyarakat Indonesia. Hasil Survei Penetrasi Internet Indonesia 2024 yang dirilis Asosiasi Penyelenggara Jasa Internet Indonesia (APJII) menunjukkan bahwa jumlah pengguna internet Indonesia tahun 2024 mencapai 221.563.479 jiwa dengan tingkat penetrasi sekitar 79{,}5\% dari total populasi. Angka ini meningkat sekitar 1{,}4 poin persentase dibanding periode sebelumnya dan mengindikasikan bahwa internet telah menjadi bagian penting dari kehidupan sehari-hari, mulai dari bekerja dan belajar, hingga bertransaksi dan mengakses layanan publik \autocite{apjii2024}.
+
+Kenaikan tersebut tercermin dalam tren persentase penetrasi internet yang terus meningkat dari tahun ke tahun. Data APJII menunjukkan bahwa penetrasi internet Indonesia naik dari sekitar 64{,}8\% pada 2018 menjadi 79{,}5\% pada 2024. Tren ini digambarkan pada Gambar~\ref{fig:tren-penetrasi-internet}, yang memperlihatkan pertumbuhan penetrasi internet Indonesia dalam beberapa tahun terakhir \autocite{apjii2018-2024}.
+
+\begin{figure}[h]
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=0.7\textwidth]{image/gambar-penetrasi-internet.png}
+  \caption{Tren penetrasi internet Indonesia 2018--2024 (diadaptasi dari APJII, 2018--2024)}
+  \label{fig:tren-penetrasi-internet}
+\end{figure}
+
+Selain dari sisi persentase, peningkatan penggunaan internet juga tercermin dari jumlah pengguna yang terus bertambah. Ringkasan berbagai laporan menunjukkan bahwa jumlah pengguna internet di Indonesia meningkat dari sekitar 88{,}1 juta orang pada 2014 menjadi lebih dari 221 juta orang pada 2024. Pertumbuhan basis pengguna yang sangat besar dalam waktu kurang dari satu dekade ini digambarkan dalam Gambar~\ref{fig:tren-jumlah-pengguna-internet} \autocite{apjii2014-2024,apjii2022}.
+
+\begin{figure}[h]
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=0.7\textwidth]{image/gambar-jumlah-pengguna-internet.png}
+  \caption{Tren jumlah pengguna internet Indonesia 2014--2024 (diadaptasi dari APJII, 2014--2024)}
+  \label{fig:tren-jumlah-pengguna-internet}
+\end{figure}
+
+Peningkatan penetrasi dan jumlah pengguna internet beriringan dengan meningkatnya kebutuhan masyarakat terhadap layanan internet tetap yang stabil dan andal di tingkat rumah tangga maupun pelaku usaha kecil. Berbagai aktivitas seperti rapat daring, kelas daring, usaha berbasis e-commerce, hingga penggunaan layanan keuangan digital sangat bergantung pada kualitas koneksi internet. Dalam konteks ini, penyedia layanan internet (Internet Service Provider/ISP) memegang peran krusial untuk menjaga kualitas layanan jaringan yang diberikan kepada pelanggan.
+
+Seiring meningkatnya kebutuhan tersebut, ekspektasi pelanggan terhadap kualitas layanan internet juga ikut meningkat. Pelanggan tidak hanya menuntut koneksi yang sekadar dapat terhubung, tetapi juga stabil, cepat, dan responsif ketika terjadi gangguan. Dalam kajian manajemen jasa, kualitas layanan (\textit{service quality}) sering dijelaskan sebagai selisih antara harapan pelanggan dan persepsi mereka terhadap kinerja layanan yang diterima. Untuk menilai kualitas layanan, Parasuraman, Zeithaml, dan Berry mengembangkan model SERVQUAL yang melihat kualitas layanan dari lima dimensi, yaitu \textit{tangibles}, \textit{reliability}, \textit{responsiveness}, \textit{assurance}, dan \textit{empathy}. SERVQUAL telah banyak digunakan sebagai acuan untuk mengevaluasi layanan di berbagai sektor, termasuk layanan telekomunikasi dan internet.
+
+Berbagai penelitian menunjukkan bahwa kualitas layanan berpengaruh secara signifikan terhadap kepuasan dan loyalitas pelanggan. Ketika pelanggan merasa layanan yang diterima tidak sejalan dengan harapan, misalnya sering mengalami gangguan koneksi, penanganan keluhan yang lambat, atau informasi yang tidak jelas, maka keluhan pelanggan cenderung meningkat. Di satu sisi, keluhan ini mencerminkan ketidakpuasan; namun di sisi lain, keluhan sebenarnya merupakan sumber informasi berharga yang dapat membantu perusahaan mengidentifikasi akar masalah, mengevaluasi proses internal, dan memperbaiki kualitas layanan.
+
+Dalam praktik di lapangan, terutama pada ISP berskala lokal, pengelolaan keluhan pelanggan masih sering menghadapi berbagai keterbatasan. ISP lokal umumnya beroperasi pada wilayah tertentu dengan sumber daya yang lebih terbatas dibandingkan penyedia nasional, tetapi tetap melayani pelanggan dengan kebutuhan yang sama tingginya terhadap kualitas koneksi.
+
+Secara umum, beberapa pola permasalahan yang kerap ditemui antara lain sebagai berikut.
+
 \begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di puskesmas daerah pedesaan dan masalah yang dihadapi.
-\item	Berbagai solusi yang telah diterapkan atau solusi yang tersedia dan memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut.
+  \item Keluhan disampaikan melalui berbagai kanal informal, seperti pesan instan (WhatsApp, Telegram), telepon, dan pesan di media sosial, tanpa adanya satu kanal resmi dan terpusat.
+
+  \item Pencatatan keluhan dilakukan secara manual atau semi-manual, misalnya dalam bentuk catatan pribadi, buku tulis, atau spreadsheet terpisah, sehingga data mudah tercecer dan sulit ditelusuri kembali.
+
+  \item Setiap keluhan belum selalu diberi identitas unik (tiket) yang memudahkan pelacakan status dan riwayat penanganan.
+
+  \item Pelanggan tidak memiliki sarana untuk memantau status keluhan secara mandiri, sehingga harus berulang kali menghubungi petugas hanya untuk menanyakan perkembangan penyelesaian masalah.
 \end{enumerate}
+
+Kondisi tersebut menimbulkan konsekuensi baik bagi pelanggan maupun penyedia layanan. Dari sisi pelanggan, keluhan yang tidak terdokumentasi dengan baik dan respons yang dirasakan lambat dapat menimbulkan persepsi bahwa keluhan tidak ditanggapi dengan serius, sehingga menurunkan tingkat kepuasan dan meningkatkan risiko perpindahan ke penyedia lain.
+
+Dari sisi penyedia layanan, ketiadaan data keluhan yang terstruktur menyulitkan perusahaan untuk menyusun indikator kinerja, seperti rata-rata waktu tanggap (\textit{response time}), rata-rata waktu penyelesaian (\textit{resolution time}), atau pola masalah yang paling sering muncul di wilayah tertentu. Akibatnya, upaya perbaikan layanan cenderung reaktif dan insidental, bukan berbasis data yang terukur.
+
+Di sisi lain, pengalaman di sektor lain menunjukkan bahwa pemanfaatan sistem informasi dapat membantu mengatasi tantangan pengelolaan keluhan. Dalam konteks pelayanan publik, pemerintah Indonesia mengembangkan Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional (SP4N)--LAPOR! yang ditetapkan melalui Peraturan Presiden Nomor 76 Tahun 2013 dan didesain sebagai pintu masuk tunggal pengaduan pelayanan publik. SP4N--LAPOR! dibangun untuk mewujudkan kebijakan \textit{no wrong door policy}, yaitu menjamin bahwa pengaduan dari manapun dan dalam bentuk apapun akan disalurkan kepada instansi yang berwenang menanganinya.
+
+Melalui sistem ini, masyarakat dapat menyampaikan keluhan secara daring, memperoleh nomor laporan, dan memantau perkembangan penanganannya secara transparan. Pendekatan serupa juga terlihat pada sistem-sistem pengaduan lain di level kementerian, pemerintah daerah, maupun lembaga layanan publik lainnya.
+
+Pada tingkat internasional, Afify dan Kadry mengusulkan \textit{Electronic Customer Complaint Management System} (E-CCMS) sebagai pendekatan generik untuk mengelola keluhan pelanggan secara elektronik. E-CCMS dirancang untuk menghubungkan berbagai basis data dan menyediakan antarmuka web untuk pengiriman serta pengelolaan keluhan, sehingga perusahaan dapat mengurangi keluhan berulang dengan melibatkan pelanggan dalam pengendalian kualitas layanan yang mereka terima \autocite{afifyeccms}.
+
+Di tingkat yang lebih praktis, berbagai penelitian juga menjelaskan pengembangan sistem pengaduan kerusakan infrastruktur, layanan air, maupun keluhan layanan lainnya yang memanfaatkan aplikasi web atau mobile untuk mencatat keluhan, mengelola status penanganan, dan menyediakan umpan balik kepada pelapor secara lebih terstruktur.
+
+Contoh-contoh tersebut menunjukkan bahwa pendekatan berbasis sistem informasi, khususnya aplikasi web untuk pengelolaan keluhan, telah digunakan di berbagai sektor dan terbukti membantu meningkatkan efektivitas penanganan pengaduan, akuntabilitas, dan transparansi proses. Namun, penerapan dan kajian serupa dalam konteks ISP lokal di Indonesia masih relatif terbatas.
+
+Di banyak ISP lokal, pengelolaan keluhan masih didominasi oleh komunikasi informal dan pencatatan manual, padahal jumlah pelanggan dan kompleksitas layanan internet terus meningkat seiring naiknya penetrasi internet secara nasional. Kesenjangan antara tingginya ketergantungan masyarakat terhadap layanan internet, pentingnya pengelolaan keluhan sebagai bagian dari kualitas layanan, dan belum optimalnya pemanfaatan sistem informasi untuk mengelola keluhan di ISP lokal inilah yang menjadi dasar pemikiran dan motivasi perlunya kajian lebih lanjut dalam tugas akhir ini.
+
+Dengan memahami kondisi, permasalahan, dan berbagai contoh solusi yang telah diterapkan di sektor lain, diharapkan dapat dirumuskan pendekatan yang lebih terstruktur dan sesuai konteks untuk mendukung pengelolaan keluhan pelanggan pada layanan internet tetap yang disediakan oleh ISP lokal, khususnya SpeedForce.
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Rumusan Masalah berisi masalah utama yang dibahas dalam tugas akhir. Rumusan masalah yang baik memiliki struktur sebagai berikut:
-\begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
+
+Berdasarkan latar belakang tersebut, permasalahan utama yang akan dibahas dalam penelitian ini adalah sebagai berikut.
+
+\begin{enumerate}[itemsep=0.5\baselineskip]
+  \item Bagaimana kondisi dan permasalahan proses pengelolaan keluhan pelanggan di SpeedForce saat ini?
+
+  \item Kebutuhan apa saja yang harus dipenuhi oleh sistem untuk membantu SpeedForce mengelola keluhan pelanggan secara lebih terstruktur dan transparan?
+
+  \item Bagaimana merancang dan mengevaluasi prototipe sistem e-complaint berbasis web yang sesuai dengan kebutuhan pengelolaan keluhan di SpeedForce?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
-Tuliskan tujuan utama dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tugas akhir. Fokuskan pada hasil akhir yang ingin diperoleh setelah tugas akhir diselesaikan, terkait dengan penyelesaian persoalan pada rumusan masalah. Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di akhir pelaksanaan tugas akhir apakah tercapai atau tidak. Tuliskan kriteria keberhasilan tugas akhir ini.
+
+Tujuan utama dari tugas akhir ini adalah mengembangkan prototipe sistem e-complaint berbasis web yang membantu ISP lokal SpeedForce mengelola keluhan pelanggan secara lebih terstruktur, terdokumentasi, dan mudah dipantau oleh pelanggan maupun pihak internal.
+
+Secara rinci, tujuan penelitian ini adalah sebagai berikut.
+
+\begin{enumerate}[itemsep=0.5\baselineskip]
+  \item Mendeskripsikan kondisi dan permasalahan proses pengelolaan keluhan pelanggan di SpeedForce saat ini.
+
+  \item Mengidentifikasi dan merumuskan kebutuhan sistem untuk mendukung pengelolaan keluhan di SpeedForce.
+
+  \item Merancang dan mengimplementasikan prototipe sistem e-complaint berbasis web yang sesuai dengan kebutuhan tersebut.
+
+  \item Mengevaluasi prototipe sistem dari sisi fungsi dan pengalaman pengguna.
+\end{enumerate}
 
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
-Tuliskan batasan-batasan yang diambil dalam pelaksanaan tugas akhir. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tugas akhir dibuat cukup spesifik.
 
-% --- Metodologi Pengerjaan TA ---
+Untuk menjaga fokus pembahasan dan memastikan tugas akhir ini dapat diselesaikan dalam waktu dan sumber daya yang tersedia, ditetapkan beberapa batasan masalah sebagai berikut.
+
+\begin{enumerate}[itemsep=0.5\baselineskip]
+  \item Ruang lingkup layanan yang dikaji dibatasi pada layanan internet tetap (\textit{fixed broadband}) yang disediakan oleh SpeedForce. Layanan lain yang mungkin dimiliki perusahaan tidak dibahas secara mendalam.
+
+  \item Jenis keluhan yang menjadi fokus adalah keluhan yang berkaitan dengan:
+  \begin{itemize}
+    \item kualitas teknis layanan (misalnya gangguan koneksi, penurunan kecepatan, pemutusan mendadak); dan
+    \item aspek administratif dasar (misalnya tagihan dan paket langganan).
+  \end{itemize}
+
+  \item Sistem yang dibahas dan dikembangkan berupa aplikasi web yang diakses melalui peramban (\textit{browser}) dengan dua kelompok pengguna utama, yaitu:
+  \begin{itemize}
+    \item pelanggan, yang dapat menyampaikan keluhan dan memantau statusnya; dan
+    \item petugas internal, yang mengelola keluhan mulai dari penerimaan, penugasan, hingga penyelesaian.
+  \end{itemize}
+
+  \item Pengembangan aplikasi \textit{mobile native} berada di luar lingkup penelitian ini.
+
+  \item Integrasi dengan kanal lain seperti telepon, pesan WhatsApp, atau media sosial tidak dibahas dalam bentuk integrasi otomatis. Dalam penelitian ini diasumsikan bahwa keluhan yang masuk melalui kanal tersebut dapat dimasukkan secara manual ke dalam sistem oleh petugas.
+
+  \item Evaluasi sistem difokuskan pada \textit{usability} dan pengalaman pengguna prototipe yang dikembangkan, menggunakan instrumen SUS dan UEQ pada sampel responden terbatas. Hasil evaluasi bersifat indikatif dan tidak dimaksudkan untuk generalisasi statistik ke seluruh populasi pelanggan.
+
+  \item Aspek keamanan, performa, dan skalabilitas sistem dibahas pada tingkat prinsip dan rekomendasi umum, tanpa dilengkapi pengujian beban (\textit{load testing}) atau uji penetrasi keamanan (\textit{penetration testing}) secara khusus.
+\end{enumerate}
+
+% --- Metodologi ---
 \section{Metodologi}
-Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. Khusus untuk penyusunan proposal ini, jelaskan secara detail:
-\begin{enumerate}
-\item	Tahapan investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Langkah-langkah pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara sistematis di Bab II Studi Literatur.
+
+Penelitian ini menggunakan pendekatan \textit{Design Science Research} (DSR) dalam konteks rekayasa perangkat lunak. DSR dipilih karena tugas akhir ini berfokus pada pengembangan dan evaluasi artefak yang dirancang untuk memecahkan masalah nyata dalam pengelolaan keluhan pelanggan di SpeedForce.
+
+Artefak yang dimaksud adalah modul e-complaint berbasis web yang terintegrasi dengan website layanan pelanggan SpeedForce \autocite{hevner2004,peffers2007,johannesson2014,wieringa2014}. Secara umum, DSR mencakup tahapan identifikasi masalah, penetapan tujuan solusi, perancangan dan pengembangan artefak, demonstrasi, evaluasi, serta komunikasi hasil.
+
+Dalam tugas akhir ini, tahapan tersebut diterjemahkan menjadi langkah-langkah berikut.
+
+\begin{enumerate}[itemsep=0.5\baselineskip]
+  \item \textbf{Identifikasi masalah dan motivasi (\textit{Problem Identification \& Motivation})}
+
+  Pada tahap ini penulis mengidentifikasi masalah utama dalam proses penanganan keluhan pelanggan di SpeedForce. Kegiatan yang dilakukan meliputi pengamatan alur penanganan keluhan yang sedang berjalan, wawancara dengan pihak internal yang terlibat, serta peninjauan contoh keluhan yang pernah tercatat.
+
+  Dari tahap ini diperoleh gambaran mengenai bagaimana keluhan saat ini diterima, dicatat, dan ditindaklanjuti, serta kendala yang dirasakan baik oleh pelanggan maupun petugas internal. Hasilnya digunakan sebagai dasar untuk menjelaskan mengapa diperlukan solusi berbasis sistem.
+
+  \item \textbf{Penetapan tujuan solusi dan kebutuhan sistem (\textit{Define Objectives of a Solution})}
+
+  Berdasarkan masalah yang telah diidentifikasi, penulis merumuskan tujuan solusi yang ingin dicapai melalui pengembangan modul e-complaint. Pada tahap ini disusun kebutuhan utama yang harus dipenuhi oleh sistem, baik dari sisi pelanggan (kemudahan melaporkan masalah dan memantau status keluhan) maupun dari sisi internal SpeedForce (pencatatan terpusat, pelacakan tiket, dan dukungan pelaporan sederhana).
+
+  Hasil tahap ini berupa tujuan solusi yang jelas dan daftar kebutuhan fungsional serta nonfungsional yang akan menjadi acuan perancangan.
+
+  \item \textbf{Perancangan dan pengembangan prototipe modul e-complaint (\textit{Design \& Development})}
+
+  Tahap ini menerjemahkan kebutuhan sistem ke dalam rancangan dan implementasi artefak. Penulis menyusun rancangan alur proses pengelolaan keluhan yang dibantu oleh sistem, rancangan struktur basis data untuk menyimpan keluhan dan riwayat penanganannya, serta rancangan antarmuka utama untuk pelanggan dan petugas internal.
+
+  Rancangan tersebut kemudian diimplementasikan menjadi prototipe modul e-complaint berbasis web. Prototipe ini mencakup formulir pelaporan keluhan oleh pelanggan, pembentukan tiket secara otomatis, tampilan daftar dan detail tiket bagi petugas internal, serta penyajian status terkini yang dapat diakses kembali oleh pelanggan.
+
+  \item \textbf{Demonstrasi dan evaluasi prototipe (\textit{Demonstration \& Evaluation})}
+
+  Setelah prototipe selesai dibangun, dilakukan demonstrasi penggunaan modul dalam konteks proses penanganan keluhan di SpeedForce. Prototipe kemudian dievaluasi dari sisi fungsi maupun dari sisi penggunaan.
+
+  Dari sisi fungsi, diperiksa apakah alur utama seperti pencatatan keluhan, pembaruan status tiket, dan penutupan keluhan sudah berjalan sesuai rancangan. Dari sisi penggunaan, dilakukan penilaian terhadap kemudahan penggunaan dan persepsi pengguna terhadap sistem melalui instrumen seperti SUS dan UEQ pada sampel responden terbatas \autocite{tullis2013,sauro2016}. Beberapa indikator operasional dasar pada skenario uji juga diamati secara deskriptif untuk melihat apakah alur baru berpotensi membuat proses lebih teratur, tanpa mengklaim pengukuran dampak jangka panjang.
+
+  \item \textbf{Dokumentasi dan komunikasi hasil (\textit{Communication})}
+
+  Tahap terakhir adalah mendokumentasikan seluruh proses dan hasil penelitian dalam bentuk laporan tugas akhir. Pada tahap ini dirangkum temuan utama dari identifikasi masalah, perancangan, pengembangan, serta evaluasi prototipe.
+
+  Selain itu, disusun rekomendasi untuk pengembangan dan penerapan lebih lanjut, misalnya penyempurnaan fitur, penyesuaian prosedur operasional internal, atau integrasi yang lebih erat dengan sistem lain di masa mendatang. Dengan demikian, artefak yang dihasilkan tidak hanya diuji secara awal, tetapi juga disertai gambaran arah pengembangan berikutnya di lingkungan SpeedForce.
 \end{enumerate}

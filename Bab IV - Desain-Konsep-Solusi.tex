@@ -1,9 +1,710 @@
 % ==========================================
-% BAB IV DESAIN KONSEP SOLUSI
+% BAB IV PERANCANGAN MODUL E-COMPLAINT
 % ==========================================
-\chapter{DESAIN KONSEP SOLUSI}
-\label{chap:desain-konsep-solusi}
-Ilustrasikan desain konsep solusi dalam bentuk model konseptual dan penjelasan secara ringkas, 
-beserta perbedaannya dengan sistem saat ini. Ilustrasi harus dapat dibandingkan (\textit{before} and \textit{after}). 
-Karena masih berupa proposal, bab ini hanya berisi gambar desain konsep solusi tersebut dan 
-penjelasan perbandingannya dengan gambar sistem yang ada saat ini (yang tergambar di awal Bab \ref{chap:analisis-masalah}).
+\chapter{PERANCANGAN MODUL E-COMPLAINT BERBASIS WEB}
+\label{chap:perancangan-sistem}
+
+Bab ini membahas perancangan modul e-complaint berbasis web yang akan diintegrasikan ke website layanan pelanggan SpeedForce. Bab ini berada pada tahap \textit{Design \& Development} dalam kerangka \textit{Design Science Research} (DSR), yaitu menerjemahkan kebutuhan fungsional dan non-fungsional yang telah dirumuskan pada Bab~\ref{chap:analisis-masalah} ke dalam rancangan arsitektur, proses bisnis, data, antarmuka, dan mekanisme keamanan sistem. Pendekatan perancangan mengacu pada praktik rekayasa perangkat lunak untuk aplikasi web berlapis (\textit{layered web application}) dan prinsip desain berpusat-pengguna (\textit{user-centred design}) sebagaimana diatur dalam standar \textit{usability} modern.\autocite{hevner2004,peffers2007,iso9241-11}
+
+\section{Gambaran Umum Solusi dan Lingkup Modul}
+
+Solusi yang dikembangkan dalam tugas akhir ini adalah modul e-complaint berbasis web yang terintegrasi dengan website layanan pelanggan SpeedForce. Modul ini dirancang sebagai kanal resmi dan terpusat untuk pengelolaan keluhan pelanggan, menggantikan pola sebelumnya yang bergantung pada komunikasi informal melalui WhatsApp, telepon, dan media sosial serta pencatatan manual yang tersebar. Dengan pendekatan ini, keluhan pelanggan dicatat sebagai tiket (\textit{ticket}) dengan identitas unik, memiliki status yang jelas, dan dapat ditelusuri kembali oleh pengguna internal maupun pelanggan.
+
+Secara konseptual, modul e-complaint berada di antara tiga pihak utama: pelanggan, admin/CS, dan teknisi. Pelanggan berinteraksi melalui halaman web publik untuk mengirim keluhan dan memeriksa status tiket. Admin/CS menggunakan panel internal untuk meninjau daftar tiket, memverifikasi keluhan, menetapkan prioritas, dan menugaskan teknisi. Teknisi memanfaatkan antarmuka internal untuk melihat tiket yang ditugaskan dan memperbarui status beserta catatan penanganan. Seluruh interaksi tersebut terhubung ke satu basis data keluhan yang tersentral sehingga mendukung pelacakan historis dan penyusunan laporan sederhana.
+
+Dari sisi lingkup, modul e-complaint yang dikembangkan berfokus pada fungsi-fungsi berikut.
+
+\begin{enumerate}
+  \item Penerimaan keluhan melalui formulir web tanpa keharusan membuat akun, dengan validasi dasar data pelanggan dan informasi keluhan.
+  \item Pembentukan tiket keluhan secara otomatis, termasuk pemberian nomor tiket, pencatatan waktu pelaporan, kategori keluhan, dan kanal masuk.
+  \item Panel internal untuk admin/CS, yang menyediakan daftar tiket dengan kemampuan filter dan pencarian, tampilan detail tiket, penetapan teknisi, serta pengubahan status (misalnya \textit{baru}, \textit{dalam penanganan}, \textit{selesai}).
+  \item Antarmuka teknisi, yang menampilkan tiket yang ditugaskan dan memungkinkan teknisi memperbarui status serta menambahkan catatan hasil penanganan.
+  \item Halaman cek status bagi pelanggan, yang memungkinkan pelanggan memantau perkembangan keluhan menggunakan nomor tiket dan identifikasi sederhana.
+  \item Ringkasan statistik dasar, seperti jumlah keluhan per periode dan kategori keluhan yang paling sering muncul, sebagai bahan pemantauan operasional.
+\end{enumerate}
+
+Agar tetap realistis terhadap sumber daya dan waktu pengerjaan, terdapat beberapa aspek yang secara eksplisit berada di luar lingkup pengembangan modul dalam tugas akhir ini. Modul ini belum mencakup:
+
+\begin{itemize}
+  \item integrasi otomatis dengan kanal lain seperti WhatsApp, telepon, atau media sosial (keluhan dari kanal tersebut diasumsikan dapat dimasukkan manual oleh admin);
+  \item aplikasi \textit{mobile native} (Android/iOS); akses pengguna dibatasi pada antarmuka web responsif;
+  \item integrasi langsung dengan sistem \textit{monitoring} jaringan atau sistem \textit{billing} yang sudah ada;
+  \item pengujian non-fungsional tingkat lanjut seperti \textit{load testing} skala besar atau \textit{penetration testing} mendalam; evaluasi sistem difokuskan pada aspek fungsional dan kualitas penggunaan (\textit{usability} dan \textit{user experience}) menggunakan SUS dan UEQ sesuai metodologi yang telah dijelaskan pada Bab~\ref{chap:tinjauan-pustaka}. \autocite{Brooke1996,Laugwitz2008}
+\end{itemize}
+
+Dengan batasan tersebut, modul yang dirancang tetap cukup representatif untuk menjawab permasalahan inti yang diidentifikasi pada Bab~\ref{chap:analisis-masalah}: kanal keluhan yang belum terpusat, ketiadaan nomor tiket dan riwayat penanganan yang rapi, serta minimnya transparansi status keluhan di mata pelanggan. Pada saat yang sama, modul ini masih berada dalam cakupan yang realistis untuk dikembangkan dan dievaluasi sebagai sebuah artefak Design Science Research dalam konteks ISP lokal seperti SpeedForce.
+
+\section{Perancangan Arsitektur Sistem}
+
+Perancangan arsitektur sistem dilakukan untuk menggambarkan bagaimana modul e-complaint diorganisasikan ke dalam komponen-komponen utama dan bagaimana komponen tersebut saling berinteraksi. Arsitektur yang dirancang mengikuti pola tiga lapisan (\textit{three-tier}) yang umum digunakan pada aplikasi web: lapisan presentasi, lapisan aplikasi, dan lapisan data. Pemisahan ini membantu meningkatkan keterpeliharaan, memungkinkan pengembangan bertahap, dan mempermudah integrasi dengan sistem lain di kemudian hari.
+
+Dalam konteks tugas akhir ini, modul e-complaint diimplementasikan sebagai aplikasi web monolitik berskala kecil yang terintegrasi dengan website layanan pelanggan SpeedForce. Lapisan presentasi menangani antarmuka pengguna (pelanggan dan pengguna internal), lapisan aplikasi menangani logika pengelolaan keluhan dan penugasan teknisi, sedangkan lapisan data menangani penyimpanan tiket dan data pelanggan dalam basis data terpusat.
+
+\subsection{Arsitektur Logis Aplikasi}
+
+Arsitektur logis menggambarkan pemisahan fungsi sistem ke dalam beberapa lapisan dan komponen utama tanpa bergantung pada detail teknologi tertentu. Gambar~\ref{fig:arsitektur-logis} memperlihatkan arsitektur logis modul e-complaint yang terdiri atas tiga lapisan utama.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/arsitektur.png}
+  \caption{Arsitektur logis modul e-complaint SpeedForce}
+  \label{fig:arsitektur-logis}
+\end{figure}
+
+\begin{description}
+  \item[Lapisan Presentasi (\textit{Presentation Layer})]
+  Menyediakan antarmuka berbasis web bagi dua kelompok pengguna utama:
+  \begin{itemize}
+    \item pelanggan, berupa portal pelaporan keluhan dan pengecekan status; dan
+    \item pengguna internal (admin/CS dan teknisi) melalui panel internal.
+  \end{itemize}
+  Lapisan ini bertanggung jawab terhadap tampilan formulir, tabel tiket, halaman detail tiket, dan halaman cek status.
+
+  \item[Lapisan Aplikasi (\textit{Application Layer})]
+  Menampung logika bisnis utama modul e-complaint, antara lain:
+  \begin{itemize}
+    \item \textit{Complaint Management Service}: pembuatan tiket, perubahan status, pengelolaan riwayat penanganan;
+    \item \textit{User \& Role Management}: pengelolaan akun pengguna internal dan hak akses;
+    \item \textit{Reporting Service}: penyusunan ringkasan statistik dasar, mulai dari jumlah keluhan, kategori keluhan terbanyak, hingga status tiket;
+    \item \textit{Authentication \& Session}: autentikasi pengguna internal dan pengelolaan sesi.
+  \end{itemize}
+
+  \item[Lapisan Data (\textit{Data Layer})]
+  Berisi basis data relasional yang menyimpan:
+  \begin{itemize}
+    \item data pelanggan (atau minimal identitas pelanggan yang relevan untuk keluhan),
+    \item data tiket keluhan,
+    \item riwayat perubahan status,
+    \item data pengguna internal dan peran,
+    \item data referensi (kategori keluhan, status, wilayah, dan sejenisnya).
+  \end{itemize}
+\end{description}
+
+Secara ringkas, komponen utama per lapisan dapat dirangkum seperti pada Tabel~\ref{tab:komponen-per-lapisan}.
+
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Ringkasan komponen utama modul e-complaint per lapisan}
+  \label{tab:komponen-per-lapisan}
+  \begin{tabularx}{\textwidth}{
+    >{\raggedright\arraybackslash}p{0.20\textwidth} % Lapisan
+    >{\raggedright\arraybackslash}p{0.30\textwidth} % Komponen
+    X                                              % Fungsi
+  }
+    \toprule
+    \textbf{Lapisan} &
+    \textbf{Komponen Utama} &
+    \textbf{Fungsi Utama} \\
+    \midrule
+    Presentasi &
+    Portal Pelanggan &
+    Menyajikan formulir keluhan, tampilan konfirmasi, dan halaman cek status tiket bagi pelanggan. \\
+    \midrule
+    Presentasi &
+    Portal Internal &
+    Menyajikan daftar tiket, detail tiket, formulir penugasan teknisi, serta formulir pembaruan status bagi admin/CS dan teknisi. \\
+    \midrule
+    Aplikasi &
+    Complaint Management Service &
+    Mengelola pembuatan tiket, perubahan status, riwayat penanganan, dan aturan alur proses keluhan. \\
+    \midrule
+    Aplikasi &
+    User \& Role Management &
+    Mengelola akun pengguna internal, peran (admin/CS, teknisi), dan hak akses ke fitur sistem. \\
+    \midrule
+    Aplikasi &
+    Reporting Service &
+    Menghasilkan ringkasan statistik keluhan dan laporan sederhana untuk keperluan monitoring manajemen. \\
+    \midrule
+    Aplikasi &
+    Authentication \& Session &
+    Menangani autentikasi pengguna internal dan pengelolaan sesi login. \\
+    \midrule
+    Data &
+    Basis Data E-Complaint &
+    Menyimpan tiket, riwayat tiket, data pelanggan, data pengguna, serta data referensi pendukung (kategori, kanal, status). \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Arsitektur logis ini menjadi dasar bagi perancangan lebih detail pada tingkat kelas dan basis data pada subbab berikutnya. Dalam kerangka Design Science Research, pemodelan arsitektur logis berfungsi untuk menjembatani kebutuhan fungsional dan non-fungsional yang telah dirumuskan pada Bab~\ref{chap:analisis-masalah} dengan artefak yang akan dikembangkan.\autocite{hevner2004}
+
+\subsection{Arsitektur Fisik Sistem}
+
+Arsitektur fisik menjelaskan bagaimana komponen-komponen modul e-complaint \textit{di-deploy} pada lingkungan infrastruktur SpeedForce. Berbeda dengan arsitektur logis yang berfokus pada pemisahan lapisan fungsi, arsitektur fisik menyoroti \textit{node} komputasi yang terlibat (klien, server aplikasi, server basis data) dan hubungan komunikasi di antaranya.
+
+Dengan mempertimbangkan skala operasional SpeedForce sebagai ISP lokal dan keterbatasan sumber daya, modul e-complaint dirancang untuk dijalankan pada arsitektur fisik yang sederhana namun masih memungkinkan pengembangan lebih lanjut. Secara garis besar, terdapat tiga kelompok komponen utama:
+
+\begin{itemize}
+  \item \textbf{Klien (Client Devices).} 
+  \begin{itemize}
+    \item Perangkat pelanggan yang mengakses formulir keluhan dan halaman pemeriksaan status tiket melalui peramban web.
+    \item Perangkat pengguna internal (admin/CS dan teknisi) yang mengakses panel internal modul e-complaint.
+  \end{itemize}
+
+  Seluruh akses dilakukan menggunakan protokol HTTP/HTTPS melalui jaringan internet maupun jaringan lokal.
+
+  \item \textbf{Server Aplikasi Web (Application Server).}  
+  Server aplikasi menjalankan \textit{stack} web berbasis:
+  \begin{itemize}
+    \item Django sebagai \textit{web framework} sisi server untuk mengelola logika bisnis, autentikasi pengguna internal, pengelolaan tiket, dan penyajian halaman HTML;
+    \item Nginx sebagai \textit{web server} dan \textit{reverse proxy} yang menerima permintaan HTTP/HTTPS dari klien, kemudian meneruskannya ke aplikasi Django yang dijalankan menggunakan Gunicorn (WSGI server).
+  \end{itemize}
+
+  Pada server ini ditempatkan kode program modul e-complaint, berkas template HTML, serta berkas statis pendukung (CSS, JavaScript, dan aset antarmuka lain). Server aplikasi melakukan proses:
+  \begin{itemize}
+    \item menerima dan memvalidasi data keluhan dari formulir web;
+    \item membangkitkan nomor tiket unik;
+    \item mengelola alur status tiket dan penugasan teknisi;
+    \item menyajikan halaman daftar dan detail tiket bagi pengguna internal; dan
+    \item menyajikan halaman pemeriksaan status tiket bagi pelanggan.
+  \end{itemize}
+
+  \item \textbf{Server Basis Data (Database Server).}
+  Basis data yang digunakan adalah PostgreSQL, yang menyimpan data terstruktur terkait:
+  \begin{itemize}
+    \item data pelanggan,
+    \item data tiket keluhan,
+    \item riwayat perubahan status tiket,
+    \item data pengguna internal yang terhubung dengan modul (melalui mekanisme autentikasi Django).
+  \end{itemize}
+
+  Dari sudut pandang fisik, terdapat dua opsi penyusunan:
+  \begin{enumerate}
+    \item \textit{Skema awal}: server basis data PostgreSQL ditempatkan pada mesin yang sama dengan server aplikasi (satu \textit{virtual private server} atau satu mesin fisik), namun secara logis tetap dipisahkan pada lapisan data. Pendekatan ini menurunkan biaya dan kompleksitas konfigurasi, serta sudah memadai untuk beban permintaan tiket yang masih moderat pada ISP lokal.
+    \item \textit{Skema pengembangan}: jika beban sistem meningkat, server basis data dapat dipindahkan ke mesin terpisah sehingga arsitektur fisiknya berubah menjadi dua \textit{node} server (aplikasi dan basis data), sementara perubahan pada lapisan logis tetap minimal.
+  \end{enumerate}
+\end{itemize}
+
+Komunikasi antara server aplikasi dan server basis data dilakukan melalui protokol koneksi basis data PostgreSQL (TCP/IP) dalam jaringan yang sama dan dibatasi oleh pengaturan \textit{firewall}. Hanya server aplikasi yang diizinkan mengakses port basis data, sedangkan klien/pelanggan tidak berkomunikasi langsung dengan PostgreSQL. Dengan demikian, jalur akses data tetap terkonsentrasi pada logika aplikasi yang dikelola Django.
+
+Arsitektur ini divisualisasikan pada Gambar~\ref{fig:arsitektur-fisik}, yang menampilkan \textit{node} klien, server aplikasi, dan server basis data beserta alur komunikasi di antaranya.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/arsitektur-fisik.png}
+  \caption{Arsitektur fisik modul e-complaint SpeedForce}
+  \label{fig:arsitektur-fisik}
+\end{figure}
+
+Gambar~\ref{fig:arsitektur-fisik} menunjukkan bahwa pelanggan dan pengguna internal (admin/CS dan teknisi) mengakses modul e-complaint melalui peramban web pada perangkat masing-masing. Seluruh permintaan HTTP/HTTPS diterima oleh web server Nginx yang berperan sebagai \textit{reverse proxy} dan meneruskan permintaan tersebut ke aplikasi Django yang dijalankan menggunakan Gunicorn pada server aplikasi. Aplikasi Django kemudian melakukan operasi baca/tulis ke basis data PostgreSQL yang ditempatkan pada server basis data. Komunikasi antara server aplikasi dan server basis data dibatasi pada jaringan internal, sementara klien hanya berinteraksi dengan web server melalui protokol HTTP/HTTPS.
+
+\section{Perancangan Proses Bisnis TO-BE}
+
+Perancangan proses bisnis TO-BE dilakukan untuk mendefinisikan bagaimana alur pengelolaan keluhan pelanggan akan berjalan setelah modul e-complaint berbasis web diterapkan. Proses ini menyempurnakan proses AS-IS yang masih bergantung pada kanal informal dan pencatatan manual, dengan menambahkan:
+
+\begin{itemize}
+  \item kanal pelaporan keluhan resmi berbasis web;
+  \item mekanisme tiket dan status terstandardisasi;
+  \item penugasan teknisi yang lebih eksplisit; serta
+  \item sarana pemantauan status keluhan bagi pelanggan dan manajemen.
+\end{itemize}
+
+Dalam kerangka Design Science Research, perancangan proses TO-BE ini merupakan implementasi konkret dari tahap \textit{define objectives of a solution} dan menjadi jembatan antara kebutuhan sistem di Bab~\ref{chap:analisis-masalah} dan perancangan arsitektur serta model data pada Bagian~\ref{sec:model-data} dan \ref{sec:perancangan-ui}.
+
+\subsection{Diagram Alur Proses Penanganan Keluhan TO-BE}
+
+Secara garis besar, alur penanganan keluhan TO-BE yang didukung modul e-complaint mencakup langkah-langkah berikut.
+
+\begin{enumerate}
+  \item \textbf{Penyampaian keluhan melalui formulir web.}\\
+  Pelanggan mengakses website layanan pelanggan SpeedForce, membuka halaman formulir keluhan, kemudian mengisi data dasar (identitas, kontak, ID pelanggan/lokasi pemasangan, kategori keluhan, deskripsi masalah). Sistem melakukan validasi isian wajib sebelum keluhan dikirim.
+
+  \item \textbf{Pencatatan keluhan dan pembangkitan tiket.}\\
+  Setelah validasi berhasil, sistem menyimpan data keluhan ke basis data dan secara otomatis membangkitkan nomor tiket unik. Sistem menandai status awal sebagai ``Baru'' dan mencatat waktu pelaporan.
+
+  \item \textbf{Konfirmasi awal kepada pelanggan.}\\
+  Sistem menampilkan halaman konfirmasi yang memuat ringkasan keluhan dan nomor tiket. Secara opsional, sistem dapat mengirimkan ringkasan tersebut ke alamat surel atau kanal komunikasi lain yang tercatat.
+
+  \item \textbf{\textit{Review} dan klasifikasi keluhan oleh admin/CS.}\\
+  Admin/CS membuka panel internal dan melihat daftar tiket berstatus ``Baru''. Pada tahap ini admin dapat:
+  \begin{itemize}
+    \item memeriksa kelengkapan informasi,
+    \item mengklasifikasikan kategori keluhan (misalnya gangguan koneksi, penurunan kecepatan, administrasi tagihan),
+    \item menandai tingkat prioritas jika diperlukan.
+  \end{itemize}
+
+  \item \textbf{Penugasan teknisi.}\\
+  Berdasarkan kategori dan lokasi pelanggan, admin menetapkan teknisi yang bertanggung jawab. Status tiket diperbarui menjadi ``Dalam penanganan'' dan sistem mencatat waktu penugasan serta identitas teknisi.
+
+  \item \textbf{Penanganan keluhan oleh teknisi.}\\
+  Teknisi mengakses panel internal untuk melihat daftar tiket yang ditugaskan kepadanya. Setelah melakukan diagnosis dan tindakan di lapangan atau secara \textit{remote}, teknisi memperbarui catatan tindakan yang sudah dilakukan dan mengubah status tiket.
+
+  \item \textbf{Konfirmasi penyelesaian dan penutupan tiket.}\\
+  Ketika tiket dinyatakan ``Selesai'', admin/CS melakukan verifikasi singkat, misalnya konfirmasi ke pelanggan atau memeriksa hasil \textit{monitoring} jaringan. Jika tidak ada keberatan, tiket ditandai ``Ditutup'' atau ``Selesai terkonfirmasi''. Sistem menyimpan waktu penyelesaian dan, bila diperlukan, mengirim notifikasi ringkas ke pelanggan.
+
+  \item \textbf{Akses status dan riwayat keluhan oleh pelanggan.}\\
+  Pelanggan dapat setiap saat membuka halaman ``Cek Status Keluhan'' di website, memasukkan nomor tiket dan identifikasi ringan (misalnya nomor telepon atau ID pelanggan), lalu melihat status terakhir, catatan singkat, dan waktu pembaruan.
+
+  \item \textbf{Pemanfaatan data keluhan untuk \textit{monitoring} internal.}\\
+  Manajemen dapat menggunakan tampilan ringkasan di panel internal untuk melihat jumlah keluhan per periode, sebaran jenis keluhan, serta indikasi rata-rata waktu tanggap dan waktu penyelesaian berdasarkan data yang tersedia, sebagai bahan evaluasi kinerja dan identifikasi area perbaikan layanan.
+\end{enumerate}
+
+Alur ini divisualisasikan dalam Gambar~\ref{fig:proses-to-be}, yang menggambarkan diagram alur proses penanganan keluhan pelanggan SpeedForce (TO-BE).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/TO-BE.png}
+  \caption{Diagram alur proses penanganan keluhan pelanggan SpeedForce (TO-BE)}
+  \label{fig:proses-to-be}
+\end{figure}
+
+\subsection{Deskripsi Proses Bisnis dan Perubahan dari AS-IS}
+
+Bagian ini menjelaskan perubahan utama antara proses AS-IS (sebelum modul e-complaint) dan TO-BE (setelah modul diterapkan), serta implikasinya terhadap pelanggan dan operasi internal SpeedForce.
+
+\subsubsection{Perubahan pada titik masuk keluhan (entry channel)}
+
+Pada kondisi AS-IS, keluhan pelanggan masuk melalui berbagai kanal informal seperti WhatsApp pribadi, telepon, dan pesan media sosial tanpa ada satu kanal resmi yang diacu sebagai pintu utama. Hal ini menimbulkan risiko keluhan tidak tercatat, duplikasi komunikasi, dan kebingungan di sisi pelanggan tentang nomor kontak mana yang sebaiknya dipakai.
+
+Pada proses TO-BE, website layanan pelanggan SpeedForce ditetapkan sebagai kanal pengaduan resmi melalui modul e-complaint. Keluhan tetap dapat datang dari kanal lain, tetapi di-input ulang oleh admin/CS ke dalam formulir internal yang sama, sehingga basis data keluhan tetap terpusat. Perubahan ini:
+
+\begin{itemize}
+  \item mengurangi fragmentasi sumber keluhan;
+  \item memudahkan pelanggan mengingat cara melaporkan masalah (cukup melalui satu alamat web);
+  \item memaksa adanya struktur data minimal yang seragam (identitas, lokasi, kategori, deskripsi).
+\end{itemize}
+
+\subsubsection{Perubahan pada mekanisme pencatatan dan identitas keluhan}
+
+Pada kondisi AS-IS, pencatatan bersifat oportunistik, bergantung pada kehendak admin untuk menyalin informasi dari chat ke buku atau \textit{spreadsheet}. Tidak ada identitas keluhan yang konsisten; penelusuran riwayat bergantung pada pencarian manual di chat atau dokumen.
+
+Pada proses TO-BE, setiap keluhan yang masuk melalui modul e-complaint secara otomatis:
+
+\begin{itemize}
+  \item disimpan ke basis data PostgreSQL,
+  \item diberi nomor tiket unik,
+  \item ditandai dengan status awal ``Baru'',
+  \item disertai penanda waktu pelaporan.
+\end{itemize}
+
+Dengan cara ini, setiap keluhan memiliki identitas yang dapat dirujuk oleh pelanggan maupun internal; riwayat penanganan dapat ditautkan ke tiket yang sama; dan penyusunan laporan serta analisis pola keluhan menjadi lebih terstruktur.
+
+\subsubsection{Perubahan pada alur komunikasi internal dan penugasan teknisi}
+
+Pada kondisi AS-IS, admin/CS meneruskan keluhan ke teknisi melalui pesan instan tanpa sistem antrian dan tanpa status yang konsisten. Teknisi dapat menerima beberapa chat sekaligus dari berbagai admin, sehingga sulit mengontrol prioritas dan urutan pekerjaan.
+
+Pada proses TO-BE, penugasan teknisi dilakukan melalui panel internal modul e-complaint. Admin memilih tiket berstatus ``Baru'', menetapkan teknisi yang bertanggung jawab, dan sistem mengubah status tiket menjadi ``Dalam penanganan'' sekaligus mencatat waktu penugasan. Teknisi tidak lagi bergantung pada chat terpisah untuk mengetahui daftar pekerjaan; cukup membuka daftar tiket yang ditugaskan kepadanya. Hal ini:
+
+\begin{itemize}
+  \item mengurangi risiko keluhan ``tertimbun'' di riwayat chat;
+  \item memberi visibilitas yang lebih jelas terhadap beban kerja teknisi;
+  \item membuka peluang penambahan aturan prioritas, misalnya mendahulukan keluhan gangguan total.
+\end{itemize}
+
+\subsubsection{Perubahan pada transparansi status ke pelanggan}
+
+Pada kondisi AS-IS, pelanggan hanya mengetahui dua kondisi ekstrem: sudah melapor dan, menurut persepsi pribadi, sudah atau belum diperbaiki. Untuk mengetahui status, pelanggan harus menghubungi admin/CS lagi. Hal ini menambah beban komunikasi dan menimbulkan kesan proses tidak transparan ketika jawaban terlambat.
+
+Pada proses TO-BE, pelanggan:
+
+\begin{itemize}
+  \item memperoleh nomor tiket pada saat pelaporan;
+  \item dapat memeriksa status terkini melalui halaman ``Cek Status Keluhan'' di website;
+  \item melihat status operasional (misalnya ``Dalam penanganan teknisi'', ``Selesai'') disertai waktu pembaruan terakhir dan catatan singkat.
+\end{itemize}
+
+Konsekuensinya, pelanggan memiliki ekspektasi yang lebih realistis tentang progres penanganan; intensitas pertanyaan status melalui chat dapat berkurang; dan admin/CS dapat fokus pada koordinasi internal, bukan mengulangi informasi status secara manual.
+
+\subsubsection{Perubahan pada kemampuan monitoring dan evaluasi}
+
+Pada kondisi AS-IS, manajemen tidak memiliki data agregat yang mudah dipakai. Untuk menjawab pertanyaan seperti ``bulan ini ada berapa keluhan?'', ``jenis gangguan apa yang paling sering muncul?'', atau ``berapa rata-rata waktu penyelesaian?'', mereka harus membuka rekaman chat atau \textit{spreadsheet} parsial.
+
+Pada proses TO-BE, modul e-complaint menyimpan semua keluhan beserta penanda waktu status; hal ini memungkinkan pembuatan tampilan ringkasan di panel internal, seperti:
+
+\begin{itemize}
+  \item jumlah keluhan per periode,
+  \item sebaran kategori keluhan,
+  \item status terkini,
+  \item indikasi waktu tanggap dan waktu penyelesaian berdasarkan data yang ada.
+\end{itemize}
+
+Meskipun pada tahap awal laporan masih bersifat deskriptif dan sederhana, hal ini sudah cukup untuk mengidentifikasi pola gangguan berulang di wilayah tertentu, melihat apakah ada penumpukan tiket pada teknisi tertentu, dan menilai apakah ada perubahan nyata sesudah kebijakan teknis tertentu diterapkan.
+
+\subsubsection{Ringkasan perubahan AS-IS vs TO-BE}
+
+Perbedaan utama antara proses AS-IS dan TO-BE dirangkum pada Tabel~\ref{tab:perbandingan-as-is-to-be}.
+
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Perbandingan proses penanganan keluhan AS-IS dan TO-BE}
+  \label{tab:perbandingan-as-is-to-be}
+  \begin{tabularx}{\textwidth}{
+    >{\raggedright\arraybackslash}p{0.19\textwidth} % Tahap
+    X                                              % AS-IS
+    X                                              % TO-BE
+    X                                              % Dampak
+  }
+    \toprule
+    \textbf{Tahap Proses} &
+    \textbf{AS-IS} &
+    \textbf{TO-BE berbasis modul e-complaint} &
+    \textbf{Dampak Utama} \\
+    \midrule
+    Kanal masuk keluhan &
+    WA pribadi, telepon, media sosial, tidak ada kanal resmi. &
+    Website SpeedForce dengan formulir e-complaint sebagai kanal resmi. &
+    Kanal lebih jelas, data awal lebih seragam. \\
+    \midrule
+    Pencatatan keluhan &
+    Manual/semi-manual, tidak konsisten, tersebar di chat dan catatan. &
+    Otomatis ke basis data dengan struktur tetap; setiap keluhan menghasilkan tiket. &
+    Risiko keluhan hilang berkurang, riwayat lebih lengkap. \\
+    \midrule
+    Identitas keluhan &
+    Tidak ada nomor tiket konsisten; pelacakan bergantung teks chat. &
+    Nomor tiket unik untuk setiap keluhan. &
+    Pelacakan lebih mudah untuk pelanggan dan internal. \\
+    \midrule
+    Penugasan teknisi &
+    Disepakati lewat chat, tidak terdokumentasi rapi. &
+    Dilakukan di panel admin dengan penetapan teknisi dan status ``Dalam penanganan''. &
+    Beban kerja teknisi lebih terstruktur, mengurangi miskomunikasi. \\
+    \midrule
+    Monitoring status internal &
+    Mengandalkan ingatan dan pencarian chat. &
+    Daftar tiket dengan status dan waktu pembaruan di panel internal. &
+    Visibilitas internal meningkat, lebih mudah mengidentifikasi tiket tertunda. \\
+    \midrule
+    Informasi status ke pelanggan &
+    Pelanggan harus bertanya ulang melalui chat/telepon. &
+    Pelanggan cek sendiri via halaman status menggunakan nomor tiket. &
+    Transparansi meningkat, beban komunikasi admin berkurang. \\
+    \midrule
+    Penyusunan laporan dan evaluasi &
+    Rekap manual dari berbagai sumber, sering tidak lengkap. &
+    Langsung dari basis data tiket dan tampilan ringkasan di panel. &
+    Indikator dasar (volume, jenis keluhan, waktu tanggap) dapat diukur secara konsisten. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\section{Perancangan Model Data dan Basis Data}
+\label{sec:model-data}
+
+Perancangan model data dilakukan untuk memastikan bahwa seluruh kebutuhan fungsional modul e-complaint (F1--F15) dapat didukung oleh struktur data yang konsisten, terintegrasi, dan mudah dikembangkan. Model data disusun dalam bentuk \textit{logical data model} berbasis konsep basis data relasional, yang kemudian menjadi dasar bagi implementasi skema PostgreSQL pada tahap pengembangan.
+
+\subsection{Pemetaan Kebutuhan Fungsional ke Entitas Data}
+
+Langkah pertama adalah memetakan kebutuhan fungsional (F1--F15) ke entitas data yang diperlukan. Dengan demikian, dapat dipastikan bahwa setiap fungsi yang diharapkan dari sistem memiliki representasi data yang memadai di lapisan basis data. Ringkasan pemetaan ditunjukkan pada Tabel~\ref{tab:pemetaan-fr-entitas}.
+
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Pemetaan kebutuhan fungsional ke entitas data utama}
+  \label{tab:pemetaan-fr-entitas}
+  \begin{tabularx}{\textwidth}{
+    >{\centering\arraybackslash}p{0.08\textwidth} % Kode F
+    >{\raggedright\arraybackslash}p{0.40\textwidth} % Nama
+    X                                              % Entitas
+  }
+    \toprule
+    \textbf{Kode F} &
+    \textbf{Nama kebutuhan fungsional} &
+    \textbf{Entitas data utama yang terlibat} \\
+    \midrule
+    F1 &
+    Formulir keluhan pelanggan berbasis web &
+    \texttt{Pelanggan}, \texttt{TiketKeluhan}, \texttt{KategoriKeluhan}, \texttt{KanalKeluhan} \\
+    \midrule
+    F2 &
+    Validasi data keluhan &
+    \texttt{Pelanggan}, \texttt{TiketKeluhan}, \texttt{KategoriKeluhan}, \texttt{KanalKeluhan} \\
+    \midrule
+    F3 &
+    Pembuatan tiket keluhan otomatis &
+    \texttt{TiketKeluhan}, \texttt{StatusKeluhan} \\
+    \midrule
+    F4 &
+    Konfirmasi pengiriman keluhan &
+    \texttt{TiketKeluhan} \\
+    \midrule
+    F5 &
+    Daftar keluhan untuk admin/CS &
+    \texttt{TiketKeluhan}, \texttt{Pelanggan}, \texttt{KategoriKeluhan}, \texttt{StatusKeluhan} \\
+    \midrule
+    F6 &
+    Filter dan pencarian keluhan &
+    \texttt{TiketKeluhan}, \texttt{Pelanggan}, \texttt{KategoriKeluhan}, \texttt{StatusKeluhan} \\
+    \midrule
+    F7 &
+    Detail tiket dan riwayat penanganan &
+    \texttt{TiketKeluhan}, \texttt{Pelanggan}, \texttt{RiwayatStatusTiket}, \texttt{StatusKeluhan} \\
+    \midrule
+    F8 &
+    Penugasan teknisi &
+    \texttt{TiketKeluhan}, \texttt{PenggunaInternal} \\
+    \midrule
+    F9 &
+    Pembaruan status tiket &
+    \texttt{RiwayatStatusTiket}, \texttt{TiketKeluhan}, \texttt{StatusKeluhan}, \texttt{PenggunaInternal} \\
+    \midrule
+    F10 &
+    Tampilan status keluhan untuk pelanggan &
+    \texttt{TiketKeluhan}, \texttt{RiwayatStatusTiket}, \texttt{StatusKeluhan}, \texttt{Pelanggan} \\
+    \midrule
+    F11 &
+    Riwayat keluhan per pelanggan &
+    \texttt{TiketKeluhan}, \texttt{Pelanggan}, \texttt{RiwayatStatusTiket} \\
+    \midrule
+    F12 &
+    Ringkasan statistik keluhan &
+    \texttt{TiketKeluhan}, \texttt{KategoriKeluhan}, \texttt{StatusKeluhan} \\
+    \midrule
+    F13 &
+    Pengelolaan pengguna internal &
+    \texttt{PenggunaInternal} \\
+    \midrule
+    F14 &
+    Log aktivitas penting &
+    \texttt{RiwayatStatusTiket}, \texttt{PenggunaInternal} \\
+    \midrule
+    F15 &
+    Integrasi dasar dengan data pelanggan &
+    \texttt{Pelanggan}, \texttt{TiketKeluhan} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Dari pemetaan tersebut terlihat bahwa entitas inti sistem adalah \texttt{TiketKeluhan}, yang terhubung ke \texttt{Pelanggan}, \texttt{KategoriKeluhan}, \texttt{KanalKeluhan}, \texttt{StatusKeluhan}, \texttt{RiwayatStatusTiket}, dan \texttt{PenggunaInternal}.
+
+\subsection{Identifikasi Entitas dan Atribut Utama}
+
+Berdasarkan pemetaan di atas dan prinsip normalisasi dasar (minimal sampai bentuk normal ketiga/3NF), diperoleh beberapa entitas utama sebagai berikut.
+
+\begin{enumerate}
+  \item \textbf{Entitas \texttt{Pelanggan}}\\
+  Menyimpan data pelanggan SpeedForce yang pernah mengajukan keluhan.
+  \begin{itemize}
+    \item \texttt{id\_pelanggan} (PK)
+    \item \texttt{nama\_lengkap}
+    \item \texttt{no\_telepon}
+    \item \texttt{email}
+    \item \texttt{alamat\_pemasangan}
+    \item \texttt{area} (misalnya nama daerah/cluster jaringan)
+    \item \texttt{status\_aktif}
+  \end{itemize}
+
+  \item \textbf{Entitas \texttt{TiketKeluhan}}\\
+  Merepresentasikan satu tiket keluhan dan menjadi pusat sebagian besar operasi sistem.
+  \begin{itemize}
+    \item \texttt{id\_tiket} (PK)
+    \item \texttt{nomor\_tiket}
+    \item \texttt{id\_pelanggan} (FK $\rightarrow$ \texttt{Pelanggan})
+    \item \texttt{id\_kategori} (FK $\rightarrow$ \texttt{KategoriKeluhan})
+    \item \texttt{id\_kanal} (FK $\rightarrow$ \texttt{KanalKeluhan})
+    \item \texttt{id\_status\_terkini} (FK $\rightarrow$ \texttt{StatusKeluhan})
+    \item \texttt{prioritas}
+    \item \texttt{ringkasan\_keluhan}
+    \item \texttt{deskripsi\_keluhan}
+    \item \texttt{waktu\_lapor}
+    \item \texttt{waktu\_selesai} (nullable)
+    \item \texttt{id\_penanggung\_jawab} (FK $\rightarrow$ \texttt{PenggunaInternal})
+  \end{itemize}
+
+  \item \textbf{Entitas \texttt{KategoriKeluhan}}\\
+  Menyimpan klasifikasi jenis keluhan.
+  \begin{itemize}
+    \item \texttt{id\_kategori} (PK)
+    \item \texttt{kode\_kategori} (misalnya \texttt{GANGGUAN\_JARINGAN}, \texttt{KECEPATAN}, \texttt{TAGIHAN}, dan sebagainya)
+    \item \texttt{nama\_kategori}
+    \item \texttt{deskripsi}
+  \end{itemize}
+
+  \item \textbf{Entitas \texttt{KanalKeluhan}}\\
+  Menyimpan informasi kanal masuknya keluhan.
+  \begin{itemize}
+    \item \texttt{id\_kanal} (PK)
+    \item \texttt{kode\_kanal} (misalnya \texttt{WEB\_FORM}, \texttt{TELPON}, \texttt{WHATSAPP})
+    \item \texttt{nama\_kanal}
+    \item \texttt{keterangan}
+  \end{itemize}
+
+  \item \textbf{Entitas \texttt{StatusKeluhan}}\\
+  Menyimpan daftar status yang mungkin dimiliki sebuah tiket.
+  \begin{itemize}
+    \item \texttt{id\_status} (PK)
+    \item \texttt{kode\_status} (misalnya \texttt{BARU}, \texttt{DALAM\_PENANGANAN}, \texttt{SELESAI}, \texttt{DITUTUP})
+    \item \texttt{nama\_status}
+    \item \texttt{urutan\_status}
+    \item \texttt{keterangan}
+  \end{itemize}
+
+  \item \textbf{Entitas \texttt{RiwayatStatusTiket}}\\
+  Menyimpan semua perubahan status tiket sebagai jejak audit.
+  \begin{itemize}
+    \item \texttt{id\_riwayat} (PK)
+    \item \texttt{id\_tiket} (FK $\rightarrow$ \texttt{TiketKeluhan})
+    \item \texttt{id\_status\_lama} (FK $\rightarrow$ \texttt{StatusKeluhan}, boleh \texttt{NULL} untuk peralihan pertama)
+    \item \texttt{id\_status\_baru} (FK $\rightarrow$ \texttt{StatusKeluhan})
+    \item \texttt{id\_pengguna} (FK $\rightarrow$ \texttt{PenggunaInternal})
+    \item \texttt{waktu\_perubahan}
+    \item \texttt{catatan} (opsional, ringkasan tindakan/klarifikasi)
+  \end{itemize}
+
+  \item \textbf{Entitas \texttt{PenggunaInternal}}\\
+  Menyimpan akun pengguna internal yang mengoperasikan panel modul e-complaint.
+  \begin{itemize}
+    \item \texttt{id\_pengguna} (PK)
+    \item \texttt{username}
+    \item \texttt{password\_hash}
+    \item \texttt{nama\_lengkap}
+    \item \texttt{peran} (misalnya ADMIN/CS, TEKNISI)
+    \item \texttt{no\_telepon}
+    \item \texttt{email}
+    \item \texttt{status\_aktif}
+  \end{itemize}
+\end{enumerate}
+
+\subsection{Relasi Antar Entitas dan Kardinalitas}
+
+Relasi antarentitas dirancang sebagai berikut.
+
+\begin{itemize}
+  \item \textbf{\texttt{Pelanggan} -- \texttt{TiketKeluhan}}\\
+  Kardinalitas: 1 \texttt{Pelanggan} : N \texttt{TiketKeluhan}.\\
+  Implementasi: \texttt{TiketKeluhan.id\_pelanggan} sebagai FK $\rightarrow$ \texttt{Pelanggan.id\_pelanggan}.\\
+  Fungsi didukung: F1, F5, F6, F7, F10, F11, F15 (pelacakan keluhan per pelanggan).
+
+  \item \textbf{\texttt{KategoriKeluhan} -- \texttt{TiketKeluhan}}\\
+  Kardinalitas: 1 \texttt{KategoriKeluhan} : N \texttt{TiketKeluhan}.\\
+  Implementasi: \texttt{TiketKeluhan.id\_kategori} sebagai FK.\\
+  Fungsi didukung: F1, F2, F5, F6, F12 (analisis jenis keluhan terbanyak).
+
+  \item \textbf{\texttt{KanalKeluhan} -- \texttt{TiketKeluhan}}\\
+  Kardinalitas: 1 \texttt{KanalKeluhan} : N \texttt{TiketKeluhan}.\\
+  Implementasi: \texttt{TiketKeluhan.id\_kanal} sebagai FK.\\
+  Fungsi didukung: F1, F2, F12.
+
+  \item \textbf{\texttt{StatusKeluhan} -- \texttt{TiketKeluhan}}\\
+  Kardinalitas: 1 \texttt{StatusKeluhan} : N \texttt{TiketKeluhan}.\\
+  Implementasi: \texttt{TiketKeluhan.id\_status\_terkini} sebagai FK.\\
+  Fungsi didukung: F5, F6, F10, F12.
+
+  \item \textbf{\texttt{TiketKeluhan} -- \texttt{RiwayatStatusTiket}}\\
+  Kardinalitas: 1 \texttt{TiketKeluhan} : N \texttt{RiwayatStatusTiket}.\\
+  Implementasi: \texttt{RiwayatStatusTiket.id\_tiket} sebagai FK.\\
+  Fungsi didukung: F7, F9, F10, F11, F14 (jejak perubahan status dan catatan teknisi).
+
+  \item \textbf{\texttt{StatusKeluhan} -- \texttt{RiwayatStatusTiket}}\\
+  Kardinalitas: 1 \texttt{StatusKeluhan} : N \texttt{RiwayatStatusTiket}.\\
+  Implementasi: \texttt{RiwayatStatusTiket.id\_status\_lama} dan \texttt{id\_status\_baru} sebagai FK.\\
+  Fungsi didukung: F7, F9, F10, F11, F12, F14 (linimasa perubahan status, analisis transisi status, dan log audit).
+
+  \item \textbf{\texttt{PenggunaInternal} -- \texttt{RiwayatStatusTiket}}\\
+  Kardinalitas: 1 \texttt{PenggunaInternal} : N \texttt{RiwayatStatusTiket}.\\
+  Implementasi: \texttt{RiwayatStatusTiket.id\_pengguna} sebagai FK.\\
+  Fungsi didukung: F9, F14 (log siapa yang melakukan perubahan).
+
+  \item \textbf{\texttt{PenggunaInternal} -- \texttt{TiketKeluhan} (penanggung jawab)}\\
+  Kardinalitas: 1 \texttt{PenggunaInternal} : N \texttt{TiketKeluhan} (sebagai penanggung jawab aktif).\\
+  Implementasi: \texttt{TiketKeluhan.id\_penanggung\_jawab} sebagai FK.\\
+  Fungsi didukung: F8 (penugasan teknisi) dan F12 (laporan beban kerja per teknisi).
+\end{itemize}
+
+\subsection{Logical Data Model Modul E-Complaint}
+
+Berdasarkan identifikasi entitas, atribut, dan relasi di atas, \textit{logical data model} modul e-complaint dapat divisualisasikan pada Gambar~\ref{fig:ldm-ecomplaint}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/logical data.png}
+  \caption{Logical data model modul e-complaint SpeedForce}
+  \label{fig:ldm-ecomplaint}
+\end{figure}
+
+Gambar~\ref{fig:ldm-ecomplaint} menggambarkan \textit{logical data model} modul e-complaint SpeedForce, dengan \texttt{TiketKeluhan} sebagai entitas inti yang terhubung ke \texttt{Pelanggan}, \texttt{KategoriKeluhan}, \texttt{KanalKeluhan}, dan \texttt{StatusKeluhan} untuk mendeskripsikan siapa yang mengeluh, jenis keluhan, berasal dari kanal mana, dan status terkini tiket. Riwayat perubahan status dicatat di entitas \texttt{RiwayatStatusTiket}, yang merekam transisi status tiket beserta waktu dan \texttt{PenggunaInternal} (admin/CS/teknisi) yang melakukan perubahan. Dengan struktur 1--N tersebut, model ini cukup untuk mendukung kebutuhan utama sistem: pembuatan tiket, pemantauan status, penugasan teknisi, pelacakan riwayat, dan penyusunan ringkasan statistik keluhan.
+
+\section{Perancangan Antarmuka Pengguna}
+\label{sec:perancangan-ui}
+
+Perancangan \textit{user interface} (UI) dilakukan untuk memastikan modul e-complaint mudah digunakan oleh pelanggan maupun pengguna internal SpeedForce. Desain antarmuka mengacu pada prinsip \textit{usability} ISO 9241-11 (efektivitas, efisiensi, kepuasan) serta panduan \textit{user experience} seperti SUS dan UEQ yang akan digunakan pada tahap evaluasi sistem.\autocite{iso9241-11,brooLe_SUS_1} Selain itu, prinsip aksesibilitas dasar dari WCAG~2.2 juga diperhatikan, terutama terkait keterbacaan, kontras warna, dan kejelasan elemen interaktif.\autocite{w3c_wcag22}
+
+Secara visual, antarmuka mengadopsi gaya modern dan minimalis dengan pemanfaatan warna identitas SpeedForce, yaitu oranye sebagai warna aksen utama, dipadukan dengan latar belakang terang dan tipografi \textit{sans-serif} yang tegas. Pendekatan ini bertujuan memberikan kesan profesional, bersih, dan nyaman di mata, sekaligus menonjolkan elemen e-complaint sebagai kanal resmi pengelolaan keluhan.
+
+\subsection{Prinsip dan Pertimbangan Desain}
+
+Beberapa prinsip desain yang digunakan dalam perancangan antarmuka modul e-complaint adalah sebagai berikut.
+
+\begin{itemize}
+  \item \textbf{Konsistensi dan kejelasan elemen.}\\
+  Struktur halaman, posisi tombol utama, gaya ikon, dan penggunaan warna diupayakan konsisten di seluruh halaman. Hal ini memudahkan pengguna mengenali pola interaksi dan mengurangi beban kognitif saat berpindah dari halaman satu ke halaman lain.
+
+  \item \textbf{Penonjolan jalur tugas utama.}\\
+  Jalur tugas utama yang ingin difasilitasi sistem adalah: (1) pelanggan menyampaikan keluhan, dan (2) pelanggan atau internal memantau status tiket. Oleh karena itu, tombol dan \textit{link} terkait e-complaint ditempatkan pada posisi yang menonjol (\textit{primary call-to-action}) di beranda sekaligus di beberapa titik strategis lain.
+
+  \item \textbf{Responsif dan ramah perangkat bergerak.}\\
+  Mengingat banyak pelanggan mengakses internet melalui ponsel, struktur \textit{layout} dirancang agar tetap terbaca dan dapat digunakan dengan nyaman pada layar kecil. Komponen seperti formulir keluhan dan kartu tiket disusun dalam grid yang mudah dilipat ke tampilan satu kolom.
+
+  \item \textbf{Aksesibilitas dasar.}\\
+  Kombinasi warna dipilih agar memiliki kontras yang cukup antara teks dan latar belakang, ukuran huruf disesuaikan agar mudah dibaca, dan pesan kesalahan ditampilkan dalam bentuk teks yang jelas sehingga pengguna dapat memahami apa yang perlu diperbaiki.
+
+  \item \textbf{Keterhubungan dengan identitas SpeedForce.}\\
+  Antarmuka mempertahankan elemen visual penting dari website SpeedForce yang sudah ada (logo, gaya judul paket internet), sambil menyisipkan komponen baru untuk e-complaint sehingga modul ini terlihat sebagai bagian resmi dari layanan, bukan sekadar tambahan sementara.
+\end{itemize}
+
+Prinsip-prinsip ini menjadi dasar perancangan empat kelompok antarmuka utama yang dijelaskan pada subbab berikut.
+
+\subsection{Rancangan Halaman Beranda Layanan Pelanggan}
+
+Halaman beranda berfungsi sebagai pintu masuk utama bagi calon pelanggan maupun pelanggan eksisting. Pada halaman ini, informasi utama yang ingin disampaikan adalah proposisi nilai (\textit{value proposition}) layanan internet SpeedForce, daftar paket internet, serta keberadaan modul e-complaint sebagai fitur tambahan yang meningkatkan keandalan layanan purna jual.
+
+Secara khusus, jalur tugas utama yang difasilitasi adalah: (1) pengguna melihat dan membandingkan paket internet, dan (2) pelanggan mengakses modul e-complaint ketika mengalami gangguan. Oleh karena itu, tombol menuju \textit{Paket Internet} dan \textit{E-Complaint} ditempatkan sebagai aksi utama pada area \textit{hero} dan/atau bagian paket layanan.
+
+Rancangan antarmuka halaman beranda layanan pelanggan yang mengintegrasikan promosi paket dan akses cepat ke modul e-complaint ditunjukkan pada Gambar~\ref{fig:ui-beranda}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/UI-awal.png}
+  \caption{Rancangan antarmuka halaman beranda layanan SpeedForce}
+  \label{fig:ui-beranda}
+\end{figure}
+
+Pada Gambar~\ref{fig:ui-beranda} terlihat komposisi halaman beranda dengan area \textit{hero} berisi judul promosi layanan, tombol untuk melihat paket internet, dan tombol untuk melaporkan keluhan. Di bagian bawah ditampilkan ringkasan paket internet dalam bentuk kartu sehingga pengguna dapat langsung memahami variasi kecepatan dan harga, sementara keberadaan tombol \textit{E-Complaint} menegaskan bahwa SpeedForce menyediakan kanal pelaporan keluhan yang terintegrasi dengan sistem.
+
+\subsection{Rancangan Halaman Formulir Pengajuan Keluhan}
+
+Halaman formulir pengajuan keluhan dirancang untuk meminimalkan hambatan ketika pelanggan ingin melaporkan masalah. Struktur isian diatur agar pelanggan dapat memasukkan informasi yang relevan tanpa kebingungan, dengan pengelompokan logis antara data identitas, informasi layanan, dan deskripsi keluhan.
+
+Prinsip yang digunakan adalah menjaga formulir tetap ringkas namun cukup informatif bagi tim internal untuk melakukan diagnosis awal, serta menampilkan pesan kesalahan yang jelas bila ada data yang belum sesuai. Rancangan antarmuka halaman formulir pengajuan keluhan ditunjukkan pada Gambar~\ref{fig:ui-form-keluhan}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/form-keluhan.png}
+  \caption{Rancangan antarmuka halaman formulir pengajuan keluhan}
+  \label{fig:ui-form-keluhan}
+\end{figure}
+
+Pada Gambar~\ref{fig:ui-form-keluhan}, tampak formulir pelaporan yang tersusun dalam beberapa kelompok isian sehingga alur pengisian terasa natural dari atas ke bawah. Tombol \textit{Kirim} ditempatkan jelas sebagai aksi utama, sementara informasi pendukung seperti penjelasan singkat tujuan formulir dan umpan balik setelah pengiriman membantu pelanggan memahami bahwa laporan mereka telah diterima oleh sistem dan akan diproses sebagai tiket keluhan.
+
+\subsection{Rancangan Halaman Cek Status Keluhan}
+
+Halaman cek status keluhan disediakan agar pelanggan dapat memantau perkembangan tiket tanpa harus menghubungi CS secara langsung. Mekanisme utamanya adalah memasukkan nomor tiket dan data verifikasi sederhana untuk menampilkan status terkini beserta riwayat singkat penanganan.
+
+Desain halaman difokuskan pada keterbacaan status dan kejelasan langkah, sehingga pelanggan dapat dengan cepat mengetahui apakah keluhannya masih dalam penanganan, sudah selesai, atau telah ditutup. Rancangan antarmuka halaman cek status keluhan ditunjukkan pada Gambar~\ref{fig:ui-status-keluhan}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/Cek Status.png}
+  \caption{Rancangan antarmuka halaman cek status keluhan pelanggan}
+  \label{fig:ui-status-keluhan}
+\end{figure}
+
+Pada Gambar~\ref{fig:ui-status-keluhan} dapat dilihat area input nomor tiket di bagian atas, diikuti tampilan ringkas informasi tiket setelah pencarian berhasil. Status keluhan ditonjolkan dalam bentuk label atau indikator visual, dan di bawahnya ditampilkan garis waktu (\textit{timeline}) singkat riwayat perubahan status. Dengan rancangan ini, pelanggan dapat segera memahami posisi tiketnya dalam proses penanganan.
+
+\subsection{Rancangan Panel Internal Admin/CS dan Teknisi}
+
+Panel internal digunakan oleh admin/CS dan teknisi untuk mengelola tiket secara operasional. Kebutuhan utama pada antarmuka ini meliputi: melihat daftar tiket dengan berbagai filter, membuka detail tiket, memperbarui status, serta menambahkan catatan tindakan.
+
+Desain panel memanfaatkan \textit{layout} dua kolom: daftar tiket di sisi kiri dan detail tiket di sisi kanan. Pendekatan ini mengurangi perpindahan halaman yang tidak perlu dan mendukung pekerjaan pemantauan yang dilakukan secara berulang sepanjang hari. Rancangan antarmuka panel internal pengelolaan tiket e-complaint ditunjukkan pada Gambar~\ref{fig:ui-panel-internal}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/panel-internal.png}
+  \caption{Rancangan antarmuka panel internal pengelolaan tiket e-complaint}
+  \label{fig:ui-panel-internal}
+\end{figure}
+
+Gambar~\ref{fig:ui-panel-internal} memperlihatkan daftar tiket dengan informasi penting seperti nomor tiket, pelanggan, kategori, status, prioritas, waktu pelaporan, dan penanggung jawab. Di sisi kanan, panel detail menampilkan informasi pelanggan, status dan teknisi yang sedang menangani, riwayat perubahan status, serta area untuk mencatat tindakan teknisi. Kombinasi daftar dan detail ini mendukung alur kerja admin/CS dan teknisi dalam meninjau, memperbarui, dan menutup tiket secara efisien.

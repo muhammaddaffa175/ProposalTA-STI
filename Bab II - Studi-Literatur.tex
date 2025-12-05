@@ -1,289 +1,338 @@
-% ==========================================
-% BAB II STUDI LITERATUR
-% ==========================================
 \chapter{STUDI LITERATUR}
-\label{chap:studi-literatur}
-\section{Penulisan Gambar, Tabel, Rumus, dan Kode}
-\lipsum[1]
 
-\subsection{Gambar}
-Contoh gambar dapat dilihat pada Gambar \ref{gambar:jaringan}. Gambar dan judulnya diposisikan di tengah. Nomor gambar tidak diakhiri tanda titik. Gambar tersebut dibuat menggunakan aplikasi draw.io dan disimpan ke format PNG setelah dengan zoom setting pada angka 300\%. Ukuran gambar yang ditampilkan dapat diatur dengan mengubah nilai \textit{width} dalam sintaks \textit{includegraphics}.
+Bab ini membahas konsep, teori, dan hasil penelitian yang menjadi landasan dalam pengembangan modul e-complaint berbasis web untuk layanan pelanggan SpeedForce. Pembahasan difokuskan pada beberapa topik utama, yaitu layanan internet dan peran ISP lokal, konsep kualitas layanan dan keluhan pelanggan, serta sistem pengelolaan pengaduan berbasis web (e-complaint) beserta contoh penerapannya di berbagai sektor \autocite{AfifyKadry2019,Merang2022}. Selain itu, bab ini juga mengulas konsep usability dan user experience yang digunakan untuk mengevaluasi prototipe sistem, prinsip dasar aksesibilitas web yang relevan untuk perancangan antarmuka, serta pendekatan Design Science Research (DSR) sebagai kerangka metodologi yang digunakan dalam tugas akhir ini \autocite{ISO2018,W3C2023,Hevner2004,peffers2007}. Melalui studi literatur ini, diharapkan diperoleh dasar teoritis dan temuan empiris yang mendukung perumusan kebutuhan, perancangan, dan evaluasi modul e-complaint bagi SpeedForce.
 
-\begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-	\centering
-  \captionsetup{justification=centering}
-    	\includegraphics[width=0.7\textwidth]{image/gambar1.png}
-	\caption{Contoh gambar jaringan}
-	\label{gambar:jaringan}
-\end{figure}
+\section{Layanan Internet dan ISP Lokal}
 
-Gambar umumnya tidak jelas atau kabur jika gambar tersebut:
-\begin{enumerate}[a.]
-  \item diperoleh dari hasil cropping pada suatu halaman buku atau situs web;
-  \item hasil pembesaran gambar yang gambar aslinya sebenarnya berukuran kecil; atau
-  \item disimpan dalam resolusi kecil
-\end{enumerate}
-Ketidakjelasan gambar ini dapat dilihat pada garis-garis diagram yang tidak tegas dan tulisan-tulisan dalam gambar yang tampak kabur dan kurang jelas terbaca.
+Internet banyak dipandang sebagai salah satu infrastruktur dasar yang menopang aktivitas sosial, ekonomi, dan pendidikan di era digital. Di Indonesia, Survei Penetrasi Internet Indonesia 2024 yang dilakukan oleh Asosiasi Penyelenggara Jasa Internet Indonesia (APJII) melaporkan bahwa jumlah pengguna internet mencapai sekitar 221{,}56 juta jiwa dengan tingkat penetrasi 79{,}5\% dari total populasi, meningkat sekitar 1{,}4 poin persentase dibanding periode sebelumnya \autocite{APJII2024}. Temuan tersebut menunjukkan bahwa koneksi internet tidak lagi sekadar fasilitas tambahan, melainkan prasyarat bagi berbagai aktivitas sehari-hari, seperti pekerjaan jarak jauh, pembelajaran daring, transaksi keuangan digital, dan pengelolaan usaha berbasis platform online.
 
-Untuk mendapatkan gambar yang tidak kabur (\textit{blur}), langkah-langkah berikut dapat digunakan:
-\begin{enumerate}[(a)]
-\item Gambar yang didapat di suatu pustaka atau referensi sebaiknya digambar ulang, misalnya menggunakan PowerPoint, Canva, Figma, draw.io, atau yang lainnya.
-\item Jika diagram atau ilustrasi digambar menggunakan draw.io, saat gambar disimpan ke format PNG atau JPG (\textit{export as}), lakukan \textit{zoom} ke minimal 300\% (\textit{the default value is} 100\%). 
-\item Jika diagram digambar dengan menggunakan PowerPoint, gambar dapat langsung di-\textit{copy-paste} ke Word.
-\end{enumerate}
+Sejumlah publikasi yang merangkum perkembangan internet di Indonesia juga menyoroti bahwa pertumbuhan pengguna internet banyak didorong oleh kelompok usia produktif dan masyarakat di wilayah perkotaan, yang memiliki intensitas tinggi dalam memanfaatkan layanan digital untuk aktivitas produktif maupun hiburan \autocite{APJII2024,katadata23}. Tren ini mempertegas peran strategis penyedia layanan internet (Internet Service Provider/ISP) sebagai pihak yang menyediakan konektivitas dan menjaga kualitas layanan jaringan bagi pengguna akhir.
 
-\subsection{Tabel}
-Tabel ada dua jenis, yaitu tabel yang bisa termuat dalam satu halaman dan tabel yang sangat panjang sehingga tidak muat dalam satu halaman.
-\subsubsection{Tabel yang Muat dalam Satu Halaman}
-Contoh tabel dapat dilihat pada Tabel \ref{tbl:harga1} dan \ref{tbl:harga2}. Tabel dan judulnya dibuat rata kiri dan judul tabel diletakkan di atas tabel. Usahakan tabel dapat ditulis dalam satu halaman, tidak terpotong ke halaman berikutnya.
+Secara umum, ISP dapat diklasifikasikan menjadi penyedia berskala nasional dan penyedia berskala lokal atau regional. ISP lokal biasanya beroperasi dalam cakupan geografis yang lebih sempit, dengan sumber daya finansial dan sumber daya manusia yang relatif terbatas dibandingkan penyedia nasional. Namun demikian, ekspektasi pelanggan terhadap kualitas layanan yang diberikan, seperti kestabilan koneksi, kecepatan akses, dan kemudahan memperoleh dukungan ketika terjadi gangguan, cenderung tidak berbeda secara signifikan antara pelanggan ISP nasional dan ISP lokal. Kondisi ini menempatkan ISP lokal pada posisi yang menantang, karena mereka dituntut untuk menjaga kualitas teknis layanan sekaligus mengelola hubungan dengan pelanggan secara efektif.
 
-\begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-  \begin{tabular}{ | p{2cm} | p{2cm} | p{3cm} |}
-	\hline
-	Nama 	& Satuan 		& Harga \\
-	\hline
-	Buku 	& Exemplar	& 25000 \\
-	Komputer	& Unit		& 2500000 \\
-	Pensil	& Buah		& 118900 \\
-	\hline
-	\end{tabular}
-\caption{Tabel harga bahan pokok}
-\label{tbl:harga1}
+Dalam literatur layanan telekomunikasi dan internet, kualitas layanan yang dirasakan pelanggan tidak hanya ditentukan oleh kinerja teknis jaringan, tetapi juga oleh cara ISP merespons dan menangani keluhan serta pertanyaan pelanggan \autocite{UlkhaqBarus2017,Wahyuningsih2021}. Hal ini membuat aspek pengelolaan keluhan (complaint handling) dan komunikasi layanan menjadi bagian yang tidak terpisahkan dari upaya ISP, termasuk ISP lokal, dalam mempertahankan kepuasan dan loyalitas pelanggan. Dalam konteks inilah, kebutuhan akan mekanisme pengelolaan keluhan yang lebih terstruktur pada ISP lokal menjadi relevan untuk dikaji lebih lanjut pada tugas akhir ini.
+
+\section{Kualitas Layanan, Kepuasan, dan Keluhan Pelanggan}
+
+Kualitas layanan, kepuasan, dan keluhan pelanggan merupakan tiga konsep yang saling berkaitan dalam pengelolaan layanan jasa, termasuk pada industri telekomunikasi dan penyedia layanan internet. Kualitas layanan yang dipersepsikan baik cenderung meningkatkan kepuasan, sedangkan kualitas layanan yang dirasakan buruk akan memicu keluhan dan berpotensi menurunkan loyalitas pelanggan \autocite{Parasuraman1988}. Sejumlah penelitian di sektor telekomunikasi menunjukkan bahwa dimensi-dimensi kualitas layanan berpengaruh signifikan terhadap kepuasan dan niat pelanggan untuk tetap menggunakan layanan yang sama \autocite{Rohmial2022}. Di sisi lain, mekanisme penanganan keluhan yang efektif dapat berfungsi sebagai \emph{safety net} ketika kualitas layanan tidak memenuhi harapan, karena keluhan yang dikelola dengan baik dapat memulihkan kepuasan dan mencegah perpindahan pelanggan ke penyedia lain \autocite{Filip2013,StaussSeidel2019}. Oleh karena itu, pemahaman yang terintegrasi mengenai kualitas layanan, kepuasan, dan keluhan menjadi penting sebagai dasar perancangan modul e-complaint bagi ISP lokal seperti SpeedForce.
+
+\subsection{Kualitas Layanan Jasa}
+
+Kualitas layanan (\emph{service quality}) merupakan konsep kunci dalam manajemen jasa dan layanan pelanggan. Parasuraman, Zeithaml, dan Berry mengembangkan instrumen SERVQUAL sebagai skala multi-item untuk mengukur persepsi pelanggan terhadap kualitas layanan, dengan mendefinisikan kualitas sebagai selisih antara harapan dan persepsi pelanggan atas layanan yang diterima \autocite{Parasuraman1988}. Model ini menekankan bahwa pelanggan menilai kualitas berdasarkan seberapa jauh kinerja layanan memenuhi atau melampaui harapan mereka pada atribut-atribut tertentu.
+
+SERVQUAL memandang kualitas layanan melalui lima dimensi utama: bukti fisik (\emph{tangibles}), keandalan (\emph{reliability}), daya tanggap (\emph{responsiveness}), jaminan (\emph{assurance}), dan empati (\emph{empathy}). Berbagai studi menunjukkan bahwa kelima dimensi ini berpengaruh signifikan terhadap kepuasan pelanggan di konteks telekomunikasi dan layanan internet tetap. Penelitian pada layanan IndiHome, misalnya, menemukan adanya \emph{gap} negatif pada beberapa dimensi kualitas layanan yang menunjukkan bahwa kinerja layanan masih berada di bawah harapan pelanggan \autocite{UlkhaqBarus2017,natalius2022,pantulu2023}.
+
+Dalam konteks ISP, dimensi \emph{reliability} dan \emph{responsiveness} umumnya menjadi sorotan utama. \emph{Reliability} berkaitan dengan kemampuan penyedia layanan untuk memberikan layanan yang andal dan konsisten, misalnya kestabilan koneksi dan minimnya gangguan. \emph{Responsiveness} mencerminkan kesediaan dan kemampuan penyedia layanan untuk merespons permintaan serta keluhan pelanggan secara cepat dan membantu. Gangguan koneksi yang berulang, keterlambatan penanganan, serta komunikasi yang tidak jelas mengenai status gangguan dapat menurunkan persepsi pelanggan terhadap kualitas layanan, meskipun dari sisi teknis jaringan telah dilakukan upaya perbaikan.
+
+Penelitian pada penyedia layanan internet di Indonesia menunjukkan bahwa kualitas jaringan dan kualitas layanan berpengaruh signifikan terhadap kepuasan dan loyalitas pelanggan \autocite{ilhamdirgantara2020,Rohmial2022}. Hasil-hasil tersebut mengindikasikan bahwa peningkatan kualitas layanan tidak dapat dilepaskan dari penguatan proses operasional dan komunikasi layanan, termasuk bagaimana keluhan ditangani dan diinformasikan kembali kepada pelanggan.
+
+\subsection{Keluhan Pelanggan dan Manajemen Keluhan}
+
+Keluhan pelanggan merupakan bentuk ekspresi ketidakpuasan ketika layanan yang diterima tidak sesuai dengan harapan. Beberapa penulis menekankan bahwa keluhan bukan hanya “masalah” bagi perusahaan, tetapi juga sumber informasi yang sangat berharga untuk memahami titik lemah layanan dan peluang perbaikan \autocite{Filip2013}. Pelanggan yang memilih untuk menyampaikan keluhan menunjukkan bahwa mereka masih memiliki keterikatan dengan layanan dan memberi kesempatan bagi perusahaan untuk melakukan \emph{service recovery}, dibandingkan langsung berpindah ke penyedia lain tanpa memberi umpan balik. Afify dan Kadry \autocite{AfifyKadry2019}, dalam kajian mereka tentang Electronic-Customer Complaint Management System (E-CCMS), menyebutkan bahwa keluhan dapat dimanfaatkan untuk mencegah terulangnya masalah yang sama dan meningkatkan kualitas produk maupun jasa jika dikelola secara sistematis.
+
+Manajemen keluhan (\emph{complaint management}) mencakup serangkaian aktivitas untuk menerima, mencatat, mengklasifikasikan, menindaklanjuti, dan menutup keluhan pelanggan. Beberapa prinsip penting dalam pengelolaan keluhan antara lain: adanya kanal resmi yang jelas untuk menyampaikan keluhan, pencatatan keluhan secara terstruktur, pemberian identitas unik (tiket) untuk memudahkan pelacakan, dan umpan balik yang transparan kepada pelanggan mengenai status dan hasil penanganan, termasuk jika diperlukan waktu tambahan atau eskalasi \autocite{Filip2013,StaussSeidel2004}.
+
+Tanpa sistem yang baik, keluhan mudah tercecer, status penanganan menjadi tidak jelas, dan perusahaan kesulitan menyusun indikator kinerja seperti waktu tanggap rata-rata atau jenis masalah yang paling sering muncul. Sejumlah kajian di sektor layanan publik dan telekomunikasi menunjukkan bahwa penanganan keluhan yang masih mengandalkan kanal informal tanpa pencatatan terpusat menyulitkan organisasi untuk melakukan \emph{tracking} dan analisis pola keluhan secara konsisten \autocite{sahita2020}.
+
+Dalam konteks ISP lokal, keterbatasan sumber daya sering membuat keluhan hanya ditangani melalui kanal informal seperti pesan instan, telepon, atau media sosial, dengan pencatatan manual atau tergantung ingatan staf. Kondisi ini sesuai dengan situasi awal yang dihadapi SpeedForce sebelum adanya modul e-complaint terstruktur.
+
+\section{Sistem Pengelolaan Pengaduan dan E-Complaint Berbasis Web}
+
+Digitalisasi layanan membuat mekanisme \emph{complaint management} bergeser dari kanal manual, seperti tatap muka, surat, atau panggilan telepon, ke sistem informasi berbasis web dan aplikasi digital. Sistem pengaduan berbasis web memungkinkan keluhan pelanggan dicatat secara terpusat, dipantau statusnya, dan dianalisis secara berkala untuk perbaikan layanan. Pendekatan ini sejalan dengan tren pemanfaatan teknologi informasi di berbagai sektor layanan, mulai dari pelayanan publik hingga utilitas seperti air dan listrik \autocite{AfifyKadry2019,Merang2022,SiskaMarsa2025}. Dalam konteks ISP lokal, sistem e-complaint berperan penting untuk menggantikan praktik penanganan keluhan yang masih tersebar di berbagai kanal informal dan belum terdokumentasi dengan baik.
+
+\subsection{Contoh Sistem Pengaduan di Sektor Publik}
+
+Di sektor pelayanan publik, pemerintah Indonesia mengembangkan Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional (SP4N)--LAPOR! sebagai pintu masuk tunggal pengaduan masyarakat. SP4N--LAPOR! dibentuk untuk merealisasikan kebijakan \emph{no wrong door policy}, yaitu menjamin bahwa pengaduan dari manapun dan jenis apapun akan disalurkan kepada instansi yang berwenang menanganinya \autocite{KemenpanRB2020,Lapor2021}. Melalui platform ini, masyarakat dapat menyampaikan keluhan secara daring melalui situs web maupun aplikasi mobile, memperoleh nomor laporan, serta memantau perkembangan penanganannya.
+
+SP4N--LAPOR! dirancang untuk meningkatkan akuntabilitas dan responsivitas penyelenggara pelayanan publik dengan cara menstandarkan alur penerimaan, disposisi, dan penyelesaian pengaduan. Pengaduan yang masuk diklasifikasikan, didistribusikan ke instansi terkait, dan dipantau statusnya hingga selesai. Pendekatan ini menunjukkan bagaimana sistem informasi pengaduan berbasis web dapat berfungsi sebagai infrastruktur koordinasi antarinstansi, bukan sekadar kanal komunikasi satu arah antara warga dan pemerintah \autocite{Lapor2021}.
+
+\subsection{E-CCMS dan Pendekatan Generik Manajemen Keluhan}
+
+Afify dan Kadry \autocite{AfifyKadry2019} mengusulkan Electronic-Customer Complaint Management System (E-CCMS) sebagai pendekatan generik untuk mengelola keluhan pelanggan secara elektronik. Dalam kajian tersebut, keluhan dipandang sebagai sumber data penting untuk pengendalian kualitas, sehingga sistem pengelolaan keluhan tidak cukup hanya menerima dan menyimpan keluhan, tetapi juga harus mendukung analisis hubungan antara perilaku keluhan pelanggan dan isu yang mendasarinya.
+
+E-CCMS dirancang sebagai layanan berbasis web yang memanfaatkan arsitektur berorientasi layanan (\emph{service-oriented architecture}). Antarmuka web berperan sebagai titik interaksi pelanggan, sementara komponen layanan menangani pemrosesan bisnis dan berkomunikasi dengan berbagai basis data yang relevan. Pendekatan ini memungkinkan organisasi mengintegrasikan data keluhan yang sebelumnya tersebar di beberapa sistem atau unit kerja ke dalam satu kerangka pengelolaan yang terpusat \autocite{AfifyKadry2019}.
+
+Secara garis besar, E-CCMS mencakup fungsi-fungsi utama seperti pendaftaran keluhan, pemberian identitas unik (nomor tiket), pengklasifikasian berdasarkan jenis masalah, pelacakan status penanganan, serta pelaporan dan analisis keluhan. Afify dan Kadry menekankan bahwa sistem seperti ini dapat digunakan secara generik di berbagai organisasi, karena struktur data dan alur prosesnya dapat dikonfigurasi sesuai dengan jenis layanan yang dikelola. Keterbatasan utama kajian tersebut adalah konteksnya yang masih bersifat konseptual dan tidak spesifik pada ISP lokal, serta tidak disertai evaluasi usability dan pengalaman pengguna dengan instrumen terstandar. Namun, ide-ide arsitektural dan prinsip pengelolaan keluhannya relevan untuk diadaptasi dalam pengembangan modul e-complaint pada tugas akhir ini.
+
+\subsection{Sistem Pengaduan Berbasis Web di Berbagai Domain}
+
+Berbagai penelitian menunjukkan bahwa sistem pengaduan berbasis web telah diterapkan di beragam domain layanan. Merang, Ibrahim, dan Jamaluddin \autocite{Merang2022} mengembangkan \emph{Web-based Water Supply Complaint Management System} untuk membantu pengelola pasokan air menindaklanjuti keluhan pelanggan terkait gangguan distribusi air. Sistem yang dikembangkan menyediakan formulir pengaduan daring, basis data untuk menyimpan keluhan, serta antarmuka bagi petugas internal untuk memantau dan memperbarui status penanganan. Pengujian fungsional dan \emph{user acceptance testing} menunjukkan bahwa sistem ini membantu mempercepat respons dan meningkatkan keteraturan pengelolaan keluhan dibandingkan proses manual sebelumnya.
+
+Di bidang infrastruktur jalan, Falasyfa dan Avianto \autocite{FalasyfaAvianto2024} merancang aplikasi layanan pengaduan kerusakan jalan berbasis Android. Aplikasi tersebut memungkinkan masyarakat mengirim laporan kerusakan jalan disertai informasi lokasi dan dokumentasi pendukung. Penelitian ini menyoroti bahwa pelaporan kerusakan jalan yang masih dilakukan secara manual sering menimbulkan masalah seperti kehilangan data dan lambatnya respons, sementara aplikasi mobile membantu memperbaiki alur pelaporan dan memudahkan pihak berwenang dalam menindaklanjuti keluhan.
+
+Siska dan Marsa \autocite{SiskaMarsa2025} mengembangkan Sistem Monitoring dan Pengelolaan Data Keluhan Pelanggan Berbasis Web pada PT PLN (Persero) ULP Bukittinggi. Sistem ini dirancang untuk menggantikan pencatatan keluhan pelanggan yang sebelumnya tersebar dan sulit dimonitor. Metode yang digunakan mengadaptasi tahapan \emph{Goal Directed Design} (GDD) mulai dari analisis kebutuhan, perancangan diagram kelas, implementasi, hingga pengujian. Hasil penelitian menunjukkan bahwa sistem baru mampu meningkatkan akurasi pencatatan, mempermudah pemantauan keluhan secara real-time, dan mendukung penyusunan laporan bagi manajemen.
+
+Secara keseluruhan, berbagai penelitian tersebut menunjukkan pola yang serupa: (1) keluhan yang awalnya disampaikan melalui kanal manual atau informal dipindahkan ke sistem digital yang terpusat, (2) pelapor memperoleh sarana untuk menyampaikan keluhan dan, dalam beberapa kasus, memantau statusnya, dan (3) organisasi memperoleh data terstruktur yang dapat digunakan untuk pemantauan kinerja dan perbaikan proses layanan \autocite{Merang2022,FalasyfaAvianto2024,SiskaMarsa2025}. Meskipun domainnya berbeda, mulai dari pelayanan publik, layanan air, infrastruktur jalan, hingga layanan listrik, prinsip dasar pengaduan berbasis web relatif konsisten. Hal ini memberikan landasan bahwa pendekatan serupa berpotensi diterapkan pada konteks layanan internet yang disediakan oleh ISP lokal.
+
+\section{Sistem Informasi Berbasis Web untuk Layanan Pelanggan ISP}
+
+Sistem informasi berbasis web saat ini menjadi salah satu kanal utama interaksi antara penyedia layanan dan pelanggan. Dalam konteks layanan internet, portal web dan aplikasi digital berfungsi sebagai \emph{front door} bagi pelanggan untuk memperoleh informasi layanan, melakukan aktivitas administratif, serta mengakses dukungan ketika terjadi gangguan \autocite{Salesforce2024,Metavshn2024}. Pendekatan \emph{customer self-service} ini memungkinkan pelanggan menyelesaikan berbagai kebutuhan secara mandiri tanpa selalu bergantung pada \emph{call center}, sehingga berpotensi meningkatkan kepuasan sekaligus menurunkan beban operasional penyedia layanan.
+
+Pada industri telekomunikasi dan ISP, portal \emph{customer self-service} umumnya menyediakan fitur-fitur seperti pendaftaran atau pengelolaan paket layanan, pengecekan dan pembayaran tagihan, permintaan pemasangan atau pemutusan layanan, pelaporan gangguan, dan pemantauan status tiket keluhan. Studi dan panduan implementasi portal self-service di sektor telekomunikasi menunjukkan bahwa desain portal yang baik harus mendukung akses 24/7, integrasi dengan sistem belakang (billing, \emph{network monitoring}, \emph{ticketing}), serta antarmuka yang sederhana namun informatif \autocite{Intellias2024,Aixtor2023}. Ketika dirancang dengan benar, portal ini tidak hanya berfungsi sebagai “etalase” informasi, tetapi juga sebagai kanal utama penanganan masalah dan keluhan secara terstruktur.
+
+Di Indonesia, penyedia layanan internet skala besar seperti IndiHome/Telkomsel menggarisbawahi peran \emph{digital touch point} berbasis web dan mobile, misalnya aplikasi MyIndiHome dan portal pelanggan, sebagai kanal utama untuk mengelola langganan, tagihan, serta laporan gangguan pelanggan \autocite{Telkomsel2024,Ronald2023}. Meskipun skala dan kompleksitas infrastrukturnya berbeda dengan ISP lokal, pola yang muncul serupa: sistem informasi berbasis web diposisikan sebagai pusat interaksi layanan pelanggan, terintegrasi dengan modul penanganan gangguan dan keluhan. Hal ini menunjukkan bahwa bahkan bagi penyedia layanan dengan sumber daya terbatas, memiliki portal berbasis web yang mampu memfasilitasi pelaporan gangguan dan pemantauan status layanan merupakan komponen penting dari strategi layanan pelanggan.
+
+Salah satu komponen kunci dalam sistem informasi layanan pelanggan ISP adalah \emph{trouble ticketing system} atau \emph{complaint/ticket management system}. \emph{Trouble ticketing system} digunakan untuk mendokumentasikan laporan gangguan dan permintaan dukungan, memberikan nomor tiket unik, mengatur eskalasi, dan melacak penanganan hingga selesai . Sistem ini memungkinkan setiap insiden layanan direkam dalam siklus hidup yang jelas, mulai dari pencatatan, klasifikasi, penugasan teknisi, pemantauan progres, sampai penutupan, sehingga memudahkan pemantauan kinerja tim dukungan dan analisis pola gangguan.
+
+Sejumlah penelitian secara spesifik membahas pengembangan sistem informasi pengaduan dan ticketing pada ISP. Ramadhan (2024) mengembangkan \emph{Integrated Customer Ticket Portal} untuk meningkatkan kualitas layanan ISP PT Padi Internet. Portal ini dirancang sebagai satu gerbang terpadu bagi pelanggan untuk mengirim keluhan, memantau status tiket, dan bagi pihak internal untuk mengelola penanganan keluhan secara lebih responsif. Penelitian tersebut menggunakan metodologi \emph{waterfall} dan menekankan pentingnya integrasi antara antarmuka pelanggan, modul ticketing, dan basis data untuk meningkatkan kecepatan dan ketertelusuran penanganan keluhan.
+
+Pada kasus lain, Prasetya dan Husufa (2023) mengembangkan \emph{Monitoring Application Complaints of Internet Service Provider Interference} pada layanan IndiHome cabang Pasar Baru Tangerang. Sistem yang dibangun mengintegrasikan aplikasi web monitoring keluhan gangguan ISP dengan bot Telegram untuk mendistribusikan tiket secara otomatis kepada teknisi, menggantikan proses distribusi tiket yang sebelumnya dilakukan secara manual dan tidak efisien. Hasilnya menunjukkan bahwa integrasi \emph{web application} dengan kanal komunikasi yang familiar bagi teknisi dapat mempercepat distribusi informasi gangguan dan mempermudah pemantauan status penanganan.
+
+Selain itu, beberapa penelitian perancangan sistem pengaduan layanan internet skala lebih kecil menunjukkan pola yang konsisten: sistem pengaduan berbasis web memungkinkan pelanggan mengirimkan keluhan, sistem memberikan nomor tiket dan menyimpan data keluhan dalam basis data, dan petugas internal dapat memperbarui status serta menyusun laporan berkala mengenai jenis dan frekuensi keluhan. Meskipun sebagian penelitian tersebut menggunakan metode pengembangan tradisional seperti \emph{waterfall}, prinsip desain yang muncul relatif seragam: antarmuka web yang mudah diakses, pencatatan keluhan terpusat, mekanisme pelacakan status, dan dukungan pelaporan untuk manajemen.
+
+Dari berbagai contoh tersebut, dapat disimpulkan bahwa sistem informasi berbasis web untuk layanan pelanggan ISP umumnya memiliki karakteristik: (1) menjadi titik akses terpusat bagi pelanggan untuk mengelola layanan dan menyampaikan keluhan, (2) terintegrasi dengan modul \emph{trouble ticketing} untuk pencatatan dan pelacakan gangguan, serta (3) menyediakan data terstruktur bagi manajemen untuk memantau kinerja layanan dan mengidentifikasi area perbaikan. Karakteristik ini relevan bagi ISP lokal seperti SpeedForce yang menghadapi keterbatasan sumber daya, tetapi tetap dituntut untuk menjaga kualitas layanan dan memberikan respons yang cepat serta transparan terhadap keluhan pelanggan. Dalam konteks tugas akhir ini, modul e-complaint berbasis web bagi SpeedForce dapat dipandang sebagai adaptasi dari konsep portal layanan pelanggan dan sistem ticketing yang telah banyak dibahas di literatur, dengan fokus pada kebutuhan praktis ISP lokal dan integrasi dengan proses operasional yang saat ini masih didominasi kanal informal.
+
+\section{Usability dan User Experience pada Sistem Berbasis Web}
+
+Usability dan \emph{user experience} (UX) merupakan aspek penting dalam keberhasilan sistem informasi berbasis web, karena kualitas fungsi saja tidak cukup jika pengguna kesulitan memahami atau menggunakan sistem. Dalam konteks modul e-complaint untuk layanan pelanggan ISP, usability yang baik memastikan pelanggan dapat menyampaikan keluhan dan memantau statusnya tanpa kebingungan, sementara UX yang positif membantu membangun persepsi bahwa organisasi responsif dan profesional dalam menangani masalah pelanggan.
+
+\subsection{Konsep Usability}
+
+Usability merupakan salah satu aspek penting dalam keberhasilan sistem berbasis web. Standar internasional ISO 9241-11 mendefinisikan usability sebagai sejauh mana suatu produk dapat digunakan oleh pengguna tertentu untuk mencapai tujuan tertentu dengan efektivitas, efisiensi, dan kepuasan dalam konteks penggunaan yang telah ditentukan \autocite{ISO2018}. Definisi ini menekankan bahwa usability bukan sekadar “mudah digunakan”, tetapi mencakup tiga aspek utama: sejauh mana pengguna dapat menyelesaikan tugas dengan benar (efektivitas), sumber daya yang diperlukan (waktu, usaha) untuk mencapai tujuan (efisiensi), dan sejauh mana pengguna merasa puas dengan pengalaman penggunaan (kepuasan).
+
+Berbagai panduan desain antarmuka web menekankan bahwa usability yang baik berhubungan dengan struktur navigasi yang jelas, konsistensi elemen antarmuka, umpan balik yang eksplisit setelah pengguna melakukan aksi, serta \emph{error handling} yang membantu pengguna memulihkan kesalahan tanpa frustrasi \autocite{Nielsen2012}.
+
+\subsection{System Usability Scale (SUS)}
+
+System Usability Scale (SUS) diperkenalkan oleh John Brooke sebagai instrumen singkat untuk melakukan penilaian usability secara cepat dan praktis \autocite{Brooke1996}. SUS terdiri atas sepuluh pernyataan dengan skala Likert lima poin, mulai dari “sangat tidak setuju” hingga “sangat setuju”. Jawaban responden kemudian diolah menjadi satu skor komposit antara 0--100 yang merepresentasikan tingkat usability sistem secara keseluruhan.
+
+Keunggulan SUS adalah prosedur pengukuran yang relatif ringan, dapat diterapkan pada berbagai jenis sistem, dan telah terbukti reliabel dalam banyak konteks evaluasi industri dan akademik \autocite{Bangor2008,Lewis2018}. Karena itu, SUS banyak digunakan sebagai alat standar untuk mengukur kebergunaan aplikasi web maupun aplikasi lain dengan usaha pengumpulan data yang tidak terlalu besar. Dalam tugas akhir ini, SUS digunakan untuk menilai kebergunaan prototipe modul e-complaint dari perspektif pengguna, khususnya terkait kemudahan belajar, kemudahan penggunaan, dan kenyamanan interaksi secara umum.
+
+\subsection{User Experience Questionnaire (UEQ)}
+
+Selain usability, pengalaman pengguna (\emph{user experience} / UX) juga menjadi fokus penting dalam evaluasi sistem berbasis web. UX mencakup persepsi dan respons pengguna yang berasal dari penggunaan dan/atau antisipasi penggunaan suatu produk, termasuk aspek kognitif, emosional, dan estetis \autocite{ISO2019}. Untuk mengukur UX secara terstruktur, User Experience Questionnaire (UEQ) dikembangkan sebagai instrumen standar oleh Schrepp dan rekan-rekan \autocite{Schrepp2014}.
+
+UEQ menggunakan pasangan kata bipolar (misalnya “tidak praktis--praktis”, “membosankan--menarik”) yang dinilai pada skala tujuh poin untuk menangkap kesan pengguna terhadap suatu sistem. Item-item UEQ dikelompokkan ke dalam beberapa skala: \emph{attractiveness}, \emph{perspicuity}, \emph{efficiency}, \emph{dependability}, \emph{stimulation}, dan \emph{novelty}. \emph{Handbook} UEQ menjelaskan bahwa instrumen ini dirancang untuk memberikan gambaran menyeluruh tentang pengalaman pengguna, mencakup aspek pragmatis, misalnya kemudahan dan efisiensi, sekaligus aspek hedonis, misalnya sejauh mana sistem terasa menarik dan menyenangkan \autocite{Laugwitz2008,Schrepp2017}.
+
+Dalam tugas akhir ini, UEQ digunakan untuk melengkapi hasil SUS dengan memberikan gambaran yang lebih kaya tentang bagaimana pelanggan dan pengguna internal SpeedForce merasakan antarmuka dan alur kerja modul e-complaint, tidak hanya dari sisi “bisa dipakai” tetapi juga dari sisi kenyamanan dan daya tarik.
+
+\section{Aksesibilitas Web dan WCAG 2.2}
+
+Web Content Accessibility Guidelines (WCAG) yang dikembangkan oleh W3C Web Accessibility Initiative (WAI) merupakan rujukan utama untuk merancang konten web yang aksesibel. Versi terbaru, WCAG 2.2, ditetapkan sebagai rekomendasi resmi W3C pada Oktober 2023 dan memperbarui kriteria keberhasilan yang harus dipenuhi untuk mencapai tingkat kepatuhan A, AA, atau AAA \autocite{W3C2023}.
+
+WCAG 2.2 mengorganisasi panduan ke dalam empat prinsip utama yang sering diringkas sebagai POUR: \emph{perceivable}, \emph{operable}, \emph{understandable}, dan \emph{robust}. Konten harus dapat dipersepsi oleh pengguna, dapat dioperasikan dengan berbagai cara, dapat dipahami (struktur, bahasa, dan umpan balik yang jelas), serta cukup robust untuk bekerja dengan berbagai agen pengguna dan teknologi bantu sekarang dan di masa mendatang \autocite{W3C2023,MDN2023}.
+
+Meskipun cakupan penuh WCAG cukup luas, prinsip dasarnya (perceivable, operable, understandable, dan robust) dapat dijadikan acuan sederhana dalam merancang antarmuka modul e-complaint. Misalnya, informasi penting seperti status tiket harus mudah terlihat dan terbaca, navigasi harus dapat dioperasikan dengan cara yang wajar, dan pesan kesalahan harus jelas sehingga pengguna memahami apa yang perlu diperbaiki \autocite{W3C2018,MDN2023}. Dalam ruang lingkup tugas akhir ini, aspek aksesibilitas dibahas pada level prinsip dan rekomendasi dasar, tanpa melakukan audit kepatuhan formal terhadap seluruh kriteria WCAG 2.2.
+
+\section{Cost--Benefit Analysis dalam Pengembangan Sistem Informasi}
+
+Cost--Benefit Analysis (CBA) merupakan pendekatan sistematis untuk membandingkan biaya dan manfaat dari suatu inisiatif sebelum diimplementasikan. Dalam konteks pengembangan sistem informasi, CBA digunakan untuk menilai apakah investasi pada sistem baru, baik dari sisi biaya pengembangan, infrastruktur, pelatihan, maupun pemeliharaan, sebanding atau tidak dengan manfaat yang diharapkan, seperti efisiensi operasional, penghematan waktu, penurunan kesalahan, peningkatan kualitas layanan, dan kepuasan pelanggan \autocite{LaudonLaudon2022,StairReynolds2020}. Pendekatan ini membantu manajemen mengambil keputusan yang lebih rasional, khususnya pada organisasi dengan sumber daya terbatas seperti ISP lokal.
+
+Secara umum, CBA dalam proyek sistem informasi melibatkan identifikasi dan kuantifikasi komponen biaya serta komponen manfaat yang bersifat finansial maupun non-finansial. Beberapa panduan pengelolaan proyek TI menyarankan untuk memisahkan manfaat yang dapat langsung dikonversi ke nilai moneter, seperti pengurangan jam kerja manual, penurunan jumlah keluhan yang tidak tertangani, atau penghematan biaya operasional, dengan manfaat kualitatif, seperti peningkatan kepuasan pengguna dan citra organisasi \autocite{WardPeppard2016,Schwalbe2022}. Meskipun manfaat kualitatif lebih sulit diukur, pengakuan terhadap keberadaannya penting agar keputusan tidak hanya didasarkan pada indikator finansial jangka pendek.
+
+Dalam konteks pengembangan modul e-complaint SpeedForce, CBA digunakan untuk membandingkan kondisi sebelum dan sesudah implementasi sistem, terutama terkait efisiensi penanganan keluhan dan potensi dampaknya terhadap kualitas layanan. Analisis ini membantu menunjukkan bahwa pengembangan modul e-complaint bukan sekadar upaya teknis, tetapi juga investasi yang diharapkan memberikan nilai tambah bagi operasional ISP lokal, baik dalam bentuk penghematan biaya akibat proses yang lebih terstruktur maupun peningkatan kepuasan dan retensi pelanggan dalam jangka panjang.
+
+\section{Design Science Research (DSR) sebagai Pendekatan Pengembangan Sistem}
+
+Design Science Research (DSR) adalah pendekatan penelitian yang berfokus pada perancangan dan evaluasi artefak untuk memecahkan masalah nyata di dalam organisasi. Artefak yang dimaksud dapat berupa model, metode, ataupun sistem perangkat lunak \autocite{Hevner2004,GregorHevner2013}. Dalam DSR, peneliti tidak hanya diminta menghasilkan solusi yang “bekerja”, tetapi juga menjelaskan bagaimana solusi tersebut dirancang, diuji, dan apa kontribusinya terhadap pengetahuan di bidang sistem informasi. Kerangka ini sesuai dengan karakter tugas akhir yang tidak hanya mendeskripsikan masalah pengelolaan keluhan, tetapi juga mengembangkan dan mengevaluasi prototipe modul e-complaint berbasis web bagi SpeedForce.
+
+Peffers dan rekan-rekan \autocite{peffers2007} mengusulkan Design Science Research Methodology (DSRM) yang memecah proses DSR ke dalam beberapa tahap yang terstruktur: (1) \emph{Problem Identification and Motivation}, mengidentifikasi masalah yang relevan dan menjelaskan urgensi penyelesaiannya; (2) \emph{Define Objectives of a Solution}, merumuskan tujuan dan kriteria solusi yang diusulkan; (3) \emph{Design and Development}, merancang dan membangun artefak (misalnya model, metode, atau sistem); (4) \emph{Demonstration}, menunjukkan bagaimana artefak digunakan untuk menyelesaikan masalah pada konteks yang dituju; (5) \emph{Evaluation}, mengevaluasi artefak terhadap tujuan yang telah ditetapkan menggunakan metode evaluasi yang sesuai; dan (6) \emph{Communication}, mengomunikasikan hasil penelitian dan artefak kepada audiens ilmiah maupun praktisi. Model DSRM ini banyak digunakan dalam penelitian pengembangan sistem informasi karena memberikan kerangka langkah demi langkah yang jelas, tetapi tetap cukup fleksibel untuk diadaptasi pada berbagai konteks domain \autocite{peffers2007}.
+
+Untuk memperjelas peran setiap tahap DSR dan keterkaitannya dengan tugas akhir, ringkasan berikut digunakan sebagai acuan dan disajikan pada Tabel~\ref{tab:dsr-tahapan}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Tahapan Design Science Research (DSR) dan Penerapannya}
+  \label{tab:dsr-tahapan}
+  \small
+  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.20\textwidth}%
+                                  >{\raggedright\arraybackslash}X%
+                                  >{\raggedright\arraybackslash}X}
+    \toprule
+    \textbf{Tahap DSR} & \textbf{Fokus dalam Penelitian Desain} & \textbf{Implementasi dalam Tugas Akhir} \\
+    \midrule
+    Problem Identification \& Motivation &
+    Mengidentifikasi masalah utama dan menjelaskan urgensi penyelesaiannya. &
+    Menggali permasalahan pengelolaan keluhan di SpeedForce (keluhan tersebar di WhatsApp/telepon, pencatatan belum terpusat). \\
+    \addlinespace
+    Define Objectives of a Solution &
+    Menetapkan tujuan dan kriteria yang harus dipenuhi oleh solusi yang diusulkan. &
+    Merumuskan tujuan modul e-complaint (pencatatan keluhan terpusat, nomor tiket, pelacakan status, transparansi ke pelanggan). \\
+    \addlinespace
+    Design \& Development &
+    Merancang dan membangun artefak yang menjawab kebutuhan dan tujuan solusi. &
+    Merancang alur proses baru, struktur basis data, serta antarmuka web, lalu mengimplementasikannya sebagai prototipe modul e-complaint. \\
+    \addlinespace
+    Demonstration &
+    Menunjukkan bagaimana artefak digunakan untuk membantu memecahkan masalah yang diidentifikasi. &
+    Menggunakan prototipe dalam skenario nyata/terbimbing untuk memproses keluhan pelanggan di lingkungan operasional SpeedForce. \\
+    \addlinespace
+    Evaluation &
+    Menilai artefak terhadap tujuan yang telah ditetapkan menggunakan metode evaluasi yang sesuai. &
+    Menguji fungsi prototipe dan mengevaluasi usability serta pengalaman pengguna menggunakan instrumen SUS dan UEQ. \\
+    \addlinespace
+    Communication &
+    Mengomunikasikan proses dan hasil penelitian kepada komunitas ilmiah maupun praktisi. &
+    Mendokumentasikan seluruh proses dan hasil pengembangan modul e-complaint dalam laporan tugas akhir dan rekomendasi bagi SpeedForce. \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
+\section{Penelitian Terdahulu yang Relevan dan Posisi Tugas Akhir}
 
+Kajian penelitian terdahulu menunjukkan bahwa pemanfaatan sistem informasi untuk pengelolaan keluhan pelanggan telah dilakukan di berbagai domain layanan, mulai dari sektor publik, utilitas (air dan listrik), hingga layanan infrastruktur jalan. Secara umum, temuan penelitian-penelitian tersebut sepakat bahwa digitalisasi proses pengaduan, melalui aplikasi web maupun mobile, mampu meningkatkan kerapihan pencatatan keluhan, mempercepat alur respons, dan memperbaiki transparansi status penanganan. Di sisi lain, terdapat juga kajian yang berfokus pada kualitas layanan dan kepuasan pelanggan pada layanan internet skala nasional. Namun, ketika konteksnya dipersempit pada ISP lokal dengan proses keluhan yang masih sangat informal, serta kebutuhan untuk mengembangkan dan mengevaluasi modul e-complaint berbasis web menggunakan kerangka Design Science Research (DSR) dan instrumen evaluasi usability/UX seperti SUS dan UEQ, ruang kajian ini masih relatif terbuka.
 
-\begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-	\begin{tabular}{ | l | c | r | }
-	\hline
-	Nama 	& Satuan 		& Harga \\
-	\hline
-	Buku 	& Exemplar	& 25000 \\
-	Komputer	& Unit		& 2500000 \\
-	Pensil	& Buah		& 118900 \\
-	\hline
-	\end{tabular}
-\caption{Tabel harga bahan sekunder}
-\label{tbl:harga2}
+Penelitian yang dilakukan oleh Afify dan Kadry berjudul \emph{Electronic-Customer Complaint Management System (E-CCMS) -- a Generic Approach} merupakan salah satu rujukan awal yang secara khusus mengangkat konsep sistem manajemen keluhan pelanggan elektronik secara generik \autocite{AfifyKadry2019}. Penelitian ini memandang keluhan pelanggan sebagai sumber informasi penting untuk meningkatkan kualitas layanan, dan mengusulkan arsitektur E-CCMS berbasis web yang menghubungkan berbagai basis data melalui suatu layanan untuk mengumpulkan, menyimpan, dan menganalisis keluhan pelanggan. Pendekatan yang digunakan bersifat konseptual dan teknis: penulis menggabungkan kajian perilaku keluhan pelanggan dengan rancangan layanan web yang dapat berinteraksi dengan beberapa platform berbeda. E-CCMS didesain untuk mendukung alur penerimaan, pencatatan, distribusi, dan penanganan keluhan secara lebih terstruktur dibanding praktik manual. Kelebihan penelitian ini adalah kerangka arsitekturalnya yang relatif lengkap dan dapat diadaptasi ke berbagai jenis organisasi. Namun, E-CCMS tidak dibahas secara spesifik dalam konteks ISP lokal, tidak menyinggung karakteristik keluhan teknis layanan internet, dan tidak dilengkapi dengan evaluasi usability maupun pengalaman pengguna menggunakan instrumen standar.
+
+Penelitian oleh Merang, Ibrahim, dan Jamaluddin berjudul \emph{Development of a Web-based Water Supply Complaint Management System} mengangkat kasus pengelolaan keluhan pelanggan pada layanan pasokan air bersih \autocite{Merang2022}. Sistem yang dikembangkan berupa aplikasi web yang memungkinkan pelanggan mengajukan keluhan terkait gangguan pasokan air, sementara petugas internal dapat memonitor daftar keluhan dan memperbarui status penanganannya. Metode pengembangan perangkat lunak yang digunakan meliputi tahap analisis kebutuhan, perancangan, implementasi, serta pengujian fungsional, yang kemudian dilanjutkan dengan \emph{user acceptance testing} untuk memastikan sistem dapat diterima pengguna. Hasil penelitian menunjukkan bahwa sistem berbasis web membantu mengurangi masalah keluhan yang tercecer dan mempermudah penelusuran status keluhan. Kekuatan utama studi ini adalah bukti empiris bahwa digitalisasi proses keluhan dapat meningkatkan keteraturan dan kecepatan respons pada layanan utilitas. Namun, domain yang dikaji terbatas pada layanan air dengan karakteristik keluhan yang berbeda dari layanan internet (misalnya pola distribusi air dan infrastruktur pipa), serta belum menempatkan penelitian dalam kerangka DSR maupun mengevaluasi aspek usability dan user experience secara spesifik.
+
+Falasyfa dan Avianto dalam penelitiannya berjudul \emph{Perancangan Aplikasi Layanan Pengaduan Kerusakan Jalan Berbasis Android} mengembangkan aplikasi mobile yang memungkinkan masyarakat melaporkan kerusakan jalan secara langsung melalui smartphone \autocite{FalasyfaAvianto2024}. Aplikasi ini memfasilitasi pengiriman informasi berupa deskripsi kerusakan dan lokasi, sehingga dapat mempercepat alur komunikasi antara pelapor dan instansi terkait. Penelitian menggunakan pendekatan perancangan dan implementasi aplikasi Android, diikuti dengan pengujian fungsional (\emph{black box testing}) untuk memastikan seluruh fitur berjalan sesuai spesifikasi. Kontribusi penting studi ini adalah menunjukkan bagaimana pemanfaatan perangkat mobile dapat menutup kesenjangan antara warga dan penyedia layanan publik dalam konteks pelaporan infrastruktur. Akan tetapi, penelitian ini fokus pada platform Android tunggal, belum membahas integrasi aplikasi dengan portal web layanan pelanggan, dan tidak mengkaji proses pengelolaan keluhan secara menyeluruh dari sisi organisasi (misalnya alur penugasan internal dan pelacakan riwayat penanganan).
+
+Penelitian Siska dan Marsa berjudul \emph{Sistem Monitoring dan Pengelolaan Data Keluhan Pelanggan Berbasis Web pada PT. PLN (Persero) ULP Bukittinggi} mengembangkan sistem web untuk membantu unit layanan pelanggan PLN dalam mencatat dan memonitor keluhan secara real-time \autocite{SiskaMarsa2025}. Sistem dirancang untuk menggantikan proses pencatatan manual yang sebelumnya tersebar dan sulit ditelusuri. Metode yang digunakan mengacu pada tahapan perancangan sistem (mengadaptasi pendekatan Goal Directed Design/GDD Cooper) yang meliputi analisis kebutuhan, perancangan diagram kelas, implementasi, dan pengujian. Hasilnya menunjukkan bahwa sistem baru mampu meningkatkan akurasi pencatatan dan mempermudah monitoring keluhan, terutama bagi manajemen yang membutuhkan informasi terkini tentang status penanganan. Kelebihan penelitian ini adalah kedekatannya dengan konteks \emph{complaint tracking} di perusahaan utilitas besar. Namun, penelitian ini tetap berada pada domain kelistrikan dengan struktur organisasi BUMN yang relatif besar, tidak secara eksplisit menggunakan kerangka DSR, dan evaluasi yang dilakukan masih berfokus pada fungsionalitas, bukan pada usability dan user experience berbasis instrumen terstandar.
+
+Ulkhaq dan Barus melalui penelitian berjudul \emph{Analisis Kepuasan Pelanggan dengan Menggunakan SERVQUAL: Studi Kasus Layanan IndiHome PT. Telekomunikasi Indonesia, Tbk, Regional 1 Sumatera} berfokus pada pengukuran kualitas layanan dan kepuasan pelanggan pada layanan internet tetap skala nasional \autocite{UlkhaqBarus2017}. Penelitian ini menggunakan model SERVQUAL untuk mengukur \emph{gap} antara harapan dan persepsi pelanggan pada lima dimensi kualitas layanan: tangibles, reliability, responsiveness, assurance, dan empathy. Hasil analisis menunjukkan adanya \emph{gap} negatif pada beberapa dimensi, yang mengindikasikan masih adanya ketidakpuasan pelanggan terhadap kualitas layanan yang diterima. Kontribusi utama studi ini adalah memberikan gambaran empiris bahwa kualitas layanan, termasuk kemampuan penyedia layanan merespons keluhan, berpengaruh signifikan terhadap kepuasan pelanggan ISP besar. Namun, penelitian ini tidak mengembangkan sistem informasi untuk pengelolaan keluhan, melainkan berhenti pada level analisis kepuasan dan rekomendasi perbaikan layanan secara umum.
+
+Selain penelitian-penelitian tersebut, terdapat pula kajian mengenai Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional (SP4N--LAPOR!) yang menunjukkan bagaimana kanal pengaduan terpusat dapat mendukung kebijakan \emph{no wrong door policy}. Berbagai dokumen kebijakan dan studi implementasi menggambarkan bahwa SP4N--LAPOR! dirancang agar pengaduan dari manapun dan jenis apapun dapat disalurkan ke instansi yang berwenang, dengan pemberian nomor laporan dan fitur pelacakan status yang dapat diakses oleh masyarakat \autocite{KemenpanRB2020,Lapor2021}. Contoh ini relevan sebagai praktik baik pengelolaan pengaduan berskala nasional, namun fokusnya berada pada pelayanan publik lintas sektor, bukan layanan internet tetap di level ISP lokal dengan skala operasional dan sumber daya yang lebih terbatas seperti SpeedForce.
+
+Untuk merangkum posisi penelitian-penelitian tersebut terhadap tugas akhir ini, perbandingan singkat disajikan pada Tabel~\ref{tab:penelitian-terdahulu}. Tabel ini dibuat dalam orientasi \emph{landscape} agar seluruh kolom dapat terbaca dengan jelas.
+
+% ============================
+% Tabel ringkasan penelitian - Bagian 1/2
+% ============================
+% Pastikan di preamble sudah ada:
+% \usepackage{tabularx}
+% \usepackage{booktabs}
+% \usepackage{array}
+% \usepackage{pdflscape} % kalau mau landscape
+
+% =========================
+% Tabel Penelitian Terdahulu (1/3)
+% =========================
+\begin{landscape}
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.2}
+  \caption{Ringkasan Penelitian Terdahulu (1/3)}
+  \label{tab:penelitian-terdahulu-1}
+  \begin{tabularx}{\textwidth}{%
+    >{\raggedright\arraybackslash}p{0.12\textwidth}%
+    >{\raggedright\arraybackslash}p{0.16\textwidth}%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+  }
+    \toprule
+    Penelitian &
+    Konteks / Domain &
+    Tujuan \& Metode Utama &
+    Kelebihan &
+    Keterbatasan / Gap terhadap TA &
+    Hal yang Relevan terhadap TA \\
+    \midrule
+    Afify \& Kadry (2019) &
+    Kerangka generik manajemen keluhan pelanggan &
+    Mengusulkan arsitektur Electronic-Customer Complaint Management System (E-CCMS) berbasis web yang menghubungkan berbagai basis data untuk mengelola keluhan pelanggan secara elektronik; pendekatan konseptual dengan rancangan layanan web dan struktur data keluhan. &
+    Menyediakan kerangka konseptual dan arsitektural yang cukup lengkap; menekankan pentingnya pencatatan keluhan terpusat, pemberian identitas unik, dan dukungan analitik terhadap pola keluhan. &
+    Tidak spesifik pada layanan internet tetap dan ISP lokal; tidak menggunakan kerangka DSR secara eksplisit; tidak dievaluasi dengan instrumen usability/UX seperti SUS dan UEQ. &
+    Menjadi dasar konseptual untuk merancang alur tiket, pencatatan terpusat, pelacakan status, dan struktur modul e-complaint SpeedForce. \\
+    \midrule
+    Merang et al.\ (2022) &
+    Layanan pasokan air bersih &
+    Mengembangkan Web-based Water Supply Complaint Management System untuk mencatat dan memonitor keluhan pelanggan air; menggunakan tahapan analisis kebutuhan, perancangan, implementasi, pengujian fungsional, dan user acceptance testing. &
+    Menunjukkan manfaat konkret digitalisasi pengaduan: data keluhan lebih rapi, status penanganan lebih mudah dipantau, dan alur respon lebih tertata dibanding proses manual. &
+    Domain spesifik layanan air dengan karakteristik keluhan berbeda dari layanan internet; tidak menggunakan kerangka DSR; evaluasi lebih fokus pada fungsi sistem dibandingkan usability/UX terstandar. &
+    Menginspirasi perancangan modul web untuk pelaporan dan monitoring keluhan pelanggan SpeedForce, khususnya terkait form keluhan, status penanganan, dan kebutuhan pencatatan terpusat. \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
+\end{landscape}
 
-% -- Example of importing table from external file --
-\subsubsection{Mengimpor Tabel dari Berkas Eksternal}
+\clearpage
 
-Tabel \ref{tbl:harga3} diimpor dari berkas eksternal \textit{table/tabel1.tex} menggunakan perintah \textit{input}. 
-Dengan demikian, jika tabel tersebut perlu diubah, cukup mengubah pada berkas eksternal tersebut tanpa perlu mengubah pada berkas utama ini.
-
-\input table/tabel1.tex
-
-
-% -- Example of long table --
-\subsubsection{Tabel yang Sangat Panjang}
-Jika tabel terlalu panjang sehingga tidak muat dalam satu halaman, gunakan paket 
-\textit{longtable} untuk membuat tabel yang dapat terpotong ke halaman berikutnya, 
-seperti pada Tabel \ref{tbl:longtable1}.
-
-\begin{longtable}{@{\extracolsep{\fill}} l c r r}
-\caption{Comprehensive Data Table Example}\label{tbl:longtable1} \\
-\midrule
-\textbf{ID} & \textbf{Name} & \textbf{Score} & \textbf{Rank} \\
-\midrule
-\endfirsthead
-
-\caption[]{Comprehensive Data Table Example (lanjutan)} \\
-\midrule
-\textbf{ID} & \textbf{Name} & \textbf{Score} & \textbf{Rank} \\
-\midrule
-\endhead
-
-\midrule
-\multicolumn{4}{r}{\textit{Bersambung ke halaman berikutnya}} \\
-%\bottomrule
-\endfoot
-
-\midrule
-\endlastfoot
-
-% === Table Data ===
-1 & Alice Smith & 89 & 5 \\
-2 & Bob Johnson & 93 & 3 \\
-3 & Carol Davis & 95 & 2 \\
-4 & Daniel Wilson & 88 & 6 \\
-5 & Eve Thompson & 97 & 1 \\
-6 & Frank Brown & 85 & 7 \\
-7 & Grace Lee & 91 & 4 \\
-8 & Henry Miller & 80 & 9 \\
-9 & Irene Garcia & 83 & 8 \\
-10 & Jack Robinson & 78 & 10 \\
-% Repeat with more rows to make it long
-11 & Kevin Harris & 76 & 11 \\
-12 & Laura Martin & 75 & 12 \\
-13 & Michael Clark & 74 & 13 \\
-14 & Natalie Lewis & 73 & 14 \\
-15 & Olivia Walker & 72 & 15 \\
-16 & Peter Hall & 71 & 16 \\
-17 & Quinn Allen & 70 & 17 \\
-18 & Rachel Young & 69 & 18 \\
-19 & Samuel King & 68 & 19 \\
-20 & Tina Wright & 67 & 20 \\
-21 & Uma Scott & 66 & 21 \\
-22 & Victor Green & 65 & 22 \\
-23 & Wendy Adams & 64 & 23 \\
-24 & Xavier Nelson & 63 & 24 \\
-25 & Yolanda Carter & 62 & 25 \\
-26 & Zachary Perez & 61 & 26 \\
-27 & Amelia Baker & 60 & 27 \\
-28 & Benjamin Rivera & 59 & 28 \\
-29 & Charlotte Rogers & 58 & 29 \\
-30 & David Murphy & 57 & 30 \\
-31 & Ethan Cooper & 56 & 31 \\
-32 & Fiona Reed & 55 & 32 \\
-33 & George Bailey & 54 & 33 \\
-34 & Hannah Cox & 53 & 34 \\
-35 & Isaac Howard & 52 & 35 \\
-36 & Julia Ward & 51 & 36 \\
-37 & Kyle Flores & 50 & 37 \\
-38 & Lily Bell & 49 & 38 \\
-39 & Mason Sanders & 48 & 39 \\
-40 & Nora Patterson & 47 & 40 \\
-41 & Owen Ramirez & 46 & 41 \\
-42 & Penelope Torres & 45 & 42 \\
-43 & Quentin Foster & 44 & 43 \\
-44 & Rebecca Gonzales & 43 & 44 \\
-45 & Sebastian Bryant & 42 & 45 \\
-46 & Taylor Alexander & 41 & 46 \\
-47 & Ursula Russell & 40 & 47 \\
-48 & Vincent Griffin & 39 & 48 \\
-49 & William Diaz & 38 & 49 \\
-50 & Zoe Simmons & 37 & 50 \\
-% (You can easily extend this list to hundreds of rows)
-\end{longtable}
-
-\subsubsection{Beberapa Contoh Penulisan Rumus atau Persamaan Matematika Menggunakan LaTeX Termasuk Penomorannya}
-Contoh rumus matematika dapat ditulis seperti pada Persamaan \ref{eq:contoh1} di bawah ini. 
-Penomoran persamaan diletakkan di sebelah kanan, dan rumus ditulis dalam mode \textit{display math}.
-\begin{equation}
-E = mc^2
-\label{eq:contoh1}
-\end{equation}
-
-Contoh lain penulisan rumus matematika yang lebih kompleks dapat ditulis seperti pada Persamaan \ref{eq:rumus2}.
-
-\begin{align}
-f(x) &= ax^2 + bx + c \\
-f'(x) &= \frac{d}{dx}(ax^2 + bx + c) \notag \\ % tidak menampilkan nomor pada baris ini
-      &= 2ax + b \label{eq:rumus2}
-\end{align}
-
-Jika rumus terlalu panjang untuk ditulis dalam satu baris, gunakan lingkungan \textit{multline} seperti pada Persamaan \ref{eq:rumus3} di bawah ini.
-\begin{multline} 
-y = a_0 + a_1x + a_2x^2 + a_3x^3 + a_4x^4 + a_5x^5 + a_6x^6 + a_7x^7 \\
-    + a_8x^8 + a_9x^9 + a_{10}x^{10} \label{eq:rumus3}
-\end{multline}
-
-Jika ada penurunan rumus yang terdiri dari beberapa baris, namun tidak memerlukan penomoran pada setiap baris, gunakan lingkungan \textit{align*}, misalnya:
-
-\begin{align*} 
-S &= \sum_{i=1}^{n} i^2 \\
-  &= 1^2 + 2^2 + 3^2 + \cdots + n^2 \\
-  &= \frac{n(n + 1)(2n + 1)}{6}
-\intertext{Contoh lainnya adalah rumus untuk mencari nilai rata-rata fungsi $f(x)$ pada interval $[p, q]$:}
-\bar{f} &= \frac{1}{q - p} \int_{p}^{q} f(x) \, dx \\
-        &= \frac{1}{q - p} \int_{p}^{q} (ax^2 + bx + c) \, dx \\
-        &= \frac{1}{q - p} \left[ \frac{a}{3}x^3 + \frac{b}{2}x^2 + cx \right]_p^q \\
-        &= \frac{a(q^3 - p^3)}{3(q - p)} + \frac{b(q^2 - p^2)}{2(q - p)} + c \label{eq:rumus4}
-\end{align*}
-
-
-
-\subsection{Algoritma, Pseudocode, atau Kode}
-Contoh penulisan algoritma atau pseudocode dapat ditulis seperti pada Kode \ref{alg:contoh1} di bawah ini. 
-Gunakan paket \textit{listings} untuk menulis source code dalam bahasa pemrograman tertentu, seperti pada Kode \ref{lst:contoh1}. 
-
-
-% -- Example of pseudocode and source code listing --
-% -- Gunakan minipage agar listing tidak terpotong ke halaman berikutnya --
-\begin{minipage}{\textwidth} 
-\begin{lstlisting}[frame=lines, captionpos=t, caption={Contoh pseudocode}, label={alg:contoh1}]
-ALGORITHM HelloWorld
-   PRINT "Hello, World!"
-END ALGORITHM
-\end{lstlisting}
-\end{minipage}
-
-\begin{minipage}{\textwidth}
-\begin{lstlisting}[language=Python, frame=single, caption={Contoh source code Python}, captionpos=t, label={lst:contoh1}]
-def hello_world():
-    print("Hello, World!")       
-hello_world()
-\end{lstlisting}
-\end{minipage}
-
-
-\section{Beberapa Kesalahan Penulisan yang Sering Terjadi}
-\subsection{Penggunaan Kata "di mana" atau "dimana"}
-Banyak yang menuliskan kata "di mana" atau "dimana" sebagai pengganti kata "which" dalam bahasa Inggris. 
-Padahal, penggunaan kata "di mana" atau "dimana" tidak tepat dalam konteks tersebut. Demikian juga untuk kata serupa, misalnya "yang mana".
-Kata "di mana" atau "dimana" ini harus diganti dengan kata lain, seperti "dengan", "tempat", "yang", dan sebagainya tergantung kalimatnya.
-Penjelasan lengkap dapat dilihat pada \autocite{BPBI}.
-
-\subsection{Penggunaan Kata "sedangkan" dan "sehingga"}
-
-\begin{table}[t]
-  \begin{tabular}{|c|l|l|}
-  \hline
-  Kata & Salah & Benar \\ \hline
-  sedangkan & \begin{tabular}[c]{@{}c@{}}Sedangkan sistem lama masih\\ digunakan oleh banyak pengguna.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Sistem lama masih digunakan\\ oleh banyak pengguna,\\ sedangkan sistem baru belum siap.\end{tabular} \\ \hline
-  sehingga & \begin{tabular}[c]{@{}c@{}}Sehingga sistem lama masih\\ digunakan oleh banyak pengguna.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Sistem lama masih digunakan\\ oleh banyak pengguna sehingga\\ sistem baru belum siap.\end{tabular} \\ \hline
-  \end{tabular}
-  \caption{Contoh penggunaan kata "sedangkan" dan "sehingga"}
-  \label{tbl:sedangkan_sehingga}
+% =========================
+% Tabel Penelitian Terdahulu (2/3)
+% =========================
+\begin{landscape}
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.2}
+  \caption{Ringkasan Penelitian Terdahulu (2/3)}
+  \label{tab:penelitian-terdahulu-2}
+  \begin{tabularx}{\textwidth}{%
+    >{\raggedright\arraybackslash}p{0.12\textwidth}%
+    >{\raggedright\arraybackslash}p{0.16\textwidth}%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+  }
+    \toprule
+    Penelitian &
+    Konteks / Domain &
+    Tujuan \& Metode Utama &
+    Kelebihan &
+    Keterbatasan / Gap terhadap TA &
+    Hal yang Relevan terhadap TA \\
+    \midrule
+    Falasyfa \& Avianto (2024) &
+    Infrastruktur jalan / pelayanan publik &
+    Merancang aplikasi Android untuk layanan pengaduan kerusakan jalan; pengembangan aplikasi mobile dan pengujian fungsional (black box testing) untuk memastikan fitur pelaporan berjalan sesuai spesifikasi. &
+    Menunjukkan pemanfaatan perangkat mobile untuk mempermudah pelaporan, mempercepat alur komunikasi, dan mengurangi kehilangan data pelaporan infrastruktur. &
+    Fokus pada platform mobile tunggal (Android); tidak membahas integrasi dengan portal web layanan pelanggan; tidak mengulas alur pengelolaan keluhan internal dan pelacakan riwayat penanganan secara menyeluruh. &
+    Memberikan referensi desain fitur pelaporan yang sederhana dan praktis, yang dapat diadaptasi pada konteks keluhan layanan internet (misalnya opsi pelaporan via mobile untuk SpeedForce di masa depan). \\
+    \midrule
+    Siska \& Marsa (2025) &
+    Layanan kelistrikan (PLN) &
+    Mengembangkan Sistem Monitoring dan Pengelolaan Data Keluhan Pelanggan Berbasis Web pada PT PLN (Persero) ULP Bukittinggi, mengadaptasi tahapan Goal Directed Design (GDD) dari analisis kebutuhan, perancangan diagram kelas, implementasi, hingga pengujian. &
+    Sangat dekat dengan konsep complaint tracking; menunjukkan bahwa sistem web baru meningkatkan akurasi pencatatan, mempermudah monitoring keluhan secara real-time, dan mendukung penyusunan laporan bagi manajemen. &
+    Konteks BUMN besar dengan struktur organisasi dan sumber daya berbeda dari ISP lokal; tidak secara eksplisit menggunakan kerangka DSR; evaluasi berfokus pada fungsionalitas, belum pada usability/UX berbasis SUS dan UEQ. &
+    Menjadi acuan penting untuk perancangan fitur monitoring keluhan, kebutuhan transparansi status tiket, dan penyediaan informasi agregat bagi manajemen SpeedForce. \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
+\end{landscape}
 
-Kata "sedangkan" dan "sehingga" adalah kata hubung atau konjungsi. 
-Konjungsi adalah kata atau ungkapan yang menghubungkan satuan bahasa 
-(kata, frasa, klausa, dan kalimat). 
-Konjungsi dapat dibagi menjadi konjungsi intrakalimat dan antarkalimat.  
-Kata "sedangkan" menghubungkan dua klausa yang bersifat kontrasif, 
-sedangkan "sehingga" menghubungkan dua klausa yang bersifat kausal. 
-Dalam ragam formal, kata hubung “sedangkan” dan “sehingga” hanya dapat digunakan 
-sebagai konjungsi intrakalimat sehingga kedua konjungsi itu \textbf{tidak dapat diletakkan pada awal kalimat}.
-Selain itu, penggunaan kata "sedangkan" harus didahului oleh koma (,), sedangkan kata "sehingga" tidak perlu didahului oleh koma (,).
-Contoh penggunaan yang benar dan salah dapat dilihat pada Tabel \ref{tbl:sedangkan_sehingga}.
+\clearpage
+
+% =========================
+% Tabel Penelitian Terdahulu (3/3)
+% =========================
+\begin{landscape}
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.2}
+  \caption{Ringkasan Penelitian Terdahulu (3/3)}
+  \label{tab:penelitian-terdahulu-3}
+  \begin{tabularx}{\textwidth}{%
+    >{\raggedright\arraybackslash}p{0.12\textwidth}%
+    >{\raggedright\arraybackslash}p{0.16\textwidth}%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+    >{\raggedright\arraybackslash}X%
+  }
+    \toprule
+    Penelitian &
+    Konteks / Domain &
+    Tujuan \& Metode Utama &
+    Kelebihan &
+    Keterbatasan / Gap terhadap TA &
+    Hal yang Relevan terhadap TA \\
+    \midrule
+    Ulkhaq \& Barus (2017) &
+    Layanan internet tetap skala nasional (IndiHome) &
+    Mengukur gap antara harapan dan persepsi pelanggan layanan IndiHome menggunakan model SERVQUAL pada lima dimensi (tangibles, reliability, responsiveness, assurance, empathy) untuk menilai kualitas layanan dan kepuasan pelanggan. &
+    Memberikan bukti empiris bahwa kualitas layanan, termasuk kemampuan penyedia layanan merespons keluhan, berpengaruh signifikan terhadap kepuasan dan loyalitas pelanggan ISP besar. &
+    Berfokus pada pengukuran kepuasan dan gap kualitas layanan; tidak mengembangkan sistem informasi e-complaint; tidak mengkaji proses keluhan di ISP lokal dengan sumber daya terbatas. &
+    Menguatkan latar belakang pentingnya kualitas layanan dan peran penanganan keluhan dalam mempertahankan kepuasan serta loyalitas pelanggan internet tetap, yang menjadi dasar urgensi modul e-complaint SpeedForce. \\
+    \midrule
+    Studi dan kebijakan SP4N--LAPOR! &
+    Pengaduan pelayanan publik nasional lintas sektor &
+    Mendeskripsikan Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional (SP4N--LAPOR!) sebagai kanal pengaduan terpusat dengan prinsip no wrong door policy, pemberian nomor laporan, dan pelacakan status pengaduan secara daring. &
+    Menjadi contoh praktik baik pengelolaan pengaduan berskala nasional dengan kanal terintegrasi, standar alur pengaduan, serta transparansi status penanganan yang dapat diakses masyarakat. &
+    Fokus pada pelayanan publik lintas sektor, bukan layanan internet tetap di level ISP lokal; tidak membahas desain sistem spesifik untuk skala usaha kecil dengan tim operasional terbatas. &
+    Menjadi rujukan prinsip desain terkait nomor tiket, kanal terpusat, dan transparansi status pengaduan yang dapat diadaptasi dalam modul e-complaint SpeedForce dengan cakupan dan skala yang lebih kecil. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+\end{landscape}
 
 
-\subsection{Penggunaan Istilah yang Tidak Baku}
-Ada beberapa istilah yang sering digunakan dalam pembicaraan sehari-hari, tetapi tidak baku dalam penulisan ilmiah.
-Beberapa istilah tersebut antara lain:
-\begin{enumerate}
-  \item analisa $\rightarrow$ analisis
-  \item eksisting atau existing $\rightarrow$ yang ada atau saat ini
-  \item bisnis proses $\rightarrow$ proses bisnis
-  \item user $\rightarrow$ pengguna
-  \item system $\rightarrow$ sistem
-  \item database $\rightarrow$ basis data
-  \item aktifitas $\rightarrow$ aktivitas
-  \item efektifitas $\rightarrow$ efektivitas
-  \item sosial media $\rightarrow$ media sosial
-\end{enumerate}
 
-\subsection{Pemisah Desimal dan Ribuan}
-Tanda pemisah desimal dalam bahasa Indonesia adalah tanda koma, contoh:
-\begin{enumerate}
-  \item (Salah) Akurasi naik menjadi 50.6\% 
-  \item (Benar) Akurasi naik menjadi 50,6\% 
-\end{enumerate}
-
-\subsection{Daftar atau \textit{List}}
-Ada beberapa aturan penulisan daftar atau \textit{list} yang perlu diperhatikan, antara lain:
-\begin{enumerate}[a)]
-\item Jika memungkinkan, hindari penggunaan “bullet points” atau sejenisnya. Sebaiknya, gunakan angka (1, 2, 3, ...) atau huruf (a, b, c, …). Dengan demikian, pembaca dapat dengan mudah melihat jumlah \textit{item} atau \textit{list}. 
-\item Jika dalam daftar hanya ada satu item, tidak perlu menggunakan nomor urut.
-\item Penjelasan atau deskripsi suatu item sebaiknya menyatu dengan judul item tersebut, tidak berbeda halaman. Contoh yang salah: judul item ada di halaman 10, namun deskripsinya di halaman 11. Sebaiknya pindahkan judul tersebut ke halaman 11.
-\item Jika penjelasan atau deskripsi suatu item cukup panjang, misalnya lebih dari 1 halaman atau terdiri atas beberapa paragraf, sebaiknya setiap item tersebut dijadikan judul subbab, kecuali jika level subbab sudah mencapai level 4. 
-\end{enumerate}
-
-\subsection{Penggunaan Kata "masing-masing" dan "setiap"}
-Kata “masing-masing” digunakan di belakang kata yang diterangkan, misalnya 
-"Setiap proses menggunakan algoritma masing-masing". Kata “tiap-tiap” atau “setiap”
-ditempatkan di depan kata yang diterangkan, misalnya
-"Setiap proses menggunakan algoritma tertentu".

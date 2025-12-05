@@ -1,0 +1,3260 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.12.5)  5 DEC 2025 20:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./ProposalTA.tex
+(ProposalTA.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
+ex.def
+File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
+\g__graphics_track_int=\count192
+\l__pdf_internal_box=\box51
+\g__pdf_backend_object_int=\count193
+\g__pdf_backend_annotation_int=\count194
+\g__pdf_backend_link_int=\count195
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex
+.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count196
+\l__fontspec_language_int=\count197
+\l__fontspec_strnum_int=\count198
+\l__fontspec_tmp_int=\count199
+\l__fontspec_tmpa_int=\count266
+\l__fontspec_tmpb_int=\count267
+\l__fontspec_tmpc_int=\count268
+\l__fontspec_em_int=\count269
+\l__fontspec_emdef_int=\count270
+\l__fontspec_strong_int=\count271
+\l__fontspec_strongdef_int=\count272
+\l__fontspec_tmpa_dim=\dimen141
+\l__fontspec_tmpb_dim=\dimen142
+\l__fontspec_tmpc_dim=\dimen143
+ (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg))
+)
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+
+ (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count273
+\Gm@cntv=\count274
+\c@Gm@tempcnt=\count275
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
+\Gm@dimlist=\toks20
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count276
+\U@D=\dimen152
+\l@unhyphenated=\language79
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/babel\xebabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count277
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/babel-indonesian\indone
+sian.ldf
+Language: indonesian 2025/06/01 v1.0n Bahasa Indonesia support from the babel s
+ystem
+))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/id\babel
+-indonesian.tex
+Package babel Info: Importing font and identification data for indonesian
+(babel)             from babel-id.ini. Reported on input line 11.
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count278
+)
+\csq@reset=\count279
+\csq@gtype=\count280
+\csq@glevel=\count281
+\csq@qlevel=\count282
+\csq@maxlvl=\count283
+\csq@tshold=\count284
+\csq@ltx@everypar=\toks21
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
+)) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.st
+y
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen155
+\captionmargin=\dimen156
+\caption@leftmargin=\dimen157
+\caption@rightmargin=\dimen158
+\caption@width=\dimen159
+\caption@indent=\dimen160
+\caption@parindent=\dimen161
+\caption@hangindent=\dimen162
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count285
+\c@continuedfloat=\count286
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count287
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count288
+) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count289
+)
+\@linkdim=\dimen163
+\Hy@linkcounter=\count290
+\Hy@pagecounter=\count291
+ (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
+) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count292
+ (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing OFF on input line 4201.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4448.
+\c@Hy@tempcnt=\count293
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4786.
+\XeTeXLinkMargin=\dimen164
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count294
+\Field@Width=\dimen165
+\Fld@charsize=\dimen166
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing OFF on input line 6080.
+Package hyperref Info: Link coloring OFF on input line 6085.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode OFF on input line 6095.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count295
+\c@Item=\count296
+\c@Hfootnote=\count297
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
+File: hxetex.def 2023-11-26 v7.01g Hyperref driver for XeTeX
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box52
+\c@Hy@AnnotLevel=\count298
+\HyField@AnnotCount=\count299
+\Fld@listcount=\count300
+\c@bookmark@seq@number=\count301
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip50
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip51
+\aftertitleunit=\skip52
+\ttl@plus=\dimen167
+\ttl@minus=\dimen168
+\ttl@toksa=\toks22
+\titlewidth=\dimen169
+\titlewidthlast=\dimen170
+\titlewidthfirst=\dimen171
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip53
+\cftbeforetoctitleskip=\skip54
+\cftaftertoctitleskip=\skip55
+\cftbeforepartskip=\skip56
+\cftpartnumwidth=\skip57
+\cftpartindent=\skip58
+\cftbeforechapskip=\skip59
+\cftchapindent=\skip60
+\cftchapnumwidth=\skip61
+\cftbeforesecskip=\skip62
+\cftsecindent=\skip63
+\cftsecnumwidth=\skip64
+\cftbeforesubsecskip=\skip65
+\cftsubsecindent=\skip66
+\cftsubsecnumwidth=\skip67
+\cftbeforesubsubsecskip=\skip68
+\cftsubsubsecindent=\skip69
+\cftsubsubsecnumwidth=\skip70
+\cftbeforeparaskip=\skip71
+\cftparaindent=\skip72
+\cftparanumwidth=\skip73
+\cftbeforesubparaskip=\skip74
+\cftsubparaindent=\skip75
+\cftsubparanumwidth=\skip76
+\cftbeforeloftitleskip=\skip77
+\cftafterloftitleskip=\skip78
+\cftbeforefigskip=\skip79
+\cftfigindent=\skip80
+\cftfignumwidth=\skip81
+\c@lofdepth=\count302
+\c@lotdepth=\count303
+\cftbeforelottitleskip=\skip82
+\cftafterlottitleskip=\skip83
+\cftbeforetabskip=\skip84
+\cfttabindent=\skip85
+\cfttabnumwidth=\skip86
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count304
+\l__lipsum_a_int=\count305
+\l__lipsum_b_int=\count306
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/floatrow\floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+\c@float@type=\count307
+\float@exts=\toks23
+\float@box=\box54
+\@floatcapt=\box55
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks24
+\flrow@foot=\insert252
+\FB@wd=\dimen172
+\FBo@wd=\dimen173
+\FBc@wd=\dimen174
+\FBo@ht=\skip87
+\FBc@ht=\skip88
+\FBf@ht=\skip89
+\FBo@max=\skip90
+\FBc@max=\skip91
+\FBf@max=\skip92
+\c@FBl@b=\count308
+\floatbox@depth=\count309
+\c@FRobj=\count310
+\c@FRsobj=\count311
+\Xhsize=\skip93
+\sXhsize=\skip94
+\Zhsize=\skip95
+\sZhsize=\skip96
+\flrow@rowbox=\box56
+\FR@Zunitlength=\dimen175
+\c@FBcnt=\count312
+\FPOScnt=\count313
+\LTleft=\skip97
+\LTright=\skip98
+\LTleft=\skip99
+\LTright=\skip100
+\flrow@types=\toks25
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count314
+\lst@gtempboxa=\box57
+\lst@token=\toks26
+\lst@length=\count315
+\lst@currlwidth=\dimen176
+\lst@column=\count316
+\lst@pos=\count317
+\lst@lostspace=\dimen177
+\lst@width=\dimen178
+\lst@newlines=\count318
+\lst@lineno=\count319
+\lst@maxwidth=\dimen179
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count320
+\lst@skipnumbers=\count321
+\lst@framebox=\box58
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip101
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks27
+\ex@=\dimen180
+))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen181
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count322
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count323
+\leftroot@=\count324
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count325
+\DOTSCASE@=\count326
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen182
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count327
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count328
+\dotsspace@=\muskip17
+\c@parentequation=\count329
+\dspbrk@lvl=\count330
+\tag@help=\toks28
+\row@=\count331
+\column@=\count332
+\maxfields@=\count333
+\andhelp@=\toks29
+\eqnshift@=\dimen183
+\alignsep@=\dimen184
+\tagshift@=\dimen185
+\tagwidth@=\dimen186
+\totwidth@=\dimen187
+\lineht@=\dimen188
+\@envbody=\toks30
+\multlinegap=\skip102
+\multlinetaggap=\skip103
+\mathdisplay@stack=\toks31
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
+y
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip104
+\enit@outerparindent=\dimen189
+\enit@toks=\toks32
+\enit@inbox=\box61
+\enit@count@id=\count334
+\enitdp@description=\count335
+) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip105
+\LTright=\skip106
+\LTpre=\skip107
+\LTpost=\skip108
+\LTchunksize=\count336
+\LTcapwidth=\dimen190
+\LT@head=\box62
+\LT@firsthead=\box63
+\LT@foot=\box64
+\LT@lastfoot=\box65
+\LT@gbox=\box66
+\LT@cols=\count337
+\LT@rows=\count338
+\c@LT@tables=\count339
+\c@LT@chunks=\count340
+\LT@p@ftn=\toks33
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen191
+\lightrulewidth=\dimen192
+\cmidrulewidth=\dimen193
+\belowrulesep=\dimen194
+\belowbottomsep=\dimen195
+\aboverulesep=\dimen196
+\abovetopsep=\dimen197
+\cmidrulesep=\dimen198
+\cmidrulekern=\dimen199
+\defaultaddspace=\dimen256
+\@cmidla=\count341
+\@cmidlb=\count342
+\@aboverulesep=\dimen257
+\@belowrulesep=\dimen258
+\@thisruleclass=\count343
+\@lastruleclass=\count344
+\@thisrulewidth=\dimen259
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/datetime2\datetime2.sty
+Package: datetime2 2021/03/21 v1.5.7 (NLCT) date and time formats
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklang.sty
+Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.t
+ex)
+Package tracklang Info: Tracking dialect `indonesian' (language `bahasai') on i
+nput line 264.
+Package tracklang Info: Tracking dialect `indonesian' (language `bahasai') on i
+nput line 264.
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+)
+\XKV@depth=\count345
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+Package tracklang Info: Tracking dialect `bahasai' (language `bahasai') on inpu
+t line 217.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-bahasai\datet
+ime2-bahasai.ldf
+File: datetime2-bahasai.ldf 2018/01/10 v1.01
+))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen260
+\ar@mcellbox=\box67
+\extrarowheight=\dimen261
+\NC@list=\toks36
+\extratabsurround=\skip109
+\backup@length=\skip110
+\ar@cellbox=\box68
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen262
+\TX@old@table=\dimen263
+\TX@old@col=\dimen264
+\TX@target=\dimen265
+\TX@delta=\dimen266
+\TX@cols=\count346
+\TX@ftn=\toks37
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip111
+\multirow@cntb=\count347
+\multirow@dima=\skip112
+\bigstrutjot=\dimen267
+)
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-chicago\biblat
+ex-chicago.sty
+Package: biblatex-chicago 2022/07/02 v 3.18 biblatex style
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+\xs_counta=\count348
+\xs_countb=\count349
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+) (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count350
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count351
+\c@listtotal=\count352
+\c@listcount=\count353
+\c@liststart=\count354
+\c@liststop=\count355
+\c@citecount=\count356
+\c@citetotal=\count357
+\c@multicitecount=\count358
+\c@multicitetotal=\count359
+\c@instcount=\count360
+\c@maxnames=\count361
+\c@minnames=\count362
+\c@maxitems=\count363
+\c@minitems=\count364
+\c@citecounter=\count365
+\c@maxcitecounter=\count366
+\c@savedcitecounter=\count367
+\c@uniquelist=\count368
+\c@uniquename=\count369
+\c@refsection=\count370
+\c@refsegment=\count371
+\c@maxextratitle=\count372
+\c@maxextratitleyear=\count373
+\c@maxextraname=\count374
+\c@maxextradate=\count375
+\c@maxextraalpha=\count376
+\c@abbrvpenalty=\count377
+\c@highnamepenalty=\count378
+\c@lownamepenalty=\count379
+\c@maxparens=\count380
+\c@parenlevel=\count381
+\blx@tempcnta=\count382
+\blx@tempcntb=\count383
+\blx@tempcntc=\count384
+\c@blx@maxsection=\count385
+\blx@maxsegment@0=\count386
+\blx@notetype=\count387
+\blx@parenlevel@text=\count388
+\blx@parenlevel@foot=\count389
+\blx@sectionciteorder@0=\count390
+\blx@sectionciteorderinternal@0=\count391
+\blx@entrysetcounter=\count392
+\blx@biblioinstance=\count393
+\labelnumberwidth=\skip113
+\labelalphawidth=\skip114
+\biblabelsep=\skip115
+\bibitemsep=\skip116
+\bibnamesep=\skip117
+\bibinitsep=\skip118
+\bibparsep=\skip119
+\bibhang=\skip120
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language80
+\c@mincomprange=\count394
+\c@maxcomprange=\count395
+\c@mincompwidth=\count396
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count397
+\c@savedafterword=\count398
+\c@annotator=\count399
+\c@savedannotator=\count400
+\c@author=\count401
+\c@savedauthor=\count402
+\c@bookauthor=\count403
+\c@savedbookauthor=\count404
+\c@commentator=\count405
+\c@savedcommentator=\count406
+\c@editor=\count407
+\c@savededitor=\count408
+\c@editora=\count409
+\c@savededitora=\count410
+\c@editorb=\count411
+\c@savededitorb=\count412
+\c@editorc=\count413
+\c@savededitorc=\count414
+\c@foreword=\count415
+\c@savedforeword=\count416
+\c@holder=\count417
+\c@savedholder=\count418
+\c@introduction=\count419
+\c@savedintroduction=\count420
+\c@namea=\count421
+\c@savednamea=\count422
+\c@nameb=\count423
+\c@savednameb=\count424
+\c@namec=\count425
+\c@savednamec=\count426
+\c@translator=\count427
+\c@savedtranslator=\count428
+\c@shortauthor=\count429
+\c@savedshortauthor=\count430
+\c@shorteditor=\count431
+\c@savedshorteditor=\count432
+\c@labelname=\count433
+\c@savedlabelname=\count434
+\c@institution=\count435
+\c@savedinstitution=\count436
+\c@lista=\count437
+\c@savedlista=\count438
+\c@listb=\count439
+\c@savedlistb=\count440
+\c@listc=\count441
+\c@savedlistc=\count442
+\c@listd=\count443
+\c@savedlistd=\count444
+\c@liste=\count445
+\c@savedliste=\count446
+\c@listf=\count447
+\c@savedlistf=\count448
+\c@location=\count449
+\c@savedlocation=\count450
+\c@organization=\count451
+\c@savedorganization=\count452
+\c@origlocation=\count453
+\c@savedoriglocation=\count454
+\c@origpublisher=\count455
+\c@savedorigpublisher=\count456
+\c@publisher=\count457
+\c@savedpublisher=\count458
+\c@language=\count459
+\c@savedlanguage=\count460
+\c@origlanguage=\count461
+\c@savedoriglanguage=\count462
+\c@pageref=\count463
+\c@savedpageref=\count464
+\shorthandwidth=\skip121
+\shortjournalwidth=\skip122
+\shortserieswidth=\skip123
+\shorttitlewidth=\skip124
+\shortauthorwidth=\skip125
+\shorteditorwidth=\skip126
+\locallabelnumberwidth=\skip127
+\locallabelalphawidth=\skip128
+\localshorthandwidth=\skip129
+\localshortjournalwidth=\skip130
+\localshortserieswidth=\skip131
+\localshorttitlewidth=\skip132
+\localshortauthorwidth=\skip133
+\localshorteditorwidth=\skip134
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-unicode.de
+f)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count465
+\c@textcitetotal=\count466
+\c@textcitemaxnames=\count467
+\c@biburlbigbreakpenalty=\count468
+\c@biburlbreakpenalty=\count469
+\c@biburlnumpenalty=\count470
+\c@biburlucpenalty=\count471
+\c@biburllcpenalty=\count472
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count473
+)
+Package biblatex Info: Trying to load bibliography style 'chicago-authordate'..
+.
+Package biblatex Info: ... file 'chicago-authordate.bbx' found.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-chicago\chicag
+o-authordate.bbx
+File: chicago-authordate.bbx 2022/11/17 v 3.18b biblatex bibliography style
+\lositemsep=\skip135
+Package biblatex Info: Delimiter 'revsdnamedelim' in context '' already defined
+, overwriting.
+\cms@tempcnta=\count474
+\cms@tempcntb=\count475
+\c@bbx:relatedcount=\count476
+\c@bbx:relatedtotal=\count477
+)
+Package biblatex Info: Trying to load citation style 'chicago-authordate'...
+Package biblatex Info: ... file 'chicago-authordate.cbx' found.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-chicago\chicag
+o-authordate.cbx
+File: chicago-authordate.cbx 2022/07/02 v 3.18 biblatex citation style
+Package biblatex Info: Trying to load citation style 'chicago-dates-common'...
+Package biblatex Info: ... file 'chicago-dates-common.cbx' found.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-chicago\chicag
+o-dates-common.cbx
+File: chicago-dates-common.cbx 2024/04/15 v 3.20 biblatex citation style
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\citetitle'.
+Package biblatex Info: Redefining '\footfullcite'.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+\c@cms@punct=\count478
+Package biblatex Info: Delimiter 'dateeradelim' in context '' already defined, 
+overwriting.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2024-01-04 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+)))
+Package hyperref Info: Option `colorlinks' set `true' on input line 170.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+
+
+Package csquotes Warning: No style for language 'indonesian'.
+(csquotes)                Using fallback style on input line 216.
+
+Package csquotes Info: Redefining alias 'default' -> 'fallback'.
+(ProposalTA.aux)
+\openout1 = `ProposalTA.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 216.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+16.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 216.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 216.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 216.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 216.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 216.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 216.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 216.
+LaTeX Font Info:    Redeclaring math accent \check on input line 216.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 216.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 216.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 216.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 216.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 216.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 2
+16.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 216.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+216.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 216.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 216.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+216.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 216.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 216.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 216.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 216.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 216.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 216.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(113.81102pt, 398.3386pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=398.3386pt
+* \textheight=674.33032pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=41.54103pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: Fixing longtable code of `floatrow' package.
+Package caption Info: End \AtBeginDocument code.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 149.
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+Package hyperref Info: Link coloring ON on input line 216.
+ (ProposalTA.out) (ProposalTA.out)
+\@outlinefile=\write4
+\openout4 = `ProposalTA.out'.
+
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/floatrow\fr-longtable.s
+ty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+
+\flrow@LT@lasthead=\box69
+\flrow@LT@prelastfoot=\box70
+\c@FBLTpage=\count479
+)
+\c@lstlisting=\count480
+Package biblatex Info: Trying to load language 'indonesian'...
+Package biblatex Info: ... file 'indonesian.lbx' not found.
+
+
+Package biblatex Warning: Language 'indonesian' not supported.
+(biblatex)                Using dummy definitions on input line 216.
+
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `ProposalTA.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'ProposalTA.bbl' found.
+(ProposalTA.bbl)
+Package biblatex Info: Reference section=0 on input line 216.
+Package biblatex Info: Reference segment=0 on input line 216.
+File: image/ganesha.jpg Graphic file (type bmp)
+<image/ganesha.jpg>
+
+
+Package datetime2 Warning: Region `bahasai' has ignored 
+(datetime2)                the following settings:
+(datetime2)                showmonthname=true
+ on input line 258.
+
+[1
+
+
+] [1] (ProposalTA.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(C:\Users\Daffa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[2
+
+] [3])
+\tf@toc=\write5
+\openout5 = `ProposalTA.toc'.
+
+ [4] (ProposalTA.lof
+Overfull \hbox (8.1857pt too wide) in paragraph at lines 11--11
+ [][] [][][]\TU/TimesNewRoman(0)/m/n/12 Diagram alur proses penanganan keluhan 
+pelanggan SpeedForce (TO- 
+ []
+
+)
+\tf@lof=\write6
+\openout6 = `ProposalTA.lof'.
+
+ [5] (ProposalTA.lot)
+\tf@lot=\write7
+\openout7 = `ProposalTA.lot'.
+
+ [6] (Bab I - Pendahuluan.tex
+Bab I.
+
+LaTeX Warning: Citation 'apjii2024' on page 1 undefined on input line 16.
+
+
+Overfull \hbox (3.55594pt too wide) in paragraph at lines 16--17
+\TU/TimesNewRoman(0)/m/n/12 jukkan bahwa jumlah pengguna internet Indonesia tah
+un 2024 mencapai 221.563.479
+ []
+
+
+LaTeX Warning: Citation 'apjii2018-2024' on page 1 undefined on input line 18.
+
+[1
+
+
+]
+File: image/gambar-penetrasi-internet.png Graphic file (type bmp)
+<image/gambar-penetrasi-internet.png>
+
+
+LaTeX Warning: Citation 'apjii2014-2024' on page 2 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'apjii2022' on page 2 undefined on input line 28.
+
+File: image/gambar-jumlah-pengguna-internet.png Graphic file (type bmp)
+<image/gambar-jumlah-pengguna-internet.png>
+[2] [3]
+
+LaTeX Warning: Citation 'afifyeccms' on page 4 undefined on input line 66.
+
+
+Overfull \hbox (1.66415pt too wide) in paragraph at lines 66--67
+[]\TU/TimesNewRoman(0)/m/n/12 Pada tingkat internasional, Afify dan Kadry mengu
+sulkan \TU/TimesNewRoman(0)/m/it/12 Electronic Customer Com-
+ []
+
+[4]
+Overfull \hbox (10.44852pt too wide) in paragraph at lines 92--93
+\TU/TimesNewRoman(0)/m/n/12 Tujuan utama dari tugas akhir ini adalah mengembang
+kan prototipe sistem e-complaint
+ []
+
+[5] [6]
+
+LaTeX Warning: Citation 'hevner2004' on page 7 undefined on input line 140.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 7 undefined on input line 140.
+
+
+LaTeX Warning: Citation 'johannesson2014' on page 7 undefined on input line 140
+.
+
+
+LaTeX Warning: Citation 'wieringa2014' on page 7 undefined on input line 140.
+
+
+Overfull \hbox (39.58005pt too wide) in paragraph at lines 140--141
+\TU/TimesNewRoman(0)/m/n/12 ngan website layanan pelanggan SpeedForce ([]; []; 
+[];
+ []
+
+[7]
+
+LaTeX Warning: Citation 'tullis2013' on page 8 undefined on input line 167.
+
+
+LaTeX Warning: Citation 'sauro2016' on page 8 undefined on input line 167.
+
+[8]) (Bab II - Studi-Literatur.tex [9]
+Bab II.
+
+LaTeX Warning: Citation 'AfifyKadry2019' on page 10 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Merang2022' on page 10 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'ISO2018' on page 10 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'W3C2023' on page 10 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Hevner2004' on page 10 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 10 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'APJII2024' on page 10 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'APJII2024' on page 10 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'katadata23' on page 10 undefined on input line 9.
+
+[10
+
+]
+
+LaTeX Warning: Citation 'UlkhaqBarus2017' on page 11 undefined on input line 13
+.
+
+
+LaTeX Warning: Citation 'Wahyuningsih2021' on page 11 undefined on input line 1
+3.
+
+
+Overfull \hbox (30.23268pt too wide) in paragraph at lines 13--14
+\TU/TimesNewRoman(0)/m/n/12 ra ISP merespons dan menangani keluhan serta pertan
+yaan pelanggan ([];
+ []
+
+
+LaTeX Warning: Citation 'Parasuraman1988' on page 11 undefined on input line 17
+.
+
+
+LaTeX Warning: Citation 'Rohmial2022' on page 11 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Filip2013' on page 11 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'StaussSeidel2019' on page 11 undefined on input line 1
+7.
+
+[11]
+
+LaTeX Warning: Citation 'Parasuraman1988' on page 12 undefined on input line 21
+.
+
+
+LaTeX Warning: Citation 'UlkhaqBarus2017' on page 12 undefined on input line 23
+.
+
+
+LaTeX Warning: Citation 'natalius2022' on page 12 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'pantulu2023' on page 12 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'ilhamdirgantara2020' on page 12 undefined on input lin
+e 27.
+
+
+LaTeX Warning: Citation 'Rohmial2022' on page 12 undefined on input line 27.
+
+[12]
+
+LaTeX Warning: Citation 'Filip2013' on page 13 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'AfifyKadry2019' on page 13 undefined on input line 31.
+
+
+
+Overfull \hbox (12.3118pt too wide) in paragraph at lines 31--32
+\TU/TimesNewRoman(0)/m/n/12 ngat berharga untuk memahami titik lemah layanan da
+n peluang perbaikan ([]).
+ []
+
+
+LaTeX Warning: Citation 'Filip2013' on page 13 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'StaussSeidel2004' on page 13 undefined on input line 3
+3.
+
+
+LaTeX Warning: Citation 'sahita2020' on page 13 undefined on input line 35.
+
+[13]
+
+LaTeX Warning: Citation 'AfifyKadry2019' on page 14 undefined on input line 41.
+
+
+
+LaTeX Warning: Citation 'Merang2022' on page 14 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'SiskaMarsa2025' on page 14 undefined on input line 41.
+
+
+
+LaTeX Warning: Citation 'KemenpanRB2020' on page 14 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation 'Lapor2021' on page 14 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Lapor2021' on page 14 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'AfifyKadry2019' on page 14 undefined on input line 51.
+
+
+[14]
+
+LaTeX Warning: Citation 'AfifyKadry2019' on page 15 undefined on input line 53.
+
+
+
+LaTeX Warning: Citation 'Merang2022' on page 15 undefined on input line 59.
+
+
+Overfull \hbox (7.92537pt too wide) in paragraph at lines 59--60
+\TU/TimesNewRoman(0)/m/n/12 rapkan di beragam domain layanan. Merang, Ibrahim, 
+dan Jamaluddin ([])
+ []
+
+[15]
+
+LaTeX Warning: Citation 'FalasyfaAvianto2024' on page 16 undefined on input lin
+e 61.
+
+
+LaTeX Warning: Citation 'SiskaMarsa2025' on page 16 undefined on input line 63.
+
+
+
+LaTeX Warning: Citation 'Merang2022' on page 16 undefined on input line 65.
+
+
+LaTeX Warning: Citation 'FalasyfaAvianto2024' on page 16 undefined on input lin
+e 65.
+
+
+LaTeX Warning: Citation 'SiskaMarsa2025' on page 16 undefined on input line 65.
+
+
+
+Overfull \hbox (1.707pt too wide) in paragraph at lines 65--66
+\TU/TimesNewRoman(0)/m/n/12 perbaikan proses layanan ([]; []; []).
+ []
+
+
+LaTeX Warning: Citation 'Salesforce2024' on page 16 undefined on input line 69.
+
+
+
+LaTeX Warning: Citation 'Metavshn2024' on page 16 undefined on input line 69.
+
+[16]
+
+LaTeX Warning: Citation 'Intellias2024' on page 17 undefined on input line 71.
+
+
+LaTeX Warning: Citation 'Aixtor2023' on page 17 undefined on input line 71.
+
+
+LaTeX Warning: Citation 'Telkomsel2024' on page 17 undefined on input line 73.
+
+
+LaTeX Warning: Citation 'Ronald2023' on page 17 undefined on input line 73.
+
+[17] [18]
+
+LaTeX Warning: Citation 'ISO2018' on page 19 undefined on input line 91.
+
+
+LaTeX Warning: Citation 'Nielsen2012' on page 19 undefined on input line 93.
+
+
+LaTeX Warning: Citation 'Brooke1996' on page 19 undefined on input line 97.
+
+
+LaTeX Warning: Citation 'Bangor2008' on page 19 undefined on input line 99.
+
+
+LaTeX Warning: Citation 'Lewis2018' on page 19 undefined on input line 99.
+
+[19]
+
+LaTeX Warning: Citation 'ISO2019' on page 20 undefined on input line 103.
+
+
+LaTeX Warning: Citation 'Schrepp2014' on page 20 undefined on input line 103.
+
+
+LaTeX Warning: Citation 'Laugwitz2008' on page 20 undefined on input line 105.
+
+
+LaTeX Warning: Citation 'Schrepp2017' on page 20 undefined on input line 105.
+
+
+Overfull \hbox (45.38972pt too wide) in paragraph at lines 105--106
+[]\TU/TimesNewRoman(0)/m/n/12 UEQ menggunakan pasangan kata bipolar (misalnya “
+tidak praktis–praktis”, “membosankan–
+ []
+
+
+LaTeX Warning: Citation 'W3C2023' on page 20 undefined on input line 111.
+
+
+Overfull \hbox (0.302pt too wide) in paragraph at lines 111--112
+\TU/TimesNewRoman(0)/m/n/12 Web Content Accessibility Guidelines (WCAG) yang di
+kembangkan oleh W3C Web
+ []
+
+
+LaTeX Warning: Citation 'W3C2023' on page 20 undefined on input line 113.
+
+
+LaTeX Warning: Citation 'MDN2023' on page 20 undefined on input line 113.
+
+[20]
+
+LaTeX Warning: Citation 'W3C2018' on page 21 undefined on input line 115.
+
+
+LaTeX Warning: Citation 'MDN2023' on page 21 undefined on input line 115.
+
+
+LaTeX Warning: Citation 'LaudonLaudon2022' on page 21 undefined on input line 1
+19.
+
+
+LaTeX Warning: Citation 'StairReynolds2020' on page 21 undefined on input line 
+119.
+
+
+LaTeX Warning: Citation 'WardPeppard2016' on page 21 undefined on input line 12
+1.
+
+
+LaTeX Warning: Citation 'Schwalbe2022' on page 21 undefined on input line 121.
+
+[21]
+
+LaTeX Warning: Citation 'Hevner2004' on page 22 undefined on input line 127.
+
+
+LaTeX Warning: Citation 'GregorHevner2013' on page 22 undefined on input line 1
+27.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 22 undefined on input line 129.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 22 undefined on input line 129.
+
+[22] [23]
+
+LaTeX Warning: Citation 'AfifyKadry2019' on page 24 undefined on input line 175
+.
+
+
+LaTeX Warning: Citation 'Merang2022' on page 24 undefined on input line 177.
+
+[24]
+
+LaTeX Warning: Citation 'FalasyfaAvianto2024' on page 25 undefined on input lin
+e 179.
+
+
+LaTeX Warning: Citation 'SiskaMarsa2025' on page 25 undefined on input line 181
+.
+
+[25]
+
+LaTeX Warning: Citation 'UlkhaqBarus2017' on page 26 undefined on input line 18
+3.
+
+
+LaTeX Warning: Citation 'KemenpanRB2020' on page 26 undefined on input line 185
+.
+
+
+LaTeX Warning: Citation 'Lapor2021' on page 26 undefined on input line 185.
+
+
+LaTeX Warning: Reference `tab:penelitian-terdahulu' on page 26 undefined on inp
+ut line 187.
+
+[26] [27] [28] [29]) (Bab III - Analisis-Masalah.tex
+Bab III.
+
+LaTeX Warning: Citation 'hevner2004' on page 30 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 30 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'galup_itsm_2009' on page 30 undefined on input line 20
+.
+
+[30
+
+
+
+
+
+
+
+
+
+]
+File: image/AS-IS.png Graphic file (type bmp)
+<image/AS-IS.png>
+ [31]
+
+LaTeX Warning: Citation 'verhoef_multichannel_2015' on page 32 undefined on inp
+ut line 40.
+
+
+LaTeX Warning: Citation 'galup_itsm_2009' on page 32 undefined on input line 44
+.
+
+
+LaTeX Warning: Citation 'tax_customer_1998' on page 32 undefined on input line 
+52.
+
+[32]
+
+LaTeX Warning: Citation 'galup_itsm_2009' on page 33 undefined on input line 56
+.
+
+
+Overfull \hbox (1.04292pt too wide) in paragraph at lines 97--97
+ []|\TU/TimesNewRoman(0)/b/n/10.95 Kode| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Keluhan masuk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 kanal informal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 (WhatsApp,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 telepon, media
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 sosial) tanpa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Pelanggan bi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 ngung harus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 melapor ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 mana, sering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 harus mengu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 lang informasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 yang sama di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 kanal berbeda,
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 dan tidak yakin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 keluhannya
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 benar-benar
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Sulit memonitor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 seluruh keluhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 risiko keluhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 tidak tercatat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 atau terlewat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 karena tersebar
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 di banyak kanal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Informasi ke-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 luhan hanya
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 tersimpan di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 riwayat chat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 atau catatan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 pribadi/manual;
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 pencatatan yang
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 konsisten dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Pelanggan ragu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 apakah detail
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 keluhannya di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 simpan dengan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 benar dan bisa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 ditelusuri jika
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 masalah beru-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Data keluhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 mudah hilang,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 penelusuran ri-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 menyita waktu,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 gangguan sulit
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 tidak ada basis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Setiap keluhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 tidak diberikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 identitas tiket
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 unik sehing-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 ga pelacakan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 status sangat
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 bergantung pada
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 ingatan petugas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 atau pencarian
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Pelanggan ke-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 sulitan merujuk
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 keluhan tertentu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 saat \TU/TimesNewRoman(0)/m/it/10.95 follow-up\T
+U/TimesNewRoman(0)/m/n/10.95 ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 status menjadi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 tidak jelas dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Ketika jumlah
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 pelanggan me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 berpotensi ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 tukar, terlewat,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 atau tertunda
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 penanganannya
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/10.95 sistem referensi
+ []
+
+[33]
+Overfull \hbox (1.04292pt too wide) in paragraph at lines 132--132
+ []|\TU/TimesNewRoman(0)/b/n/10.95 Kode| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Perkembangan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 penanganan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 keluhan hanya
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 dapat diketahui
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 dengan cara
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 menghubungi
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 kembali petugas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 (chat/telepon);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 tidak ada an-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 tarmuka bagi
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 mengecek status
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Pelanggan me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 rasa proses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 penanganan
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 kurang transpar-
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 an dan lambat,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 terutama jika
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 respons petugas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 tidak konsisten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 atau sedang
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 132--132
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Menambah beb-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 an komunikasi
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 admin/CS untuk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 menjawab per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 tanyaan status
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 berulang, me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 miskomunikasi,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 dan membuat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 proses layanan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 tampak kurang
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Tidak terse-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 dia basis data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 keluhan yang
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 konsisten untuk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 seperti jumlah
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 keluhan per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 periode, jenis
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 gangguan terba-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 nyak, rata-rata
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 waktu tanggap,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 dan rata-rata
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 waktu penye-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 lesaian secara
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 sistematis dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Pelanggan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 cenderung me-
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 rasakan masalah
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 yang sama ber-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 ulang tanpa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 perbaikan yang
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 nyata karena
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 an cenderung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 reaktif dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 berbasis penga-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 laman individu;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 sulit menyusun
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 dan membu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 at keputusan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 perbaikan jari-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 ngan/layanan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/TimesNewRoman(0)/m/n/10.95 secara strategis
+ []
+
+[34] [35]
+
+LaTeX Warning: Citation 'hevner2004' on page 36 undefined on input line 140.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 36 undefined on input line 140.
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 208--208
+\TU/TimesNewRoman(0)/m/n/10.95 site layanan pelanggan
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 208--208
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Sistem melakukan vali-
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 208--208
+\TU/TimesNewRoman(0)/m/n/10.95 lom wajib, format kon-
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 208--208
+\TU/TimesNewRoman(0)/m/n/10.95 an, sistem menampilk-
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 208--208
+\TU/TimesNewRoman(0)/m/n/10.95 an halaman atau pesan
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 208--208
+\TU/TimesNewRoman(0)/m/n/10.95 konfirmasi yang memu-
+ []
+
+[36]
+Underfull \hbox (badness 2103) in paragraph at lines 255--255
+\TU/TimesNewRoman(0)/m/n/10.95 perti waktu, pelanggan,
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 255--255
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Admin dapat memfilter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Sistem menyediakan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+\TU/TimesNewRoman(0)/m/n/10.95 tampilan detail untuk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+\TU/TimesNewRoman(0)/m/n/10.95 informasi keluhan dan
+ []
+
+[37]
+Underfull \hbox (badness 2042) in paragraph at lines 302--302
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Admin atau teknisi da-
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 302--302
+\TU/TimesNewRoman(0)/m/n/10.95 pat mengubah status ti-
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 302--302
+\TU/TimesNewRoman(0)/m/n/10.95 ngan menambahkan ca-
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 302--302
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Pelanggan dapat meng-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+\TU/TimesNewRoman(0)/m/n/10.95 ecek status keluhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Sistem menyediakan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+\TU/TimesNewRoman(0)/m/n/10.95 ringkasan sederhana
+ []
+
+
+Underfull \hbox (badness 7486) in paragraph at lines 302--302
+\TU/TimesNewRoman(0)/m/n/10.95 seperti jumlah keluhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+\TU/TimesNewRoman(0)/m/n/10.95 per periode, kategori
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 302--302
+\TU/TimesNewRoman(0)/m/n/10.95 keluhan terbanyak, dan
+ []
+
+[38]
+Underfull \hbox (badness 4108) in paragraph at lines 337--337
+\TU/TimesNewRoman(0)/m/n/10.95 ket, penugasan teknisi)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Sistem minimal me-
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 337--337
+\TU/TimesNewRoman(0)/m/n/10.95 pelanggan (ID pelangg-
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 337--337
+\TU/TimesNewRoman(0)/m/n/10.95 an, nama, kontak) agar
+ []
+
+[39]
+
+LaTeX Warning: Citation 'Brooke1996' on page 40 undefined on input line 348.
+
+[40]
+
+LaTeX Warning: Citation 'Laugwitz2008' on page 41 undefined on input line 358.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+\TU/TimesNewRoman(0)/m/n/10.95 keluhan maksimal tiga
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Pengalaman penggunaan
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 401--401
+\TU/TimesNewRoman(0)/m/n/10.95 terasa nyaman dan tidak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Skor UEQ \TU/TimesNewRoman(0)/m/it/10.95 Attr
+active-
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 401--401
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Tampilan mudah terbaca
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Rasio kontras teks–
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 401--401
+\TU/TimesNewRoman(0)/m/it/10.95 background $\OMS/cmsy/m/n/10.95 ^^U$ \TU/TimesN
+ewRoman(0)/m/n/10.95 4,5 : 1;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Halaman panel internal
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 401--401
+\TU/TimesNewRoman(0)/m/n/10.95 login; data keluhan dan
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 401--401
+\TU/TimesNewRoman(0)/m/n/10.95 kontak pelanggan hanya
+ []
+
+
+Underfull \hbox (badness 3138) in paragraph at lines 432--432
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Data keluhan dan peru-
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 432--432
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Tidak ada keluhan yang
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 432--432
+\TU/TimesNewRoman(0)/m/n/10.95 tus tiket tercatat di log
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 432--432
+\TU/TimesNewRoman(0)/m/n/10.95 dah dipelihara/diatur un-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--432
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Waktu muat halaman
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--432
+\TU/TimesNewRoman(0)/m/n/10.95 utama dan form ke-
+ []
+
+
+Underfull \hbox (badness 7981) in paragraph at lines 432--432
+\TU/TimesNewRoman(0)/m/n/10.95 luhan $\OMS/cmsy/m/n/10.95 ^^T$ \TU/TimesNewRoma
+n(0)/m/n/10.95 3 detik pada
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--432
+\TU/TimesNewRoman(0)/m/n/10.95 pencarian/pemfilteran ti-
+ []
+
+
+Underfull \hbox (badness 5203) in paragraph at lines 432--432
+\TU/TimesNewRoman(0)/m/n/10.95 atau perubahan kategori
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 432--432
+\TU/TimesNewRoman(0)/m/n/10.95 keluhan dapat dilakukan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--432
+\TU/TimesNewRoman(0)/m/n/10.95 tanpa mengubah kode
+ []
+
+[41] [42] [43] [44]
+
+LaTeX Warning: Citation 'galup_itsm_2009' on page 45 undefined on input line 54
+7.
+
+[45]
+
+LaTeX Warning: Citation 'hevner2004' on page 46 undefined on input line 559.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 46 undefined on input line 559.
+
+
+Overfull \hbox (0.99344pt too wide) in paragraph at lines 561--562
+[]\TU/TimesNewRoman(0)/m/n/12 Alternatif-alternatif tersebut dapat dibandingkan
+ secara sistematis dalam Tabel [][]III.10[][]
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Kesesuaian de-
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/b/n/10.95 ngan Kebutuh-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Meningkatkan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 formalitas pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 sedur tanpa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 pengembang-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 an sistem baru
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 (menggunakan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Biaya rendah,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 implementasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 cepat, tidak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 membutuhkan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 pengembangan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 pada pencatatan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 akses mandiri
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 bagi pelanggan,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 sulit menyusun
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Kurang meme-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 nuhi kebutuhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 transparansi ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 pelanggan dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 kebutuhan data
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 terstruktur untuk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 evaluasi jangka
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Menggunakan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 platform pihak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 ketiga (he-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 lpdesk/ticketing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Banyak fitur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 standar sudah
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 keluhan, tiket,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 panel admin);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Integrasi de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 ngan website
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 SpeedForce bisa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 terbatas; model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 kontrol penuh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Cukup mem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 bantu, tetapi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 fleksibilitas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 terhadap cara
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 dan integrasi
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 tampilan dengan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 website bisa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Mengembangkan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 modul e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 complaint
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 berbasis web
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 yang terintegrasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 dengan website
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Alur dapat dise-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 suaikan dengan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 proses bisnis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 SpeedForce;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 kanal keluhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Membutuhkan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 pengembangan,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 ngan kebutuhan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 fokus: respons
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 lebih teratur,
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 601--601
+\TU/TimesNewRoman(0)/m/n/10.95 transparansi sta-
+ []
+
+[47
+
+]
+
+LaTeX Warning: Citation 'Brooke1996' on page 48 undefined on input line 610.
+
+
+LaTeX Warning: Citation 'Laugwitz2008' on page 48 undefined on input line 610.
+
+
+Overfull \hbox (0.11142pt too wide) in paragraph at lines 616--617
+[]\TU/TimesNewRoman(0)/m/n/12 Dari sisi kompleksitas pengembangan, A3 memang me
+mbutuhkan usaha teknis yang
+ []
+
+
+Overfull \hbox (11.26846pt too wide) in paragraph at lines 618--619
+[]\TU/TimesNewRoman(0)/m/n/12 Artinya, dari sudut pandang rekayasa perangkat lu
+nak, membangun modul e-complaint
+ []
+
+
+LaTeX Warning: Citation 'hevner2004' on page 48 undefined on input line 620.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 48 undefined on input line 620.
+
+[48]) (Bab IV - Desain-Konsep-Solusi.tex [49]
+Bab IV.
+
+LaTeX Warning: Citation 'hevner2004' on page 50 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'peffers2007' on page 50 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'iso9241-11' on page 50 undefined on input line 7.
+
+[50
+
+]
+
+LaTeX Warning: Reference `chap:tinjauan-pustaka' on page 51 undefined on input 
+line 32.
+
+
+LaTeX Warning: Citation 'Brooke1996' on page 51 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'Laugwitz2008' on page 51 undefined on input line 32.
+
+
+Overfull \hbox (24.03899pt too wide) in paragraph at lines 32--33
+\TU/TimesNewRoman(0)/m/n/12 SUS dan UEQ sesuai metodologi yang telah dijelaskan
+ pada Bab []. ([];
+ []
+
+[51]
+File: image/arsitektur.png Graphic file (type bmp)
+<image/arsitektur.png>
+ [52]
+Overfull \hbox (8.51492pt too wide) in paragraph at lines 56--58
+[]\TU/TimesNewRoman(0)/m/n/12 Menyediakan antarmuka berbasis web ba-
+ []
+
+
+Overfull \hbox (0.19498pt too wide) in paragraph at lines 68--69
+[]\TU/TimesNewRoman(0)/m/it/12 Reporting Service\TU/TimesNewRoman(0)/m/n/12 : p
+enyusunan ringkasan statistik dasar, mulai dari jum-
+ []
+
+[53]
+Overfull \hbox (5.66415pt too wide) in paragraph at lines 83--84
+[]\TU/TimesNewRoman(0)/m/n/12 Secara ringkas, komponen utama per lapisan dapat 
+dirangkum seperti pada Tabel [][]IV.1[][]. 
+ []
+
+
+LaTeX Warning: Citation 'hevner2004' on page 54 undefined on input line 131.
+
+[54] [55]
+File: image/arsitektur-fisik.png Graphic file (type bmp)
+<image/arsitektur-fisik.png>
+ [56]
+Overfull \hbox (8.19656pt too wide) in paragraph at lines 191--192
+\TU/TimesNewRoman(0)/m/n/12 teknisi) mengakses modul e-complaint melalui peramb
+an web pada perangkat masing-
+ []
+
+[57]
+Overfull \hbox (10.69441pt too wide) in paragraph at lines 208--209
+\TU/TimesNewRoman(0)/m/n/12 Secara garis besar, alur penanganan keluhan TO-BE y
+ang didukung modul e-complaint
+ []
+
+[58]
+File: image/TO-BE.png Graphic file (type bmp)
+<image/TO-BE.png>
+ [59] [60] [61] [62]
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/b/n/10.95 TO-BE berbasis
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 media sosial, tidak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 dengan formulir
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 e-complaint sebagai
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 ta awal lebih sera-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Manual/semi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 manual, tidak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 konsisten, tersebar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Otomatis ke basis
+ []
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Risiko keluhan hi-
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 lang berkurang, ri-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Tidak ada nomor
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 tiket konsisten; pe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 lacakan bergantung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Disepakati lewat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Dilakukan di pa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 nel admin dengan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 penetapan teknisi
+ []
+
+
+Underfull \hbox (badness 6978) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 dan status “Dalam
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Beban kerja teknisi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 lebih terstruktur,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 mengurangi misko-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Mengandalkan
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Daftar tiket dengan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 status dan waktu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Visibilitas internal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 meningkat, lebih
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 mudah mengidenti-
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Pelanggan cek sen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 diri via halaman
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Transparansi me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 ningkat, beban
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 komunikasi admin
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 381--381
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Rekap manual dari
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 lume, jenis keluh-
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 an, waktu tanggap)
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 381--381
+\TU/TimesNewRoman(0)/m/n/10.95 dapat diukur secara
+ []
+
+[63] [64]
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 Pelanggan\TU/TimesNewRoman(0)/m/n/10.95 , \TU/lmtt/m/n/10
+.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 Pelanggan\TU/TimesNewRoman(0)/m/n/10.95 , \TU/lmtt/m/n/10
+.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 , \TU/lmtt/m/n
+/10.95 Pelanggan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 , \TU/lmtt/m/n
+/10.95 Pelanggan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 , \TU/lmtt/m/n
+/10.95 Pelanggan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+\TU/lmtt/m/n/10.95 RiwayatStatusTiket\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 RiwayatStatusTiket\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+\TU/lmtt/m/n/10.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 , \TU/lmtt/m/n/10
+.95 StatusKeluhan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+\TU/lmtt/m/n/10.95 RiwayatStatusTiket\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 , \TU/lmtt/m/n
+/10.95 Pelanggan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 TiketKeluhan\TU/TimesNewRoman(0)/m/n/10.95 , \TU/lmtt/m/n
+/10.95 KategoriKeluhan\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]|\TU/lmtt/m/n/10.95 RiwayatStatusTiket\TU/TimesNewRoman(0)/m/n/10.95 ,
+ []
+
+[65]
+Overfull \hbox (12.39003pt too wide) in paragraph at lines 471--472
+\TU/TimesNewRoman(0)/m/n/12 yang terhubung ke \TU/lmtt/m/n/12 Pelanggan\TU/Time
+sNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 KategoriKeluhan\TU/TimesNewRoman(0)/m/n/1
+2 , \TU/lmtt/m/n/12 KanalKeluhan\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 S
+tatusKeluhan\TU/TimesNewRoman(0)/m/n/12 ,
+ []
+
+[66]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 478.
+
+Overfull \hbox (6.66167pt too wide) in paragraph at lines 511--512
+[]\TU/lmtt/m/n/12 kode_kategori \TU/TimesNewRoman(0)/m/n/12 (misalnya \TU/lmtt/
+m/n/12 GANGGUAN_JARINGAN\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 KECEPATAN
+\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 TAGIHAN\TU/TimesNewRoman(0)/m/n/1
+2 ,
+ []
+
+[67]
+Overfull \hbox (6.47778pt too wide) in paragraph at lines 529--530
+[]\TU/lmtt/m/n/12 kode_status \TU/TimesNewRoman(0)/m/n/12 (misalnya \TU/lmtt/m/
+n/12 BARU\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 DALAM_PENANGANAN\TU/Time
+sNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 SELESAI\TU/TimesNewRoman(0)/m/n/12 , \TU/
+lmtt/m/n/12 DITUTUP\TU/TimesNewRoman(0)/m/n/12 ) 
+ []
+
+[68]
+Overfull \hbox (68.59116pt too wide) in paragraph at lines 566--570
+\TU/TimesNewRoman(0)/m/n/12 Implementasi: \TU/lmtt/m/n/12 TiketKeluhan.id_pelan
+ggan \TU/TimesNewRoman(0)/m/n/12 sebagai FK $\OMS/cmsy/m/n/12 !$ \TU/lmtt/m/n/1
+2 Pelanggan.id_pelanggan\TU/TimesNewRoman(0)/m/n/12 . 
+ []
+
+
+Overfull \hbox (15.59602pt too wide) in paragraph at lines 591--595
+\TU/TimesNewRoman(0)/m/n/12 Implementasi: \TU/lmtt/m/n/12 RiwayatStatusTiket.id
+_status_lama \TU/TimesNewRoman(0)/m/n/12 dan \TU/lmtt/m/n/12 id_status_baru
+ []
+
+[69]
+File: image/logical data.png Graphic file (type bmp)
+<image/logical data.png>
+
+Overfull \hbox (49.61095pt too wide) in paragraph at lines 618--619
+\TU/TimesNewRoman(0)/m/n/12 dengan \TU/lmtt/m/n/12 TiketKeluhan \TU/TimesNewRom
+an(0)/m/n/12 sebagai entitas inti yang terhubung ke \TU/lmtt/m/n/12 Pelanggan\T
+U/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 KategoriKeluhan\TU/TimesNewRoman(0)
+/m/n/12 ,
+ []
+
+[70]
+
+LaTeX Warning: Citation 'iso9241-11' on page 71 undef
