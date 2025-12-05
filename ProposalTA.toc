@@ -1,0 +1,431 @@
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{DAFTAR GAMBAR}{v}{figure.caption.1}%
+\contentsline {chapter}{DAFTAR TABEL}{vi}{figure.caption.1}%
+\contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
+\contentsline {section}{\numberline {I.1}Latar Belakang}{1}{section.1.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {I.2}Rumusan Masalah}{5}{section.1.2}%
+\contentsline {section}{\numberline {I.3}Tujuan}{6}{section.1.3}%
+\contentsline {section}{\numberline {I.4}Batasan Masalah}{6}{section.1.4}%
+\contentsline {section}{\numberline {I.5}Metodologi}{7}{section.1.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{\numberline {II}STUDI LITERATUR}{10}{chapter.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.1}Layanan Internet dan ISP Lokal}{10}{section.2.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.2}Kualitas Layanan, Kepuasan, dan Keluhan Pelanggan}{11}{section.2.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.2.1}Kualitas Layanan Jasa}{12}{subsection.2.2.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.2.2}Keluhan Pelanggan dan Manajemen Keluhan}{13}{subsection.2.2.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.3}Sistem Pengelolaan Pengaduan dan E-Complaint Berbasis Web}{14}{section.2.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.3.1}Contoh Sistem Pengaduan di Sektor Publik}{14}{subsection.2.3.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.3.2}E-CCMS dan Pendekatan Generik Manajemen Keluhan}{15}{subsection.2.3.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.3.3}Sistem Pengaduan Berbasis Web di Berbagai Domain}{15}{subsection.2.3.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.4}Sistem Informasi Berbasis Web untuk Layanan Pelanggan ISP}{16}{section.2.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.5}Usability dan User Experience pada Sistem Berbasis Web}{19}{section.2.5}%
+\contentsline {subsection}{\numberline {II.5.1}Konsep Usability}{19}{subsection.2.5.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.5.2}System Usability Scale (SUS)}{19}{subsection.2.5.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.5.3}User Experience Questionnaire (UEQ)}{20}{subsection.2.5.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.6}Aksesibilitas Web dan WCAG 2.2}{21}{section.2.6}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.7}Cost--Benefit Analysis dalam Pengembangan Sistem Informasi}{21}{section.2.7}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.8}Design Science Research (DSR) sebagai Pendekatan Pengembangan Sistem}{22}{section.2.8}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.9}Penelitian Terdahulu yang Relevan dan Posisi Tugas Akhir}{23}{section.2.9}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{31}{chapter.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{31}{section.3.1}%
+\contentsline {subsection}{\numberline {III.1.1}Gambaran Umum Proses Penanganan Keluhan di SpeedForce}{31}{subsection.3.1.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {III.1.2}Permasalahan Utama dalam Proses Pengelolaan Keluhan}{33}{subsection.3.1.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{37}{section.3.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {III.2.1}Kebutuhan Fungsional}{37}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Non-Fungsional}{41}{subsection.3.2.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {III.3}Pemetaan Kebutuhan Fungsional terhadap Permasalahan}{43}{section.3.3}%
+\contentsline {section}{\numberline {III.4}Analisis Pemilihan Solusi}{45}{section.3.4}%
+\contentsline {subsection}{\numberline {III.4.1}Alternatif Solusi}{45}{subsection.3.4.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {III.4.2}Analisis Penentuan Solusi}{48}{subsection.3.4.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{\numberline {IV}PERANCANGAN MODUL E-COMPLAINT BERBASIS WEB}{51}{chapter.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {IV.1}Gambaran Umum Solusi dan Lingkup Modul}{51}{section.4.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {IV.2}Perancangan Arsitektur Sistem}{53}{section.4.2}%
+\contentsline {subsection}{\numberline {IV.2.1}Arsitektur Logis Aplikasi}{53}{subsection.4.2.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {IV.2.2}Arsitektur Fisik Sistem}{56}{subsection.4.2.2}%
+\contentsline {section}{\numberline {IV.3}Perancangan Proses Bisnis TO-BE}{58}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Diagram Alur Proses Penanganan Keluhan TO-BE}{59}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.3.2}Deskripsi Proses Bisnis dan Perubahan dari AS-IS}{61}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {IV.3.2.1}Perubahan pada titik masuk keluhan (entry channel)}{62}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {IV.3.2.2}Perubahan pada mekanisme pencatatan dan identitas keluhan}{62}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {IV.3.2.3}Perubahan pada alur komunikasi internal dan penugasan teknisi}{62}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {IV.3.2.4}Perubahan pada transparansi status ke pelanggan}{63}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {IV.3.2.5}Perubahan pada kemampuan monitoring dan evaluasi}{63}{subsubsection.4.3.2.5}%
+\contentsline {subsubsection}{\numberline {IV.3.2.6}Ringkasan perubahan AS-IS vs TO-BE}{64}{subsubsection.4.3.2.6}%
+\contentsline {section}{\numberline {IV.4}Perancangan Model Data dan Basis Data}{66}{section.4.4}%
+\contentsline {subsection}{\numberline {IV.4.1}Pemetaan Kebutuhan Fungsional ke Entitas Data}{66}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {IV.4.2}Identifikasi Entitas dan Atribut Utama}{68}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {IV.4.3}Relasi Antar Entitas dan Kardinalitas}{70}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {IV.4.4}Logical Data Model Modul E-Complaint}{71}{subsection.4.4.4}%
+\contentsline {section}{\numberline {IV.5}Perancangan Antarmuka Pengguna}{72}{section.4.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {IV.5.1}Prinsip dan Pertimbangan Desain}{72}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {IV.5.2}Rancangan Halaman Beranda Layanan Pelanggan}{73}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {IV.5.3}Rancangan Halaman Formulir Pengajuan Keluhan}{74}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {IV.5.4}Rancangan Halaman Cek Status Keluhan}{75}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {IV.5.5}Rancangan Panel Internal Admin/CS dan Teknisi}{77}{subsection.4.5.5}%
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{78}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Rencana Implementasi Modul E-Complaint}{78}{section.5.1}%
+\contentsline {subsection}{\numberline {V.1.1}Fase 1 – Finalisasi Desain Teknis (Design Refinement)}{78}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {V.1.2}Fase 2 – Implementasi Modul E-Complaint (Design \& Development)}{79}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {V.1.3}Fase 3 – Pengujian Fungsional dan Perbaikan (Internal Testing \& Refinement)}{79}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {V.1.4}Fase 4 – Demonstrasi dan Evaluasi Usability/UX (Demonstration \& Evaluation)}{80}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {V.1.5}Fase 5 – Analisis, Dokumentasi, dan Komunikasi Hasil (Communication)}{80}{subsection.5.1.5}%
+\contentsline {section}{\numberline {V.2}Analisis Biaya–Manfaat (Cost–Benefit Analysis)}{81}{section.5.2}%
+\contentsline {subsection}{\numberline {V.2.1}Analisis Biaya}{81}{subsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {V.2.1.1}Biaya Pengembangan Sistem}{81}{subsubsection.5.2.1.1}%
+\contentsline {subsubsection}{\numberline {V.2.1.2}Biaya Infrastruktur}{81}{subsubsection.5.2.1.2}%
+\contentsline {subsubsection}{\numberline {V.2.1.3}Biaya Operasional dan Perubahan Proses}{82}{subsubsection.5.2.1.3}%
+\contentsline {subsubsection}{\numberline {V.2.1.4}Biaya Evaluasi dan Pelatihan}{82}{subsubsection.5.2.1.4}%
+\contentsline {subsection}{\numberline {V.2.2}Analisis Manfaat}{82}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {V.2.2.1}Manfaat bagi Pelanggan}{82}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {V.2.2.2}Manfaat bagi Operasional Internal}{83}{subsubsection.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {V.2.2.3}Manfaat Manajerial dan Pengambilan Keputusan}{83}{subsubsection.5.2.2.3}%
+\contentsline {section}{\numberline {V.3}Identifikasi Risiko dan Strategi Mitigasi}{83}{section.5.3}%
+\contentsline {subsection}{\numberline {V.3.1}Risiko Teknis}{84}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {V.3.2}Risiko Proses dan Organisasi}{84}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {V.3.3}Risiko Jadwal}{85}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {V.3.4}Risiko Evaluasi}{85}{subsection.5.3.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 

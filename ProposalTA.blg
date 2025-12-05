@@ -1,5 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'ProposalTA.blg'
-[137] biber-MSWIN64:340> INFO - === 
-[572] Utils.pm:410> ERROR - Cannot find control file 'ProposalTA.bcf'! - Did latex run successfully on your .tex file before you ran biber?
-[572] Biber.pm:136> INFO - ERRORS: 1
+[1] Config.pm:310> INFO - Logfile is 'ProposalTA.blg'
+[284] biber-MSWIN64:340> INFO - === 
+[359] Biber.pm:419> INFO - Reading 'ProposalTA.bcf'
+[851] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[884] Biber.pm:4419> INFO - Processing section 0
+[909] Biber.pm:4610> INFO - Looking for bibtex file 'daftar-pustaka.bib' for section 0
+[1035] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1181] bibtex.pm:1519> INFO - Found BibTeX data source 'daftar-pustaka.bib'
+[2063] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2064] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
+[2064] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2065] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'indonesian'
+[2065] Biber.pm:4245> INFO - No sort tailoring available for locale 'indonesian'
+[2210] bbl.pm:660> INFO - Writing 'ProposalTA.bbl' with encoding 'UTF-8'
+[2268] bbl.pm:763> INFO - Output to ProposalTA.bbl
+[2270] Biber.pm:131> WARN - Possible typo (case mismatch) between datasource keys: 'APJII2024' and 'apjii2024' in file 'daftar-pustaka.bib'
+[2270] Biber.pm:131> WARN - Possible typo (case mismatch) between datasource keys: 'Hevner2004' and 'hevner2004' in file 'daftar-pustaka.bib'
+[2270] Biber.pm:131> WARN - legacy month field 'March 15' in entry 'nytimes2024aiethics' is not an integer - this will probably not sort properly.
+[2271] Biber.pm:133> INFO - WARNINGS: 3

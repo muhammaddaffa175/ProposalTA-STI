@@ -1,0 +1,2391 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{AfifyKadry2019}{misc}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=9f7edb5c6fd2ad0ca9efa1cf2d064c0d}{%
+           family={Afify},
+           familyi={A\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=89ad1c6aa74355d573a6d32e70d637fb}{%
+           family={Kadry},
+           familyi={K\bibinitperiod},
+           given={Seifedine},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b6a4b95b3bca5aa517f4f9fe225ff4dd}
+      \strng{fullhash}{b6a4b95b3bca5aa517f4f9fe225ff4dd}
+      \strng{bibnamehash}{b6a4b95b3bca5aa517f4f9fe225ff4dd}
+      \strng{authorbibnamehash}{b6a4b95b3bca5aa517f4f9fe225ff4dd}
+      \strng{authornamehash}{b6a4b95b3bca5aa517f4f9fe225ff4dd}
+      \strng{authorfullhash}{b6a4b95b3bca5aa517f4f9fe225ff4dd}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Artikel jurnal daring}
+      \field{note}{Detail jurnal (nama, volume, nomor, halaman) lengkapi dari PDF yang kamu pakai}
+      \field{title}{Electronic-Customer Complaint Management System (E-CCMS) -- A Generic Approach}
+      \field{year}{2019}
+    \endentry
+    \entry{afifyeccms}{article}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=16bf4475c6ed439f3c466d31c3aa3da6}{%
+           family={Afify},
+           familyi={A\bibinitperiod},
+           given={Esraa\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=89ad1c6aa74355d573a6d32e70d637fb}{%
+           family={Kadry},
+           familyi={K\bibinitperiod},
+           given={Seifedine},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a69b81550e701e1da7a323b8e9bda487}
+      \strng{fullhash}{a69b81550e701e1da7a323b8e9bda487}
+      \strng{bibnamehash}{a69b81550e701e1da7a323b8e9bda487}
+      \strng{authorbibnamehash}{a69b81550e701e1da7a323b8e9bda487}
+      \strng{authornamehash}{a69b81550e701e1da7a323b8e9bda487}
+      \strng{authorfullhash}{a69b81550e701e1da7a323b8e9bda487}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{International Journal of Advanced Networking and Applications}
+      \field{number}{1}
+      \field{title}{Electronic-Customer Complaint Management System (E-CCMS): A Generic Approach}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{pages}{4125\bibrangedash 4141}
+      \range{pages}{17}
+    \endentry
+    \entry{Aixtor2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3dd1b6caaaece0c68680ee6fd5be3201}{%
+           family={{Aixtor Technologies}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3dd1b6caaaece0c68680ee6fd5be3201}
+      \strng{fullhash}{3dd1b6caaaece0c68680ee6fd5be3201}
+      \strng{bibnamehash}{3dd1b6caaaece0c68680ee6fd5be3201}
+      \strng{authorbibnamehash}{3dd1b6caaaece0c68680ee6fd5be3201}
+      \strng{authornamehash}{3dd1b6caaaece0c68680ee6fd5be3201}
+      \strng{authorfullhash}{3dd1b6caaaece0c68680ee6fd5be3201}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{...}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb ...
+      \endverb
+      \verb{url}
+      \verb ...
+      \endverb
+    \endentry
+    \entry{apjii2014-2024}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1f4757ae14f37ccec9567c2da8fb6ea}{%
+           family={{Asosiasi Penyelenggara Jasa Internet Indonesia (APJII)}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Asosiasi Penyelenggara Jasa Internet Indonesia}%
+      }
+      \list{location}{1}{%
+        {Jakarta}%
+      }
+      \strng{namehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{fullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{bibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorbibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authornamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorfullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Digunakan sebagai sumber data jumlah pengguna internet 2014}
+      \field{title}{Profil Pengguna Internet Indonesia 2014}
+      \field{year}{2014}
+    \endentry
+    \entry{apjii2018-2024}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1f4757ae14f37ccec9567c2da8fb6ea}{%
+           family={{Asosiasi Penyelenggara Jasa Internet Indonesia (APJII)}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Asosiasi Penyelenggara Jasa Internet Indonesia}%
+      }
+      \list{location}{1}{%
+        {Jakarta}%
+      }
+      \strng{namehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{fullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{bibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorbibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authornamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorfullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Digunakan sebagai sumber data tren penetrasi internet 2018--2024}
+      \field{title}{Laporan Survei Penetrasi dan Profil Perilaku Pengguna Internet Indonesia 2018}
+      \field{year}{2018}
+    \endentry
+    \entry{apjii2022}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1f4757ae14f37ccec9567c2da8fb6ea}{%
+           family={{Asosiasi Penyelenggara Jasa Internet Indonesia (APJII)}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Asosiasi Penyelenggara Jasa Internet Indonesia}%
+      }
+      \list{location}{1}{%
+        {Jakarta}%
+      }
+      \strng{namehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{fullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{bibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorbibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authornamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorfullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \field{extraname}{3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Laporan Survei Penetrasi dan Profil Perilaku Pengguna Internet Indonesia 2022}
+      \field{year}{2022}
+    \endentry
+    \entry{APJII2024}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1f4757ae14f37ccec9567c2da8fb6ea}{%
+           family={{Asosiasi Penyelenggara Jasa Internet Indonesia (APJII)}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{fullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{bibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorbibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authornamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorfullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \field{extraname}{4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses 5 Desember 2025}
+      \field{subtitle}{Survei Penetrasi Internet Indonesia 2024}
+      \field{title}{Laporan Survei Internet APJII 2024}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://apjii.or.id/survei
+      \endverb
+      \verb{url}
+      \verb https://apjii.or.id/survei
+      \endverb
+    \endentry
+    \entry{apjii2024}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1f4757ae14f37ccec9567c2da8fb6ea}{%
+           family={{Asosiasi Penyelenggara Jasa Internet Indonesia (APJII)}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Asosiasi Penyelenggara Jasa Internet Indonesia}%
+      }
+      \list{location}{1}{%
+        {Jakarta}%
+      }
+      \strng{namehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{fullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{bibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorbibnamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authornamehash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \strng{authorfullhash}{e1f4757ae14f37ccec9567c2da8fb6ea}
+      \field{extraname}{5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses dari laporan resmi APJII}
+      \field{title}{Laporan Survei Penetrasi dan Profil Perilaku Pengguna Internet Indonesia 2024}
+      \field{year}{2024}
+    \endentry
+    \entry{Bangor2008}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=221e957dde9bcf783fdee858cf2b365e}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bff0e87eeab4ba1e74ae3e776e15d490}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{069c4734e30da9449cee720f93eda80e}
+      \strng{fullhash}{069c4734e30da9449cee720f93eda80e}
+      \strng{bibnamehash}{069c4734e30da9449cee720f93eda80e}
+      \strng{authorbibnamehash}{069c4734e30da9449cee720f93eda80e}
+      \strng{authornamehash}{069c4734e30da9449cee720f93eda80e}
+      \strng{authorfullhash}{069c4734e30da9449cee720f93eda80e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{International Journal of Human--Computer Interaction}
+      \field{number}{6}
+      \field{title}{An Empirical Evaluation of the System Usability Scale}
+      \field{volume}{24}
+      \field{year}{2008}
+      \field{pages}{574\bibrangedash 594}
+      \range{pages}{21}
+    \endentry
+    \entry{Brooke1996}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=813064283275c281401d7a7483420c67}{%
+           family={Brooke},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=452809b686e37be035877e8ddc20d470}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={P.\bibnamedelimi W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ac86fe4c53a0b662f004a5b8ffb38bdb}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f2223f64b37dd140488e741fb265a185}{%
+           family={Weerdmeester},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=cf3840ba5ef95736de9b6f0da0e65c32}{%
+           family={McClelland},
+           familyi={M\bibinitperiod},
+           given={I.\bibnamedelimi L.},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{813064283275c281401d7a7483420c67}
+      \strng{fullhash}{813064283275c281401d7a7483420c67}
+      \strng{bibnamehash}{813064283275c281401d7a7483420c67}
+      \strng{authorbibnamehash}{813064283275c281401d7a7483420c67}
+      \strng{authornamehash}{813064283275c281401d7a7483420c67}
+      \strng{authorfullhash}{813064283275c281401d7a7483420c67}
+      \strng{editorbibnamehash}{f9a6cd00748d9e7779606685fd8952ff}
+      \strng{editornamehash}{305814c267030b47870a3020917344e9}
+      \strng{editorfullhash}{f9a6cd00748d9e7779606685fd8952ff}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Usability Evaluation in Industry}
+      \field{title}{SUS: A `Quick and Dirty' Usability Scale}
+      \field{year}{1996}
+      \field{pages}{189\bibrangedash 194}
+      \range{pages}{6}
+    \endentry
+    \entry{brynjolfsson2021machine}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7bd9f54569cb8c0301da00ed49b5a752}{%
+           family={Brynjolfsson},
+           familyi={B\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00c50c0a44597347642883ea39a79e19}{%
+           family={McAfee},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {W. W. Norton \& Company}%
+      }
+      \strng{namehash}{ac2b8f18503c977022c84dc540f6fda9}
+      \strng{fullhash}{ac2b8f18503c977022c84dc540f6fda9}
+      \strng{bibnamehash}{ac2b8f18503c977022c84dc540f6fda9}
+      \strng{authorbibnamehash}{ac2b8f18503c977022c84dc540f6fda9}
+      \strng{authornamehash}{ac2b8f18503c977022c84dc540f6fda9}
+      \strng{authorfullhash}{ac2b8f18503c977022c84dc540f6fda9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Updated edition}
+      \field{title}{The Machine, Platform, Crowd: Harnessing Our Digital Future}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{BPBI}{misc}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Buku {Praktis} {Bahasa} {Indonesia} 1/{Kata} - {Wikisumber} bahasa {Indonesia}}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
+      \endverb
+      \verb{url}
+      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
+      \endverb
+    \endentry
+    \entry{doe2025quantum}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6cfb2b8c4b3f9440ec4642438129367}{%
+           family={Doe},
+           familyi={D\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{fullhash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{bibnamehash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{authorbibnamehash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{authornamehash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{authorfullhash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.techinsights.com/articles/rise-of-quantum-computing-startups}}
+      \field{note}{Accessed October 20, 2025}
+      \field{title}{The Rise of Quantum Computing Startups}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{iso9241-11}{standard}{}
+      \list{institution}{1}{%
+        {International Organization for Standardization}%
+      }
+      \list{location}{1}{%
+        {Geneva, Switzerland}%
+      }
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{number}{ISO 9241-11:1998}
+      \field{title}{Ergonomic requirements for office work with visual display terminals (VDTs) --- Part 11: Guidance on usability}
+      \field{type}{Standard}
+      \field{year}{1998}
+    \endentry
+    \entry{FalasyfaAvianto2024}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e7d21df49e607a2b710ff791d4c4bd50}{%
+           family={Falasyfa},
+           familyi={F\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92cb5d1f78755fb45aa8ff4f6b9cde42}{%
+           family={Avianto},
+           familyi={A\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac7fa83c2ba42384ccfb4d7f99f838ba}
+      \strng{fullhash}{ac7fa83c2ba42384ccfb4d7f99f838ba}
+      \strng{bibnamehash}{ac7fa83c2ba42384ccfb4d7f99f838ba}
+      \strng{authorbibnamehash}{ac7fa83c2ba42384ccfb4d7f99f838ba}
+      \strng{authornamehash}{ac7fa83c2ba42384ccfb4d7f99f838ba}
+      \strng{authorfullhash}{ac7fa83c2ba42384ccfb4d7f99f838ba}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Artikel/jurnal lokal}
+      \field{note}{Lengkapi detail publikasi dari dokumen yang kamu miliki}
+      \field{title}{Perancangan Aplikasi Layanan Pengaduan Kerusakan Jalan Berbasis Android}
+      \field{year}{2024}
+    \endentry
+    \entry{Filip2013}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5bdde5da6be4c09c2172fa1c9a125c0d}{%
+           family={Filip},
+           familyi={F\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5bdde5da6be4c09c2172fa1c9a125c0d}
+      \strng{fullhash}{5bdde5da6be4c09c2172fa1c9a125c0d}
+      \strng{bibnamehash}{5bdde5da6be4c09c2172fa1c9a125c0d}
+      \strng{authorbibnamehash}{5bdde5da6be4c09c2172fa1c9a125c0d}
+      \strng{authornamehash}{5bdde5da6be4c09c2172fa1c9a125c0d}
+      \strng{authorfullhash}{5bdde5da6be4c09c2172fa1c9a125c0d}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Procedia -- Social and Behavioral Sciences}
+      \field{title}{Complaint Management: A Customer Satisfaction Learning Process}
+      \field{volume}{93}
+      \field{year}{2013}
+      \field{pages}{271\bibrangedash 275}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.sbspro.2013.09.188
+      \endverb
+    \endentry
+    \entry{galup_itsm_2009}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=52959bce9b1d2c75d42a6cf60c6fbc72}{%
+           family={Galup},
+           familyi={G\bibinitperiod},
+           given={Stuart\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4943a9de92d34853f0d7bc5eac364d05}{%
+           family={Dattero},
+           familyi={D\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb7c5d6359304908275d155cf718aec1}{%
+           family={Quan},
+           familyi={Q\bibinitperiod},
+           given={James\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d5a1f68fa29b0a6c66f2800b74534ba}{%
+           family={Conger},
+           familyi={C\bibinitperiod},
+           given={Sue},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b187cd4855c708528d4d49e70b03fcc}
+      \strng{fullhash}{54c5224466b9f74c98ad04bdb54aafee}
+      \strng{bibnamehash}{54c5224466b9f74c98ad04bdb54aafee}
+      \strng{authorbibnamehash}{54c5224466b9f74c98ad04bdb54aafee}
+      \strng{authornamehash}{8b187cd4855c708528d4d49e70b03fcc}
+      \strng{authorfullhash}{54c5224466b9f74c98ad04bdb54aafee}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Communications of the Association for Information Systems}
+      \field{title}{Information Technology Service Management: An Emerging Area for Academic Research and Pedagogical Development}
+      \field{volume}{26}
+      \field{year}{2009}
+    \endentry
+    \entry{garcia2020ethics}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c43609126ee510c62777a2ec43ff6ee6}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Massachusetts Institute of Technology}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \strng{namehash}{c43609126ee510c62777a2ec43ff6ee6}
+      \strng{fullhash}{c43609126ee510c62777a2ec43ff6ee6}
+      \strng{bibnamehash}{c43609126ee510c62777a2ec43ff6ee6}
+      \strng{authorbibnamehash}{c43609126ee510c62777a2ec43ff6ee6}
+      \strng{authornamehash}{c43609126ee510c62777a2ec43ff6ee6}
+      \strng{authorfullhash}{c43609126ee510c62777a2ec43ff6ee6}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data Ethics in Machine Learning Systems}
+      \field{type}{PhD dissertation}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{GregorHevner2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6cb3773d13196927d56a5877ea24b6a2}{%
+           family={Gregor},
+           familyi={G\bibinitperiod},
+           given={Shirley},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{62477b683a6398d89f0689141480a261}
+      \strng{fullhash}{62477b683a6398d89f0689141480a261}
+      \strng{bibnamehash}{62477b683a6398d89f0689141480a261}
+      \strng{authorbibnamehash}{62477b683a6398d89f0689141480a261}
+      \strng{authornamehash}{62477b683a6398d89f0689141480a261}
+      \strng{authorfullhash}{62477b683a6398d89f0689141480a261}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{MIS Quarterly}
+      \field{number}{2}
+      \field{title}{Positioning and Presenting Design Science Research for Maximum Impact}
+      \field{volume}{37}
+      \field{year}{2013}
+      \field{pages}{337\bibrangedash 355}
+      \range{pages}{19}
+    \endentry
+    \entry{hevner2004}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5aec260b5b1381edc4b8ff6755f2d543}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Salvatore\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c518c214dc9e77148493e9ea47f505ab}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jinsoo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Sudha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{fullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{bibnamehash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authorbibnamehash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorfullhash}{b163bef761d9a2c79a3d232595321775}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{MIS Quarterly}
+      \field{number}{1}
+      \field{title}{Design Science in Information Systems Research}
+      \field{volume}{28}
+      \field{year}{2004}
+      \field{pages}{75\bibrangedash 105}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.2307/25148625
+      \endverb
+    \endentry
+    \entry{Hevner2004}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5aec260b5b1381edc4b8ff6755f2d543}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Salvatore\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c518c214dc9e77148493e9ea47f505ab}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jinsoo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Sudha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{fullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{bibnamehash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authorbibnamehash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorfullhash}{b163bef761d9a2c79a3d232595321775}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{MIS Quarterly}
+      \field{number}{1}
+      \field{title}{Design Science in Information Systems Research}
+      \field{volume}{28}
+      \field{year}{2004}
+      \field{pages}{75\bibrangedash 105}
+      \range{pages}{31}
+    \endentry
+    \entry{ilhamdirgantara2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=424e485fb4083fdc557a1772db9503bd}{%
+           family={Ilham},
+           familyi={I\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d78dbc57b6a56378b2babf9823b55177}{%
+           family={Dirgantara},
+           familyi={D\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{286b19519411b85f0c9811c4a352adda}
+      \strng{fullhash}{286b19519411b85f0c9811c4a352adda}
+      \strng{bibnamehash}{286b19519411b85f0c9811c4a352adda}
+      \strng{authorbibnamehash}{286b19519411b85f0c9811c4a352adda}
+      \strng{authornamehash}{286b19519411b85f0c9811c4a352adda}
+      \strng{authorfullhash}{286b19519411b85f0c9811c4a352adda}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Diponegoro Journal of Management}
+      \field{note}{Lengkapi halaman dan URL sesuai artikel aslinya.}
+      \field{number}{4}
+      \field{title}{Analisis Pengaruh Kualitas Pelayanan dan Kualitas Jaringan terhadap Kepuasan Pelanggan IndiHome di Kota Semarang}
+      \field{volume}{9}
+      \field{year}{2020}
+    \endentry
+    \entry{Intellias2024}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18c0c3d56d1a988bc49cd072fcd233fa}{%
+           family={{Intellias}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{18c0c3d56d1a988bc49cd072fcd233fa}
+      \strng{fullhash}{18c0c3d56d1a988bc49cd072fcd233fa}
+      \strng{bibnamehash}{18c0c3d56d1a988bc49cd072fcd233fa}
+      \strng{authorbibnamehash}{18c0c3d56d1a988bc49cd072fcd233fa}
+      \strng{authornamehash}{18c0c3d56d1a988bc49cd072fcd233fa}
+      \strng{authorfullhash}{18c0c3d56d1a988bc49cd072fcd233fa}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Telecom Self-Service Digital Portal ...}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb ...
+      \endverb
+      \verb{url}
+      \verb ...
+      \endverb
+    \endentry
+    \entry{iso2023data}{manual}{}
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=7058e4bd76f877c52b621c942b30613c}{%
+           family={{International Organization for Standardization}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{organization}{1}{%
+        {International Organization for Standardization}%
+      }
+      \strng{namehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{bibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{shortauthorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{shortauthornamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{shortauthorfullhash}{7058e4bd76f877c52b621c942b30613c}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 27001:2023 – Information Security Management Systems}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.iso.org/standard/27001.html
+      \endverb
+      \verb{url}
+      \verb https://www.iso.org/standard/27001.html
+      \endverb
+    \endentry
+    \entry{ISO2018}{standard}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7058e4bd76f877c52b621c942b30613c}{%
+           family={{International Organization for Standardization}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{publisher}{1}{%
+        {ISO}%
+      }
+      \strng{namehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{bibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ISO} 9241-11:2018 Ergonomics of human-system interaction -- Part 11: Usability: Definitions and concepts}
+      \field{year}{2018}
+    \endentry
+    \entry{ISO2019}{standard}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7058e4bd76f877c52b621c942b30613c}{%
+           family={{International Organization for Standardization}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{publisher}{1}{%
+        {ISO}%
+      }
+      \strng{namehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{bibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
+      \field{extraname}{3}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ISO} 9241-210:2019 Ergonomics of human-system interaction -- Part 210: Human-centred design for interactive systems}
+      \field{year}{2019}
+    \endentry
+    \entry{johannesson2014}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dd80ac4b1137a2146cfe23198c3b97b4}{%
+           family={Johannesson},
+           familyi={J\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5738b162e36788f4d223f0b77218c657}{%
+           family={Perjons},
+           familyi={P\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{761a6a099c1d307d74864e60982d1956}
+      \strng{fullhash}{761a6a099c1d307d74864e60982d1956}
+      \strng{bibnamehash}{761a6a099c1d307d74864e60982d1956}
+      \strng{authorbibnamehash}{761a6a099c1d307d74864e60982d1956}
+      \strng{authornamehash}{761a6a099c1d307d74864e60982d1956}
+      \strng{authorfullhash}{761a6a099c1d307d74864e60982d1956}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Introduction to Design Science}
+      \field{year}{2014}
+    \endentry
+    \entry{nytimes2024aiethics}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b727bfa931c94f294f6cb6ee782ef02a}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b727bfa931c94f294f6cb6ee782ef02a}
+      \strng{fullhash}{b727bfa931c94f294f6cb6ee782ef02a}
+      \strng{bibnamehash}{b727bfa931c94f294f6cb6ee782ef02a}
+      \strng{authorbibnamehash}{b727bfa931c94f294f6cb6ee782ef02a}
+      \strng{authornamehash}{b727bfa931c94f294f6cb6ee782ef02a}
+      \strng{authorfullhash}{b727bfa931c94f294f6cb6ee782ef02a}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{The New York Times}
+      \field{month}{3}
+      \field{note}{Accessed October 22, 2025}
+      \field{title}{Tech Leaders Debate Regulation of Artificial Intelligence}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.nytimes.com/2024/03/15/technology/ai-regulation-debate.html
+      \endverb
+      \verb{url}
+      \verb https://www.nytimes.com/2024/03/15/technology/ai-regulation-debate.html
+      \endverb
+    \endentry
+    \entry{katadata23}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b3350814072231a9064791f35f23bd01}{%
+           family={{Katadata Insight Center}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3350814072231a9064791f35f23bd01}
+      \strng{fullhash}{b3350814072231a9064791f35f23bd01}
+      \strng{bibnamehash}{b3350814072231a9064791f35f23bd01}
+      \strng{authorbibnamehash}{b3350814072231a9064791f35f23bd01}
+      \strng{authornamehash}{b3350814072231a9064791f35f23bd01}
+      \strng{authorfullhash}{b3350814072231a9064791f35f23bd01}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses 5 Desember 2025. Sesuaikan tahun/judul persis dengan artikel yang kamu gunakan.}
+      \field{title}{Penetrasi Internet di Kalangan Remaja Tertinggi di Indonesia}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://katadata.co.id/riset/detail/penetrasi-internet-di-kalangan-remaja-tertinggi-di-indonesia
+      \endverb
+      \verb{url}
+      \verb https://katadata.co.id/riset/detail/penetrasi-internet-di-kalangan-remaja-tertinggi-di-indonesia
+      \endverb
+    \endentry
+    \entry{KemenpanRB2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=138c1c4b92f5d9b35c5671f4d80cd4aa}{%
+           family={{Kementerian Pendayagunaan Aparatur Negara dan Reformasi Birokrasi}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{138c1c4b92f5d9b35c5671f4d80cd4aa}
+      \strng{fullhash}{138c1c4b92f5d9b35c5671f4d80cd4aa}
+      \strng{bibnamehash}{138c1c4b92f5d9b35c5671f4d80cd4aa}
+      \strng{authorbibnamehash}{138c1c4b92f5d9b35c5671f4d80cd4aa}
+      \strng{authornamehash}{138c1c4b92f5d9b35c5671f4d80cd4aa}
+      \strng{authorfullhash}{138c1c4b92f5d9b35c5671f4d80cd4aa}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Dokumen kebijakan pemerintah}
+      \field{note}{Diakses melalui portal resmi KemenPAN-RB/SP4N--LAPOR!}
+      \field{title}{Pedoman Penyelenggaraan Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional {(SP4N{-}LAPOR!)}}
+      \field{year}{2020}
+    \endentry
+    \entry{laudon2020}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
+           family={Laudon},
+           familyi={L\bibinitperiod},
+           given={Kenneth\bibnamedelima C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7104f050b378ef23f0bc36c2b73e5ea2}{%
+           family={Laudon},
+           familyi={L\bibinitperiod},
+           given={Jane\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Jakarta}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{fullhash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{bibnamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorbibnamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authornamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorfullhash}{a99ce1573b42821945806f73f25db5a4}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sistem Informasi Manajemen}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{LaudonLaudon2022}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
+           family={Laudon},
+           familyi={L\bibinitperiod},
+           given={Kenneth\bibnamedelima C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7104f050b378ef23f0bc36c2b73e5ea2}{%
+           family={Laudon},
+           familyi={L\bibinitperiod},
+           given={Jane\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{fullhash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{bibnamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorbibnamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authornamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorfullhash}{a99ce1573b42821945806f73f25db5a4}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{16}
+      \field{note}{Gunakan edisi dan tahun sesuai buku yang kamu pakai; sesuaikan jika berbeda}
+      \field{title}{Management Information Systems: Managing the Digital Firm}
+      \field{year}{2022}
+    \endentry
+    \entry{Laugwitz2008}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f475b785777add18d68f5a68f511c96a}{%
+           family={Laugwitz},
+           familyi={L\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=154faed09eb48eac927d33d66111ec04}{%
+           family={Held},
+           familyi={H\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=131c7fe2089d9229c28f4e7a09b3a096}{%
+           family={Schrepp},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0fc133a4d58ac90454061630761ab126}
+      \strng{fullhash}{0fc133a4d58ac90454061630761ab126}
+      \strng{bibnamehash}{0fc133a4d58ac90454061630761ab126}
+      \strng{authorbibnamehash}{0fc133a4d58ac90454061630761ab126}
+      \strng{authornamehash}{0fc133a4d58ac90454061630761ab126}
+      \strng{authorfullhash}{0fc133a4d58ac90454061630761ab126}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{USAB 2008: HCI and Usability for Education and Work}
+      \field{title}{Construction and Evaluation of a User Experience Questionnaire}
+      \field{year}{2008}
+      \field{pages}{63\bibrangedash 76}
+      \range{pages}{14}
+    \endentry
+    \entry{Lewis2018}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{bibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorbibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authornamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{International Journal of Human--Computer Interaction}
+      \field{number}{7}
+      \field{title}{The System Usability Scale: Past, Present, and Future}
+      \field{volume}{34}
+      \field{year}{2018}
+      \field{pages}{577\bibrangedash 590}
+      \range{pages}{14}
+    \endentry
+    \entry{MDN2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eace3534eb86e51f9a1db37427425ce9}{%
+           family={{MDN Web Docs}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{eace3534eb86e51f9a1db37427425ce9}
+      \strng{fullhash}{eace3534eb86e51f9a1db37427425ce9}
+      \strng{bibnamehash}{eace3534eb86e51f9a1db37427425ce9}
+      \strng{authorbibnamehash}{eace3534eb86e51f9a1db37427425ce9}
+      \strng{authornamehash}{eace3534eb86e51f9a1db37427425ce9}
+      \strng{authorfullhash}{eace3534eb86e51f9a1db37427425ce9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses untuk prinsip dasar aksesibilitas web}
+      \field{title}{What is Accessibility?}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility
+      \endverb
+    \endentry
+    \entry{Merang2022}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1c1af1a651b114d867d5080a12d030dd}{%
+           family={Merang},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4aee1ed4bfd1c77b7878b3f9ea4429d}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fde0c496f4584a6f19a7144eccda7efc}{%
+           family={Jamaluddin},
+           familyi={J\bibinitperiod},
+           given={N.\bibnamedelimi H.},
+           giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4be2405f3ca15651c89a9bd2148a5643}
+      \strng{fullhash}{4be2405f3ca15651c89a9bd2148a5643}
+      \strng{bibnamehash}{4be2405f3ca15651c89a9bd2148a5643}
+      \strng{authorbibnamehash}{4be2405f3ca15651c89a9bd2148a5643}
+      \strng{authornamehash}{4be2405f3ca15651c89a9bd2148a5643}
+      \strng{authorfullhash}{4be2405f3ca15651c89a9bd2148a5643}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Artikel konferensi/jurnal}
+      \field{note}{Lengkapi nama prosiding/jurnal, volume, dan halaman dari sumber asli}
+      \field{title}{Development of a Web-based Water Supply Complaint Management System}
+      \field{year}{2022}
+    \endentry
+    \entry{miller2023cyber}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a029b65b1e80a3cc170905a6ad97f71d}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=fbac1132862baad848b06926ad241610}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d423f545c47a8c65a465fcd5649bcbbc}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a029b65b1e80a3cc170905a6ad97f71d}
+      \strng{fullhash}{a029b65b1e80a3cc170905a6ad97f71d}
+      \strng{bibnamehash}{a029b65b1e80a3cc170905a6ad97f71d}
+      \strng{authorbibnamehash}{a029b65b1e80a3cc170905a6ad97f71d}
+      \strng{authornamehash}{a029b65b1e80a3cc170905a6ad97f71d}
+      \strng{authorfullhash}{a029b65b1e80a3cc170905a6ad97f71d}
+      \strng{editorbibnamehash}{f34073c5f8bff7516d40437259b5dda8}
+      \strng{editornamehash}{f34073c5f8bff7516d40437259b5dda8}
+      \strng{editorfullhash}{f34073c5f8bff7516d40437259b5dda8}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of Information Systems Security}
+      \field{title}{Cybersecurity Governance in Cloud Ecosystems}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{181\bibrangedash 205}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/978-3-031-11321-0_9
+      \endverb
+    \endentry
+    \entry{natalius2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2107f7dff92d6a80a546043a2e5196f9}{%
+           family={Natalius},
+           familyi={N\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=931026d060349910c5b9210f0600010a}{%
+           family={Budiman},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=891bb96af5ebd521d384851819788fa1}{%
+           family={Wijayanto},
+           familyi={W\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc19992b288b034175fffb3ba37e2eba}
+      \strng{fullhash}{dc19992b288b034175fffb3ba37e2eba}
+      \strng{bibnamehash}{dc19992b288b034175fffb3ba37e2eba}
+      \strng{authorbibnamehash}{dc19992b288b034175fffb3ba37e2eba}
+      \strng{authornamehash}{dc19992b288b034175fffb3ba37e2eba}
+      \strng{authorfullhash}{dc19992b288b034175fffb3ba37e2eba}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Jurnal Teknik Informatika (JTi) Universitas Tanjungpura}
+      \field{note}{Isi volume, nomor, halaman, dan URL setelah kamu buka jurnalnya.}
+      \field{title}{Pengukuran Kualitas Layanan Internet IndiHome di Kota Pontianak Menggunakan Metode SERVQUAL}
+      \field{year}{2022}
+    \endentry
+    \entry{nguyen2022trust}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=88b03ae9eed0476bbfedbfc61ccedbc7}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Linh\bibnamedelima T.},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35f7ad3aa766caab0d088592c981391b}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7365313ebce5d83701115a311949ec31}
+      \strng{fullhash}{7365313ebce5d83701115a311949ec31}
+      \strng{bibnamehash}{7365313ebce5d83701115a311949ec31}
+      \strng{authorbibnamehash}{7365313ebce5d83701115a311949ec31}
+      \strng{authornamehash}{7365313ebce5d83701115a311949ec31}
+      \strng{authorfullhash}{7365313ebce5d83701115a311949ec31}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Ethics and Information Technology}
+      \field{number}{3}
+      \field{title}{Trust, Privacy, and Data Ethics in AI Systems}
+      \field{volume}{24}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{315\bibrangedash 332}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s10676-021-09612-8
+      \endverb
+    \endentry
+    \entry{Nielsen2012}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=753054f71283d85f82cda8e35daf6bac}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{fullhash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{bibnamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authorbibnamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authornamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authorfullhash}{753054f71283d85f82cda8e35daf6bac}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Artikel panduan dasar usability dari Nielsen Norman Group}
+      \field{title}{Usability 101: Introduction to Usability}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://www.nngroup.com/articles/usability-101-introduction-to-usability/
+      \endverb
+      \verb{url}
+      \verb https://www.nngroup.com/articles/usability-101-introduction-to-usability/
+      \endverb
+    \endentry
+    \entry{pantulu2023}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=af0533e5506b6d5005694c7c7826995e}{%
+           family={Pantulu},
+           familyi={P\bibinitperiod},
+           given={Wahyuni},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af0533e5506b6d5005694c7c7826995e}
+      \strng{fullhash}{af0533e5506b6d5005694c7c7826995e}
+      \strng{bibnamehash}{af0533e5506b6d5005694c7c7826995e}
+      \strng{authorbibnamehash}{af0533e5506b6d5005694c7c7826995e}
+      \strng{authornamehash}{af0533e5506b6d5005694c7c7826995e}
+      \strng{authorfullhash}{af0533e5506b6d5005694c7c7826995e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{JAMBURA: Jurnal Manajemen}
+      \field{note}{Cek di ejurnal.ung.ac.id untuk tahun, volume, nomor, dan halaman yang benar.}
+      \field{title}{Pengaruh Kualitas Pelayanan Terhadap Kepuasan Pelanggan Pengguna Layanan IndiHome Fiber di Kota Gorontalo}
+    \endentry
+    \entry{Parasuraman1988}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=498166acdf04741e12863656cb9f264b}{%
+           family={Parasuraman},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf61548305f24576b680c6a416e0d533}{%
+           family={Zeithaml},
+           familyi={Z\bibinitperiod},
+           given={Valarie\bibnamedelima A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ff51bb66c32684216352ce9bfcb0a488}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Leonard\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{16d046c2df1488e4ec3553383095e290}
+      \strng{fullhash}{16d046c2df1488e4ec3553383095e290}
+      \strng{bibnamehash}{16d046c2df1488e4ec3553383095e290}
+      \strng{authorbibnamehash}{16d046c2df1488e4ec3553383095e290}
+      \strng{authornamehash}{16d046c2df1488e4ec3553383095e290}
+      \strng{authorfullhash}{16d046c2df1488e4ec3553383095e290}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Retailing}
+      \field{number}{1}
+      \field{title}{SERVQUAL: A Multiple-Item Scale for Measuring Consumer Perceptions of Service Quality}
+      \field{volume}{64}
+      \field{year}{1988}
+      \field{pages}{12\bibrangedash 40}
+      \range{pages}{29}
+    \endentry
+    \entry{peffers2007}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
+           family={Peffers},
+           familyi={P\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
+           family={Tuunanen},
+           familyi={T\bibinitperiod},
+           given={Tuure},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
+           family={Rothenberger},
+           familyi={R\bibinitperiod},
+           given={Marcus\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Samir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Management Information Systems}
+      \field{number}{3}
+      \field{title}{A Design Science Research Methodology for Information Systems Research}
+      \field{volume}{24}
+      \field{year}{2007}
+      \field{pages}{45\bibrangedash 77}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.2753/MIS0742-1222240302
+      \endverb
+    \endentry
+    \entry{pressman2019}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4d3f81788d99cf425c4b6e0a454baab0}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Yogyakarta}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{fullhash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{bibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authorbibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authornamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authorfullhash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rekayasa Perangkat Lunak: Pendekatan Praktisi}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{rahman2024iot}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e86ecedaa4a6fc887837eb8ca64c8585}{%
+           family={Rahman},
+           familyi={R\bibinitperiod},
+           given={Faisal},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=88b775182551940235c4ebae2818392e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Tokyo, Japan}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{80dddf8b5b4d63288297c2c564b2c7db}
+      \strng{fullhash}{80dddf8b5b4d63288297c2c564b2c7db}
+      \strng{bibnamehash}{80dddf8b5b4d63288297c2c564b2c7db}
+      \strng{authorbibnamehash}{80dddf8b5b4d63288297c2c564b2c7db}
+      \strng{authornamehash}{80dddf8b5b4d63288297c2c564b2c7db}
+      \strng{authorfullhash}{80dddf8b5b4d63288297c2c564b2c7db}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Smart Infrastructure}
+      \field{title}{Optimizing IoT Networks for Smart Cities}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{55\bibrangedash 64}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/SI2024.9023417
+      \endverb
+    \endentry
+    \entry{Rohmial2022}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d03a5d9404c9436e4035aa7965b8b8b4}{%
+           family={Rohmial},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d03a5d9404c9436e4035aa7965b8b8b4}
+      \strng{fullhash}{d03a5d9404c9436e4035aa7965b8b8b4}
+      \strng{bibnamehash}{d03a5d9404c9436e4035aa7965b8b8b4}
+      \strng{authorbibnamehash}{d03a5d9404c9436e4035aa7965b8b8b4}
+      \strng{authornamehash}{d03a5d9404c9436e4035aa7965b8b8b4}
+      \strng{authorfullhash}{d03a5d9404c9436e4035aa7965b8b8b4}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Artikel/jurnal lokal}
+      \field{note}{Lengkapi nama jurnal, volume, dan halaman sesuai sumber asli}
+      \field{title}{Pengaruh Kualitas Pelayanan dan Kepuasan terhadap Loyalitas Pelanggan WiFi IndiHome PT Telekomunikasi Indonesia}
+      \field{year}{2022}
+    \endentry
+    \entry{sahita2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1b603e392bf777123b0a6de84682e34d}{%
+           family={Sahita},
+           familyi={S\bibinitperiod},
+           given={P.\bibnamedelimi P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=301c95f9e6838928f75dd154ed361057}{%
+           family={Hutabarat},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c66cd397046c08c2eed36d52449b68a8}{%
+           family={Budiharti},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3afe4d1e9d8b53281674bebdf05138f0}
+      \strng{fullhash}{3afe4d1e9d8b53281674bebdf05138f0}
+      \strng{bibnamehash}{3afe4d1e9d8b53281674bebdf05138f0}
+      \strng{authorbibnamehash}{3afe4d1e9d8b53281674bebdf05138f0}
+      \strng{authornamehash}{3afe4d1e9d8b53281674bebdf05138f0}
+      \strng{authorfullhash}{3afe4d1e9d8b53281674bebdf05138f0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Nama Jurnal}
+      \field{note}{Lengkapi nama jurnal, volume, nomor, dan halaman dari artikel asli. Tahun 2021, bukan 2020.}
+      \field{title}{Analisis Kualitas Pelayanan dan Kepuasan Pelanggan Menggunakan Metode SERVQUAL}
+      \field{year}{2021}
+    \endentry
+    \entry{sauro2016}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f24e1723133e0393dfd185716f640bed}{%
+           family={Sauro},
+           familyi={S\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Waltham, MA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{fullhash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{bibnamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authorbibnamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authornamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authorfullhash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Quantifying the User Experience: Practical Statistics for User Research}
+      \field{year}{2016}
+    \endentry
+    \entry{Schrepp2014}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=131c7fe2089d9229c28f4e7a09b3a096}{%
+           family={Schrepp},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9aa46ba977c60b7e085ab820b41df600}{%
+           family={Hinderks},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3bf7546743b7280490d85d6c7818717}{%
+           family={Thomaschewski},
+           familyi={T\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{446252976774aa02d4e2b844f472a622}
+      \strng{fullhash}{446252976774aa02d4e2b844f472a622}
+      \strng{bibnamehash}{446252976774aa02d4e2b844f472a622}
+      \strng{authorbibnamehash}{446252976774aa02d4e2b844f472a622}
+      \strng{authornamehash}{446252976774aa02d4e2b844f472a622}
+      \strng{authorfullhash}{446252976774aa02d4e2b844f472a622}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Human-Computer Interaction}
+      \field{title}{Design and Evaluation of a Short Version of the User Experience Questionnaire (UEQ-S)}
+      \field{year}{2014}
+      \field{pages}{383\bibrangedash 392}
+      \range{pages}{10}
+    \endentry
+    \entry{Schrepp2017-UEQ-Handbook}{online}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=131c7fe2089d9229c28f4e7a09b3a096}{%
+           family={Schrepp},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9aa46ba977c60b7e085ab820b41df600}{%
+           family={Hinderks},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3bf7546743b7280490d85d6c7818717}{%
+           family={Thomaschewski},
+           familyi={T\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{446252976774aa02d4e2b844f472a622}
+      \strng{fullhash}{446252976774aa02d4e2b844f472a622}
+      \strng{bibnamehash}{446252976774aa02d4e2b844f472a622}
+      \strng{authorbibnamehash}{446252976774aa02d4e2b844f472a622}
+      \strng{authornamehash}{446252976774aa02d4e2b844f472a622}
+      \strng{authorfullhash}{446252976774aa02d4e2b844f472a622}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Dokumentasi resmi instrumen {UEQ}}
+      \field{title}{User Experience Questionnaire Handbook}
+      \field{year}{2017}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.ueq-online.org
+      \endverb
+      \verb{url}
+      \verb https://www.ueq-online.org
+      \endverb
+    \endentry
+    \entry{Schwalbe2022}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=531850ee62c9cc3dff8fa887ab513286}{%
+           family={Schwalbe},
+           familyi={S\bibinitperiod},
+           given={Kathy},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{531850ee62c9cc3dff8fa887ab513286}
+      \strng{fullhash}{531850ee62c9cc3dff8fa887ab513286}
+      \strng{bibnamehash}{531850ee62c9cc3dff8fa887ab513286}
+      \strng{authorbibnamehash}{531850ee62c9cc3dff8fa887ab513286}
+      \strng{authornamehash}{531850ee62c9cc3dff8fa887ab513286}
+      \strng{authorfullhash}{531850ee62c9cc3dff8fa887ab513286}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10}
+      \field{title}{Information Technology Project Management}
+      \field{year}{2022}
+    \endentry
+    \entry{shapiro2019information}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6340b85ec1efcd67833befbb9a1ff577}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=affde3c8d511e90b7126c60a56e7ab49}{%
+           family={Varian},
+           familyi={V\bibinitperiod},
+           given={Hal\bibnamedelima R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Harvard Business School Press}%
+      }
+      \strng{namehash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{fullhash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{bibnamehash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{authorbibnamehash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{authornamehash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{authorfullhash}{121f4eb5a606d2971837eb468f4ab01b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Information Rules: A Strategic Guide to the Network Economy}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{SiskaMarsa2025}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fd7ac077c151f3063adb463c802f193d}{%
+           family={Siska},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dea6e307bd03feca3942be55719c176a}{%
+           family={Marsa},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4e878debf04e3d608caf51c4677d061e}
+      \strng{fullhash}{4e878debf04e3d608caf51c4677d061e}
+      \strng{bibnamehash}{4e878debf04e3d608caf51c4677d061e}
+      \strng{authorbibnamehash}{4e878debf04e3d608caf51c4677d061e}
+      \strng{authornamehash}{4e878debf04e3d608caf51c4677d061e}
+      \strng{authorfullhash}{4e878debf04e3d608caf51c4677d061e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Jurnal Pustaka AI}
+      \field{title}{Sistem monitoring dan pengelolaan data keluhan pelanggan berbasis web pada PT. PLN (Persero) ULP Bukittinggi}
+      \field{volume}{5}
+      \field{year}{2025}
+      \field{pages}{19\bibrangedash 24}
+      \range{pages}{6}
+    \endentry
+    \entry{Lapor2021}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ee516ffc93c04eaa4a460ee33f4b98f7}{%
+           family={{SP4N{-}LAPOR!}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee516ffc93c04eaa4a460ee33f4b98f7}
+      \strng{fullhash}{ee516ffc93c04eaa4a460ee33f4b98f7}
+      \strng{bibnamehash}{ee516ffc93c04eaa4a460ee33f4b98f7}
+      \strng{authorbibnamehash}{ee516ffc93c04eaa4a460ee33f4b98f7}
+      \strng{authornamehash}{ee516ffc93c04eaa4a460ee33f4b98f7}
+      \strng{authorfullhash}{ee516ffc93c04eaa4a460ee33f4b98f7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Lengkapi judul persis dan tautan laporan jika kamu pakai dokumen spesifik}
+      \field{title}{Laporan Implementasi Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional {(SP4N{-}LAPOR!)}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.lapor.go.id
+      \endverb
+      \verb{url}
+      \verb https://www.lapor.go.id
+      \endverb
+    \endentry
+    \entry{StairReynolds2020}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=52cd8a2ba8dde40c31547ce5f545ef3a}{%
+           family={Stair},
+           familyi={S\bibinitperiod},
+           given={Ralph\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16382f9dc03cab1b3684112d6d7e067d}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={George\bibnamedelima W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{4965d5e0fe14870ca825ff45381ac613}
+      \strng{fullhash}{4965d5e0fe14870ca825ff45381ac613}
+      \strng{bibnamehash}{4965d5e0fe14870ca825ff45381ac613}
+      \strng{authorbibnamehash}{4965d5e0fe14870ca825ff45381ac613}
+      \strng{authornamehash}{4965d5e0fe14870ca825ff45381ac613}
+      \strng{authorfullhash}{4965d5e0fe14870ca825ff45381ac613}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{13}
+      \field{title}{Principles of Information Systems}
+      \field{year}{2020}
+    \endentry
+    \entry{StaussSeidel2004}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5d02832f42dabd4ffc75798d1c1a78ee}{%
+           family={Stauss},
+           familyi={S\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcc2ad47a61727898e77ffd962db645a}{%
+           family={Seidel},
+           familyi={S\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cincinnati, OH}%
+      }
+      \list{publisher}{1}{%
+        {Thomson/South-Western}%
+      }
+      \strng{namehash}{fbc91bd2ccb4c8dac1789dd3db4da62d}
+      \strng{fullhash}{fbc91bd2ccb4c8dac1789dd3db4da62d}
+      \strng{bibnamehash}{fbc91bd2ccb4c8dac1789dd3db4da62d}
+      \strng{authorbibnamehash}{fbc91bd2ccb4c8dac1789dd3db4da62d}
+      \strng{authornamehash}{fbc91bd2ccb4c8dac1789dd3db4da62d}
+      \strng{authorfullhash}{fbc91bd2ccb4c8dac1789dd3db4da62d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Complaint Management: The Heart of {CRM}}
+      \field{year}{2004}
+    \endentry
+    \entry{tax_customer_1998}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7f64578ef52caca0939280386553be15}{%
+           family={Tax},
+           familyi={T\bibinitperiod},
+           given={Stephen\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9efe2aef8dfca1b637839f1ca313a782}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Stephen\bibnamedelima W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f02e26337ddcb6b76bb991bc4c16b29}{%
+           family={Chandrashekaran},
+           familyi={C\bibinitperiod},
+           given={Murali},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13728844cb07f2d5f9e671ef91da0f6c}
+      \strng{fullhash}{13728844cb07f2d5f9e671ef91da0f6c}
+      \strng{bibnamehash}{13728844cb07f2d5f9e671ef91da0f6c}
+      \strng{authorbibnamehash}{13728844cb07f2d5f9e671ef91da0f6c}
+      \strng{authornamehash}{13728844cb07f2d5f9e671ef91da0f6c}
+      \strng{authorfullhash}{13728844cb07f2d5f9e671ef91da0f6c}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Marketing}
+      \field{number}{2}
+      \field{title}{Customer Evaluations of Service Complaint Experiences: Implications for Relationship Marketing}
+      \field{volume}{62}
+      \field{year}{1998}
+      \field{pages}{60\bibrangedash 76}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1177/002224299806200205
+      \endverb
+    \endentry
+    \entry{tullis2013}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d30a52ff3bc99e8029fb81d676a57cf0}{%
+           family={Tullis},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7354511e2a5658fb0cf105e498208a33}{%
+           family={Albert},
+           familyi={A\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Waltham, MA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{7d2f5fe80aec92d6512b4ec0494ae58b}
+      \strng{fullhash}{7d2f5fe80aec92d6512b4ec0494ae58b}
+      \strng{bibnamehash}{7d2f5fe80aec92d6512b4ec0494ae58b}
+      \strng{authorbibnamehash}{7d2f5fe80aec92d6512b4ec0494ae58b}
+      \strng{authornamehash}{7d2f5fe80aec92d6512b4ec0494ae58b}
+      \strng{authorfullhash}{7d2f5fe80aec92d6512b4ec0494ae58b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Measuring the User Experience: Collecting, Analyzing, and Presenting Usability Metrics}
+      \field{year}{2013}
+    \endentry
+    \entry{UlkhaqBarus2017}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bc79cd12c7604c8f9fe80331e3d33198}{%
+           family={Ulkhaq},
+           familyi={U\bibinitperiod},
+           given={Mujiya},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72c67945a8f7c63f67119c556e44bbf1}{%
+           family={Barus},
+           familyi={B\bibinitperiod},
+           given={Monalisa\bibnamedelima Putri},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b850277ae6348ea70d43377ea94176af}
+      \strng{fullhash}{b850277ae6348ea70d43377ea94176af}
+      \strng{bibnamehash}{b850277ae6348ea70d43377ea94176af}
+      \strng{authorbibnamehash}{b850277ae6348ea70d43377ea94176af}
+      \strng{authornamehash}{b850277ae6348ea70d43377ea94176af}
+      \strng{authorfullhash}{b850277ae6348ea70d43377ea94176af}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Laporan penelitian/skripsi}
+      \field{note}{Lengkapi nama jurnal/instansi dan detail publikasi sesuai dokumen yang kamu gunakan}
+      \field{title}{Analisis Kepuasan Pelanggan dengan Menggunakan SERVQUAL: Studi Kasus Layanan IndiHome PT. Telekomunikasi Indonesia, Tbk, Regional 1 Sumatera}
+      \field{year}{2017}
+    \endentry
+    \entry{un2024ai}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eccb44c9a7b3005992d0cb473b80b6e0}{%
+           family={{United Nations Department of Economic and Social Affairs}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {United Nations}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \strng{namehash}{eccb44c9a7b3005992d0cb473b80b6e0}
+      \strng{fullhash}{eccb44c9a7b3005992d0cb473b80b6e0}
+      \strng{bibnamehash}{eccb44c9a7b3005992d0cb473b80b6e0}
+      \strng{authorbibnamehash}{eccb44c9a7b3005992d0cb473b80b6e0}
+      \strng{authornamehash}{eccb44c9a7b3005992d0cb473b80b6e0}
+      \strng{authorfullhash}{eccb44c9a7b3005992d0cb473b80b6e0}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{AI and Global Development: Policy Outlook 2024}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.un.org/ai-global-development-2024
+      \endverb
+      \verb{url}
+      \verb https://www.un.org/ai-global-development-2024
+      \endverb
+    \endentry
+    \entry{verhoef_multichannel_2015}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c9eb2ea99edb17813e705d43204e1b17}{%
+           family={Verhoef},
+           familyi={V\bibinitperiod},
+           given={Peter\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe53c870e19c719acc39f8d2f42a8cec}{%
+           family={Kannan},
+           familyi={K\bibinitperiod},
+           given={P.\bibnamedelimi K.},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55cc89acc69add83291925a4eb845fa4}{%
+           family={Inman},
+           familyi={I\bibinitperiod},
+           given={J.\bibnamedelimi Jeffrey},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e72d21030d39c9cb609f890e450cbbc}
+      \strng{fullhash}{0e72d21030d39c9cb609f890e450cbbc}
+      \strng{bibnamehash}{0e72d21030d39c9cb609f890e450cbbc}
+      \strng{authorbibnamehash}{0e72d21030d39c9cb609f890e450cbbc}
+      \strng{authornamehash}{0e72d21030d39c9cb609f890e450cbbc}
+      \strng{authorfullhash}{0e72d21030d39c9cb609f890e450cbbc}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Retailing}
+      \field{number}{2}
+      \field{title}{From Multi-Channel Retailing to Omni-Channel Retailing: Introduction to the Special Issue on Multi-Channel Retailing}
+      \field{volume}{91}
+      \field{year}{2015}
+      \field{pages}{174\bibrangedash 181}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.jretai.2015.02.005
+      \endverb
+    \endentry
+    \entry{Wahyuningsih2021}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b4c2e13c029c401573f32de2698b9fe3}{%
+           family={Wahyuningsih},
+           familyi={W\bibinitperiod},
+           given={Yuyun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universitas Tadulako}%
+      }
+      \list{location}{1}{%
+        {Palu}%
+      }
+      \strng{namehash}{b4c2e13c029c401573f32de2698b9fe3}
+      \strng{fullhash}{b4c2e13c029c401573f32de2698b9fe3}
+      \strng{bibnamehash}{b4c2e13c029c401573f32de2698b9fe3}
+      \strng{authorbibnamehash}{b4c2e13c029c401573f32de2698b9fe3}
+      \strng{authornamehash}{b4c2e13c029c401573f32de2698b9fe3}
+      \strng{authorfullhash}{b4c2e13c029c401573f32de2698b9fe3}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{indonesian}
+      \field{title}{Analisis Proses Penanganan Keluhan Pelanggan Produk IndiHome pada Unit Customer Care PT. Telkom Witel Sulteng (Studi Kasus: Plasa Telkom Palu)}
+      \field{type}{Diploma thesis}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://repository.untad.ac.id/id/eprint/105978
+      \endverb
+      \verb{url}
+      \verb https://repository.untad.ac.id/id/eprint/105978
+      \endverb
+    \endentry
+    \entry{WardPeppard2016}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5a9259d02c91726a8fd8b53f2f5cd4e6}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f02e8cc1a2c544befd0c40c7db7a338}{%
+           family={Peppard},
+           familyi={P\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{335df3d0c8ae943487bc1142bfe638d0}
+      \strng{fullhash}{335df3d0c8ae943487bc1142bfe638d0}
+      \strng{bibnamehash}{335df3d0c8ae943487bc1142bfe638d0}
+      \strng{authorbibnamehash}{335df3d0c8ae943487bc1142bfe638d0}
+      \strng{authornamehash}{335df3d0c8ae943487bc1142bfe638d0}
+      \strng{authorfullhash}{335df3d0c8ae943487bc1142bfe638d0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{The Strategic Management of Information Systems: Building a Digital Strategy}
+      \field{year}{2016}
+    \endentry
+    \entry{wieringa2014}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=01bb6d836903bfca764966753bb21d3a}{%
+           family={Wieringa},
+           familyi={W\bibinitperiod},
+           given={Roel\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{01bb6d836903bfca764966753bb21d3a}
+      \strng{fullhash}{01bb6d836903bfca764966753bb21d3a}
+      \strng{bibnamehash}{01bb6d836903bfca764966753bb21d3a}
+      \strng{authorbibnamehash}{01bb6d836903bfca764966753bb21d3a}
+      \strng{authornamehash}{01bb6d836903bfca764966753bb21d3a}
+      \strng{authorfullhash}{01bb6d836903bfca764966753bb21d3a}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Design Science Methodology for Information Systems and Software Engineering}
+      \field{year}{2014}
+    \endentry
+    \entry{williams2023supplychain}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7dd649d84847634e415c312a17549e72}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a94b2fa705c4db0f1e3dfc4917e9f735}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Priya},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d816b91b3ae51b58ac6957c5c4f572d7}
+      \strng{fullhash}{d816b91b3ae51b58ac6957c5c4f572d7}
+      \strng{bibnamehash}{d816b91b3ae51b58ac6957c5c4f572d7}
+      \strng{authorbibnamehash}{d816b91b3ae51b58ac6957c5c4f572d7}
+      \strng{authornamehash}{d816b91b3ae51b58ac6957c5c4f572d7}
+      \strng{authorfullhash}{d816b91b3ae51b58ac6957c5c4f572d7}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Operations Management}
+      \field{number}{2}
+      \field{title}{Blockchain Applications for Transparent Supply Chains}
+      \field{volume}{74}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{141\bibrangedash 158}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.jom.2023.01.005
+      \endverb
+    \endentry
+    \entry{worldbank2025report}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=32730e15a7ca0bf0686ea8d4a3a46ab9}{%
+           family={{World Bank}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{32730e15a7ca0bf0686ea8d4a3a46ab9}
+      \strng{fullhash}{32730e15a7ca0bf0686ea8d4a3a46ab9}
+      \strng{bibnamehash}{32730e15a7ca0bf0686ea8d4a3a46ab9}
+      \strng{authorbibnamehash}{32730e15a7ca0bf0686ea8d4a3a46ab9}
+      \strng{authornamehash}{32730e15a7ca0bf0686ea8d4a3a46ab9}
+      \strng{authorfullhash}{32730e15a7ca0bf0686ea8d4a3a46ab9}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed October 22, 2025}
+      \field{title}{The Digital Economy Report 2025: Innovation, Inclusion, and Inequality}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.worldbank.org/digital-economy-2025
+      \endverb
+      \verb{url}
+      \verb https://www.worldbank.org/digital-economy-2025
+      \endverb
+    \endentry
+    \entry{W3C2018}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66c3509f57565d7fbe270a57a403004c}{%
+           family={{World Wide Web Consortium (W3C)}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{fullhash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{bibnamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorbibnamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authornamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorfullhash}{66c3509f57565d7fbe270a57a403004c}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Rekomendasi W3C untuk aksesibilitas web}
+      \field{title}{Web Content Accessibility Guidelines (WCAG) 2.1}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/WCAG21/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/WCAG21/
+      \endverb
+    \endentry
+    \entry{W3C2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66c3509f57565d7fbe270a57a403004c}{%
+           family={{World Wide Web Consortium (W3C)}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{fullhash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{bibnamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorbibnamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authornamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorfullhash}{66c3509f57565d7fbe270a57a403004c}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Rekomendasi W3C terbaru untuk aksesibilitas web}
+      \field{title}{Web Content Accessibility Guidelines (WCAG) 2.2}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/WCAG22/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/WCAG22/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
